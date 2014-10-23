@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: nonlinelasticity.aux
+The style file: JHEP.bst
+Database file #1: nle.bib
+Repeated entry---line 790 of file nle.bib
+ : @article{Frauendiener:2007yx
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1031 of file nle.bib
+ : @article{Frauendiener:2007yx
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Green1991462"
+Warning--can't use both author and editor fields in carter_springer_cond
+You've used 81 entries,
+            2166 wiz_defined-function locations,
+            1075 strings with 15944 characters,
+and the built_in function-call counts, 25807 in all, are:
+= -- 2738
+> -- 666
+< -- 0
++ -- 258
+- -- 177
+* -- 1928
+:= -- 3379
+add.period$ -- 85
+call.type$ -- 81
+change.case$ -- 78
+chr.to.int$ -- 0
+cite$ -- 82
+duplicate$ -- 1424
+empty$ -- 2445
+format.name$ -- 177
+if$ -- 6731
+int.to.chr$ -- 0
+int.to.str$ -- 81
+missing$ -- 302
+newline$ -- 249
+num.names$ -- 81
+pop$ -- 307
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1099
+stack$ -- 0
+substring$ -- 1652
+swap$ -- 684
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 183
+width$ -- 83
+write$ -- 835
+(There were 2 error messages)
