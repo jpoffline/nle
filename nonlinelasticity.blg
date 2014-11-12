@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: nonlinelasticity.aux
 The style file: JHEP.bst
@@ -13,45 +13,45 @@ Repeated entry---line 1031 of file nle.bib
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Green1991462"
 Warning--can't use both author and editor fields in carter_springer_cond
-You've used 81 entries,
+You've used 83 entries,
             2166 wiz_defined-function locations,
-            1075 strings with 15944 characters,
-and the built_in function-call counts, 25807 in all, are:
-= -- 2738
-> -- 666
+            1086 strings with 16210 characters,
+and the built_in function-call counts, 26315 in all, are:
+= -- 2793
+> -- 678
 < -- 0
-+ -- 258
-- -- 177
-* -- 1928
-:= -- 3379
-add.period$ -- 85
-call.type$ -- 81
-change.case$ -- 78
++ -- 263
+- -- 180
+* -- 1957
+:= -- 3443
+add.period$ -- 88
+call.type$ -- 83
+change.case$ -- 79
 chr.to.int$ -- 0
-cite$ -- 82
-duplicate$ -- 1424
-empty$ -- 2445
-format.name$ -- 177
-if$ -- 6731
+cite$ -- 84
+duplicate$ -- 1458
+empty$ -- 2497
+format.name$ -- 180
+if$ -- 6866
 int.to.chr$ -- 0
-int.to.str$ -- 81
-missing$ -- 302
-newline$ -- 249
-num.names$ -- 81
-pop$ -- 307
+int.to.str$ -- 83
+missing$ -- 308
+newline$ -- 256
+num.names$ -- 83
+pop$ -- 319
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1099
+skip$ -- 1121
 stack$ -- 0
-substring$ -- 1652
-swap$ -- 684
+substring$ -- 1669
+swap$ -- 698
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 183
-width$ -- 83
-write$ -- 835
+while$ -- 186
+width$ -- 85
+write$ -- 856
 (There were 2 error messages)

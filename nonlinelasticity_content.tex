@@ -1,4 +1,4 @@
-
+\cleardoublepage
 \section{Introduction}
 
 Suppose one wanted to construct a description of water flowing through a pipe. Given that one knows that water is constituted from ``particulate'' molecules,  one could construct a particle description. With the best will and all available computing power, such a description would fail to describe almost all systems of physical interest. Instead, one moves to a coarse-grained fluids description where one attempts to describe the collective behavior of the particles on a ``large scale''.  Scalar field models of dark energy and modified gravity are prevalent in modern cosmology and it is our contention that in an important sense these are equivalent to constructing a particulate description of water.
@@ -9,6 +9,7 @@ It is useful for our purposes to imagine that the theory of materials comes in t
 
 In some sense the idea of describing a medium is similar to the idea of using multiple scalar fields to build dark energy models: the medium description is constructed with a set of three scalar fields. Except now one obtains a concrete interpretation of what the scalar fields \textit{are}. Knowing what the fields are significantly enhances physical insight, and guides the choice of  functions or parameters used to parameterize available freedom in the theory.
 
+\input{manifold_pic}
 
 \begin{itemize}
 \item In Bucher and Spergel, \cite{Bucher:1998mh}, the linearized theory is constructed in detail.
@@ -41,26 +42,29 @@ The energy-momentum tensors written above \textit{become} those for a fluid or s
 
 When one constructs ``conventional'' models of dark energy or modified gravity, one has a some freedom to choose various types of quantities: these are, e.g., functional forms of the potential, or the kinetic terms which appear in the Lagrangian density. This may seem like an obvious point, but the choice of a restriction on a theory can have implications for (a) its applicability, and (b) its physical naturalness/interpretation. 
 
-\subsection{Fluids and solids}
-The distinction between a \textit{fluid} and a \textit{solid} isn't one of the best explained concepts in the literature. Fluids are commonly used as a   description for the content of the Universe in cosmology: but they are only a sub-class of a more general description for ``content''; or, to perhaps use a  more physically transparent terminology: for materials. The more general  description of material is that of a solid (we won't go so far as to say \textit{the}  general material description). Below we will outline some of the salient pieces to the construction of a material model: full explanations are given in the rest of this paper.
 
-In the descriptions of both solids and fluids  one has a notion of a \textit{material metric} ${k^a}_b$ on a \textit{material space}, whose determinant is related to the particle number density, $n$. A convenient decomposition of this metric is ${k^a}_b = n^{2/3}{\eta^a}_b$: with this decomposition of   ${k^a}_b$, the conformal metric ${\eta^a}_b$ is unimodular, i.e., it has unit determinant. The action for both a fluid and a solid is of the form 
+\subsection{Fluids and solids}
+The distinction between a \textit{fluid} and a \textit{solid} isn't one of the best explained concepts in the literature. Fluids are commonly used as a   description for the content of the Universe in cosmology: but they are only a sub-class of a more general description for ``content''; or, to perhaps use a  more physically transparent terminology: for materials. A more general  description of material is that of a solid; obviously, we won't go so far as to say \textit{the}  general material description. Below we will outline some of the salient pieces to the construction of a material model: full explanations are given in the rest of this paper.
+
+In the descriptions of both solids and fluids  one has a notion of a \textit{material metric} ${k^a}_b$ on a \textit{material space}, whose determinant is related to the particle number density, $n$. A convenient decomposition of this metric is ${k^a}_b = n^{2/3}{\eta^a}_b$. With this decomposition of   ${k^a}_b$, the conformal metric ${\eta^a}_b$ is uni-modular, i.e., it has unit determinant. The action for both a fluid and a solid is of the form 
 \bea
 \label{eq:intro-solid-action}
 S = \int \dd^4x\, \sqrt{-g}\, \ld\left(n, \left[ \gbm{\eta}\right],\left[\gbm{\eta}^2\right]\right).
 \eea
-This is the ``answer'' from which everything else is obtained; as such it is worth taking a little time to explain the interpretation of various terms. To begin with, $n$ is the number density of particles and is identified with the determinant of the material metric $n = \sqrt{\det k_{AB}}$ on the material manifold, whose coordinates $\phi^A$ specify the locations of the particles. The square-braces in (\ref{eq:intro-solid-action}) denote traces of the mixed components of the unimodular tensor, ${\eta^a}_b = \gamma^{ac}\eta_{cb}$, so that the action (\ref{eq:intro-solid-action}) is dependant upon the tensor
+Since this is the ``answer'' from which everything else is obtained  it is worth taking a little time to explain the interpretation of various terms. Firstly, $n$ is the number density of particles and is identified with the determinant of the material metric $n = \sqrt{\det k_{AB}}$ on the material manifold (the coordinates $\phi^A$ specify the locations of the particles on the material manifold). The square-braces in (\ref{eq:intro-solid-action}) denote traces of the mixed components of the uni-modular tensor, ${\eta^a}_b = \gamma^{ac}\eta_{cb}$. That is, the action (\ref{eq:intro-solid-action}) is dependant upon the two independent invariants of the tensor
 \bea
 \eta_{ab} = n^{-2/3}k_{AB}\partial_a\phi^A\partial_b\phi^B.
 \eea
-It is useful to split up the Lagrangian density   as $\ld = n \epsilon$, where $\epsilon$ is the energy per particle and $n$ is the particle number density. In the  cases of a fluid and a solid, $\epsilon$ is a function with the following dependencies:
+It is useful to split up the Lagrangian density   as $\ld = n \epsilon$, where $\epsilon$ is the energy per particle and $n$ retaints its interpretation as the particle number density. In the  cases of   fluids or solids, $\epsilon$ is a function with the following dependencies:
 \bea
 \qsubrm{\epsilon}{fluid} = \qsubrm{\epsilon}{fluid}(n),\qquad \qsubrm{\epsilon}{solid} = \qsubrm{\epsilon}{solid}(n, {\eta^a}_b).
 \eea
-Thus, it is the dependence of the energy per particle on the unimodular tensor ${\eta^a}_b$ which makes the description that of a solid rather than a fluid. The physical consequence of this dependence is that the substance is able to support anisotropic stress (whereas fluids can't): this manifests as \textit{rigidity}. It is worth noting that a fluid is a highly symmetric solid, and a pressureless fluid has $\qsubrm{\epsilon}{fluid}(n) = \overline{\epsilon}_0$, a constant.
+This makes the distinction between solids and fluids explicit: it is the dependence of the energy per particle on the uni-modular tensor ${\eta^a}_b$ which makes the description that of a solid rather than a fluid. Later on we will see that the physical consequence of this dependence is that the substance is able to support anisotropic stress (whereas fluids can't): this manifests as \textit{rigidity}. It is worth noting that a fluid is a highly symmetric solid, and a pressureless fluid has $\qsubrm{\epsilon}{fluid}(n) = \overline{\epsilon}_0$, a constant.
 
+In \fref{fig:shem_roadmap} we show how the materials are related.
 
- 
+\input{material_models_relations}
+
 {\renewcommand{\arraystretch}{1.4}
 \begin{table}%[b] 
 %\begin{andptabular}{X[4c]X[4c] }%
@@ -71,8 +75,8 @@ Thus, it is the dependence of the energy per particle on the unimodular tensor $
 \textbf{Symbol} & \textbf{Meaning} \\
 \hline
 $\lied{X}$ & Lie derivative operator along the vector $X^{\mu}$\\\hline
-$\left(\mathfrak{M}, g_{ab}\right)$ & Space-time manifold and metric\\\hline
-$\left(\mathfrak{X}, k_{ab}\right)$ & Material manifold and metric \\\hline
+$\left(\stmanif, g_{ab}\right)$ & Space-time manifold and metric\\\hline
+$\left(\matmanif, k_{ab}\right)$ & Material manifold and metric \\\hline
 $u_a$ & Time-like unit-vector; $u^au_a = -1$\\\hline
 $\gamma_{ab} = g_{ab} + u_au_b$ & Orthogonal projector; $u^a\gamma_{ab}=0$\\\hline
 $n$ & Particle number density; $n^2 = \det k_{AB} $\\\hline
@@ -88,7 +92,7 @@ Another  concept which is used is that of a \textit{perfect fluid}. This is supp
 \bea
 T_{ab} = \rho u_au_b + P\gamma_{ab},
 \eea
-in which $\rho$ and $P$ are the  fluid's energy density and pressure respectively, $u^a$ is the velocity of the fluid and $\gamma_{ab} = g_{ab} + u_au_b$ is the orthogonal projection operator. If the energy-momentum tensor for a \textit{fluid} is not of this form (for example, if there is anisotropic stress or heat flux) then the \textit{fluid} is said to be   \textit{imperfect}. We are deliberately trying to be careful about only using the term \textit{fluid}: a solid can be categorised in a similar sense, but a perfect solid manifestly has an anisotropic part to the energy-momentum tensor (that is what distinguishes a solid from a fluid).
+in which $\rho$ and $P$ are the  fluid's energy density and pressure respectively, $u^a$ is the velocity of the fluid and $\gamma_{ab} = g_{ab} + u_au_b$ is the orthogonal projection operator. If the energy-momentum tensor for a \textit{fluid} is not of this form (for example, if there is anisotropic stress or heat flux) then the \textit{fluid} is said to be   \textit{imperfect}. We are deliberately being careful about only using the term \textit{fluid}: a solid can be categorised in a similar sense, but a perfect solid manifestly has an anisotropic part to the energy-momentum tensor (this is a distinguishing feature of a solid from a fluid).
 
 
 In some sense the main result of this review is to obtain an understanding of the theory of a relativistic solid: useful geometric structures on the manifold of particle locations, the action, and energy-momentum tensor. It is rather involved, but is worthwhile since expressions and formulae obtain physical meaning.
@@ -181,24 +185,155 @@ It follows that (\ref{eq:sec;Kmuab-defn-1}) evaluates to
 \overline{\nabla}_{\mu}\gamma_{\alpha\beta}.
 \eea
 
-\section{Describing non-linear materials}
-In this section we will take some time to build a description of a medium. There will be some instances where we ``mix'' material space and space-time indices. This is   unavoidable in the course of exposing some interesting part of the formalism. That said, all final results (equations of motion etc) will be expressed solely in terms of space-time indicies.
-\subsection{The map and particle number density}
-\label{sec:mpnd}
-It is important to understand the minimal assumed geometric structure in building a model. We  assume that there is a 3D material manifold $\mathfrak{X}$ which is endowed with a particle density form $n_{ABC} = n_{[ABC]}$. There will be an associated metric on the material manifold, which we call $k_{AB}$ and will discuss further later on. We want to obtain fields and energies in space-time due to structures in this material manifold. 
 
-The points of $\mathfrak{X}$ are  particles of the medium, and they do not move: the dynamics in space-time comes from the maps from the material manifold to space-time, not the motion of the particles in material space.  We shall let  $\mathfrak{M}'$ be the submanifold of the full space-time manifold $\mathfrak{M}$  which is the subset of the spacetime that the material passes through. Then invoke a map $\psi$ which takes a location in space-time and points at a location in the material manifold;
+
+
+
+
+\subsection{Perturbed solids}
+The majority of this review will be focussed on the general theory of solids: the deformations performed on the solid or medium may be arbitrarily large. Whilst this is very general, it also yields a theory which is complicated to work with. There are a substantial number of physical systems for whom the non-linear theory of elasticity is ``over-kill'': understanding the governing equations that describe small deformations of the solid from its equilibrium configuration is often sufficient. For this reason we shall review the theory of perturbed solids.
+
+Comprehensive reviews, applications, and examples in the relativistic theory have already been presented \cite{Carter:1973zz, Carter:1977qf, Bucher:1998mh, Battye:2005ik, Battye:2007aa, Battye:2013er, Pearson:2014iaa}, as well as the non-relativistic theory being the main subject of a classic book by Landau and Lifshitz \cite{ll_elast}.
+
+The physical picture one should constantly keep in mind is that a continuous medium has ``two states'': relaxed and deformed. The former occurs when there are no forces on the medium, and the latter will induce strains and forces on other surrounding materials and fields (notably the metric). In some sense the ``point'' of a model is to catalogue the possible ways in which a material can influence surrounding media and fields. 
+
+The coordinates of the undeformed medium are represented by $\overline{x}^a$, and those of the deformed medium are by $x^a$. These are related via
 \bea
-\psi : \mathfrak{M}'\longrightarrow \mathfrak{X}.
+ x^a =  \overline{x}^a+\xi^a(x^b) .
 \eea
-For all points p in $\mathfrak{X}' = \psi(\mathfrak{M}')$, the inverse map at that point, $\psi^{-1}({\rm p})$, is a single time-like curve in $\mathfrak{M}'$: these are the flow-lines of the particles. 
+The crucial piece here is the deformation vector, $\xi^a(x^b)$, which as we explicitly show, is dependent upon the space-time coordinates (different locations can deform by different amounts).
+
+The metric of a space-time which contains a perturbed medium is given by
+\bea
+\label{metric-perts-elastic}
+g_{ab} = \overline{g}_{ab} +h_{ab} + 2 \nabla_{(a}\xi_{b)}.
+\eea
+The metric of the unperturbed space-time is $\overline{g}_{ab}$, and the metric fluctuations due to ``intrinsic'', or extra-material contents, is given by $h_{ab}$. The presence of the perturbed medium is encapsulated by the term involving the deformation field, 
+\bea
+\xi^a(x^b) = x^a - \overline{x}^a.
+\eea
+One may recognise the final term is (\ref{metric-perts-elastic}) as that which arises in standard perturbation theory after one performs the diffeomorphism 
+\bea
+x^a\rightarrow x^a + \xi^a(x^b).
+\eea
+Of course, this recognition is accurate. There is an additional concept to appreciate however: interpretation. The $\xi^a$-field describes all the fluctuations of the medium away from its equilibrium configuration. In addition, the deformation field $\xi^a$ is orthogonal,
+\bea
+u_a\xi^a=0.
+\eea
+
+A more elegant, and geometrically intuitive way to write the corrections to the metric is by writing all of the non-background terms in (\ref{metric-perts-elastic}) as
+\bea
+\lp g_{ab} = \ep g_{ab} + \lied{\xi}g_{ab},
+\eea
+wherein one can hopefully recognise the usual expression for the Lie derivative of the metric along the vector $\xi^a$,
+\bea 
+\lied{\xi}g_{ab} = 2\nabla_{(a}\xi_{b)}.
+\eea
+
+\subsubsection{Non-relativistic solids}
+A non-relativistic solid is one for whom there are no gravitational effects. As examples, one imagines an eraser, rubber band, trampolines: these kinds of materials.
+
+Under a deformation the coordinates of a non-relativistic solid alter according to $x^i \rightarrow x^i + \xi^i(x^j)$. If the line element in the solid before the deformation is $\dd\ell^2 = \delta_{ij} \dd x^i \dd x^j$, then after the deformation the line element has metric  given by
+\bea
+g_{ij} = \delta_{ij} + 2 \varepsilon_{ij},
+\eea
+where we defined the strain tensor,
+\bea
+\label{non-rel-strain-defn}
+\varepsilon_{ij}\defn \partial_{(i}\xi_{j)}.
+\eea
+The components of the strain tensor $\varepsilon_{ij}$ contain all information about the deformation performed on the body. We now require information about the manner in which the body responds to the given deformation. What this actually entails is an understanding of the stress tensor, $\sigma^{ij}$, for a given strain tensor $\varepsilon_{ij}$. If one computes the divergence of the stress tensor one obtains the components of the force, which can be equated to the acceleration of the deformation vectors, to obtain the equation of motion
+\bea
+\label{nonrela-eom}
+F^i = \partial_j\sigma^{ij} = \rho \ddot{\xi}^i.
+\eea
+In broad-brush-terms there are two possibilities which are useful to consider.
+\begin{enumerate}
+\item The stress tensor is proportional to the strain tensor:
+\bea
+\label{e-solid}
+\sigma^{ij} = E^{ijkl}\varepsilon_{kl}.
+\eea
+The components   $E^{ijkl}$ precisely prescribe the strength of certain forces for given deformations (we will have much more to say about this later); they are the components of the elasticity tensor. Materials for whom (\ref{e-solid}) holds are   Hookean elastic solids.
+\item The stress tensor is proportional to the rate-of-strain tensor:
+\bea
+\label{v-solid}
+\sigma^{ij} = V^{ijkl}\dot{\varepsilon}_{kl}.
+\eea
+The components   $V^{ijkl}$ play a similar role to the components of the elasticity tensor for a Hookean solid, except here we are  considering viscous solids and $V^{ijkl}$ are the components of the viscosity tensor.
+\end{enumerate}
+Of course, the given physical material may require an amalgamation of the two cases, whereby stress is proportional to both strain, and rate-of-strain, in which case
+\bea
+\label{kv-solid}
+\sigma^{ij} = E^{ijkl}\varepsilon_{kl}+ V^{ijkl}\dot{\varepsilon}_{kl}.
+\eea
+These models describe visco-elastic solids (also known as Kelvin-Voigt solids). Since (\ref{kv-solid}) contains both the elastic (\ref{e-solid}) and viscous (\ref{v-solid}) as sub-cases, we will proceed with the Kelvin-Voigt expression (\ref{kv-solid}). Using (\ref{non-rel-strain-defn}) and (\ref{kv-solid}), the equation of motion (\ref{nonrela-eom}) is
+\bea
+\label{eom-kv-nonreal}
+\rho \ddot{\xi}^i = E^{ijkl}\partial_j\partial_{(k}\xi_{l)} + V^{ijkl}\partial_j\partial_{(k}\dot{\xi}_{l)}. 
+\eea
+
+The problem of describing the solid considerably simplifies when one assumes some symmetry of the solid, for example material isotropy. In such cases (other symmetries require more freedom than we are about to introduce), the material tensors only have two independant components each, and decompose completely as
+\bse
+\label{decomp_iso}
+\bea
+E^{ijkl} = \left(\beta-\tfrac{2}{3}\mu\right) g^{ij}g^{kl} + 2\mu g^{i(k}g^{l)j},\\
+V^{ijkl} = \left(\lambda-\tfrac{2}{3}\nu\right) g^{ij}g^{kl} + 2\nu g^{i(k}g^{l)j}.
+\eea
+\ese
+Using the decompositions (\ref{decomp_iso}), the stress-tensor (\ref{kv-solid}) becomes
+\bea
+\sigma^{ij} = \left( \beta - \tfrac{2}{3}\mu\right) g^{ij}\partial_k\xi^k + \left( \lambda - \tfrac{2}{3}\nu\right) g^{ij}\partial_k\dot{\xi}^k + 2\mu \partial^{(i}\xi^{j)} + 2 \nu\partial^{(i}\dot{\xi}^{j)},
+\eea
+and the equation of motion (\ref{eom-kv-nonreal}) becomes
+\bea
+\label{iso-eom}
+\rho \ddot{\xi}^i = \left( \beta + \tfrac{1}{3}\mu\right) \partial^i\partial_k\xi^k + \mu \partial_k\partial^k\xi^i + \left( \lambda + \tfrac{1}{3}\nu\right) \partial^i\partial_k\dot{\xi}^k + \nu \partial_k\partial^k\dot{\xi}^i.
+\eea
+
+We shall provide a simple example which highlights the seperate modes of propagation inherent in a material medium. Consider the simple case where the deformation vector has only two components; we can expand $\xi^i$ using two scalars $\phi$ and $\psi$ in an orthonormal basis $(\hat{x}^i, \hat{y}^i)$ via
+\bse
+\label{iso-eom-ex}
+\bea
+\xi^i = \phi\hat{x}^i + \psi\hat{y}^i.
+\eea
+Now suppose that these scalars depend on time, and only one of the two available spatial directions; that is, we set
+\bea
+\partial_i\phi = \phi'\hat{x}_i,\qquad \partial_i\psi = \psi'\hat{x}_i.
+\eea
+\ese
+Putting the decomposition of the deformation vector (\ref{iso-eom-ex}) into the equation of motion (\ref{iso-eom}) yields an equation with two independant projections (one along $\hat{x}^i$, and one along $\hat{y}^i$); these projections leads to the requirement that the following two equations are satisfied:
+\bea
+\ddot{\phi} - \frac{\lambda + \frac{4}{3}\nu}{\rho}\dot{\phi}'' = \frac{\beta+\frac{4}{3}\mu}{\rho}\phi'',\qquad
+\ddot{\psi} - \frac{\nu}{\rho}\dot{\psi}'' = \frac{\mu}{\rho}\psi''.
+\eea
+In the purely elastic case (i.e., where all components of the viscosity tensor vanish), it is with relative ease that one realises a plane wave ansatz $\phi \sim e^{\ci\left( \omega t + kx \right)}$ solves the equations of motion, and that $\phi$ and $\psi$ travel with different speeds: these are the  longitudinal and transverse sound speeds
+\bea
+\qsubrm{c}{L}^2 = \frac{\beta + \frac{4}{3}\mu}{\rho},\qquad \qsubrm{c}{T}^2 = \frac{\mu}{\rho}.
+\eea
+\subsubsection{Relativistic solids}
+
+
+
+\cleardoublepage
+\section{Describing non-linear materials}
+In this section we will take some time to build a description of a medium. We will introduce the notion of a material manifold, and geometric structures on the material manifold: coordinates, metric, connection, and volume form. There will be an important step where we relate structures in the material manifold to structures in space-time. We will want to obtain fields and energies in space-time due to structures in the material manifold. There will be some instances where we ``mix'' material space and space-time indices; this is   unavoidable in the course of exposing some interesting part of the formalism. That said, all final results (equations of motion etc) will be expressed solely in terms of space-time indicies.
+\subsection{The material manifold,  particle number density, and map}
+\label{sec:mpnd}
+It is important to understand the minimal assumed geometric structure in building a model. We  assume that there is a 3D   manifold $\matmanif$ which is endowed with a particle density form $n_{ABC} = n_{[ABC]}$. This is the material manifold. There will be an associated metric on the material manifold, which we call $k_{AB}$ and will discuss further later on. 
+
+The points of $\matmanif$ are  particles of the medium, and they do not move: the dynamics in space-time comes from the maps from the material manifold to space-time, not the motion of the particles in material space.  We shall let  $\stmanif'$ be the submanifold of the full space-time manifold $\stmanif$  which is the subset of the spacetime that the material passes through. Then invoke a map $\psi$ which takes a location in space-time and points at a location in the material manifold;
+\bea
+\psi : \stmanif'\longrightarrow \matmanif.
+\eea
+For all points p in $\matmanif' = \psi(\stmanif')$, the inverse map at that point, $\psi^{-1}({\rm p})$, is a single time-like curve in $\stmanif'$: these are the flow-lines of the particles. 
 
 Let $\phi^A$ be   coordinates in material space. Then their gradients with respect to the space-time coordinates $x^a$ can be computed
 \bea
 \label{eq:sec:config_gradient}
 {\psi^A}_a = \pd{\phi^A}{x^a}.
 \eea
-The ${\psi^A}_a$ are called the configuration gradient. The time-like projection of these must vanish
+The ${\psi^A}_a$ are   the components of the configuration gradient. The time-like projection of these must vanish
 \bea
 \label{eq:sec:ortho-condition}
 u^a{\psi^A}_a =0.
@@ -209,31 +344,35 @@ This is equivalent to setting the Lie derivative of the $\phi^A$ in the time-lik
 \eea
 which has a more direct physical interpretation of saying that the material coordinates are static with respect to coordinate time. In Section \ref{sec:hyperelasticity} we shall explain what happens when this condition is relaxed: the upshot is that one ends up describing ``scalar field theories'', rather than ``solid theories''.  In that section we also explore the technology required when the material manifolds dimension isn't just three, and where the material lives on some brane in a higher dimensional bulk.
 
-One of the main tools    used to aid transparency are pull-backs and push-forwards. $\psi^{\star}$ is the pull-back of a covariant tensor from $\mathfrak{X}'$ to $\mathfrak{M}'$ and is denoted to act on a material tensor as
+One can conceive of scalars, vectors, forms, and tensors on the material manifold: the material metric and particle density form are examples, as are a few other tensors we introduce later on. Collectively, we call such quantities ``material tensors'', and they have components whose indices are denoted with captial latin letters. We relate tensors in the material and space-time manifolds using the technology of pull-backs and push-forwards:
+\begin{itemize}
+\item $\psi^{\star}$ is the pull-back of a covariant tensor from $\matmanif'$ to $\stmanif'$ and is denoted to act on a material tensor as
 \bea
-N_{a\cdots} = \psi^{\star} N_{A\cdots}.
+N_{ab\cdots z} = \psi^{\star} N_{AB\cdots Z}.
 \eea
 In ``coordinates'' notation the pull-back is
 \bea
 \label{eq:sec:coord-pull-bacj}
 N_{ab\cdots z} = {\psi^A}_a{\psi^B}_b \cdots {\psi^Z}_z N_{AB\cdots Z},
 \eea
-where ${\psi^A}_a$ are the components of the configuration gradient (\ref{eq:sec:config_gradient}). $\psi_{\star}$ denotes the push-forward of a contravariant tensor from $\mathfrak{M}'$ to $\mathfrak{X}'$, and is denoted to act on a space-time tensor as
+where ${\psi^A}_a$ are the components of the configuration gradient (\ref{eq:sec:config_gradient}). 
+\item $\psi_{\star}$ denotes the push-forward of a contravariant tensor from $\stmanif'$ to $\matmanif'$, and is denoted to act on a space-time tensor as
 \bea
-M^{AB\cdots} = \psi_{\star}M^{ab\cdots},
+M^{AB\cdots Z} = \psi_{\star}M^{ab\cdots z},
 \eea
 and in coordinates it reads
 \bea
 \label{eq:sec:pusg-frwad-explanation}
 M^{AB\cdots Z}= {\psi^A}_a{\psi^B}_b \cdots {\psi^Z}_z M^{ab\cdots z}.
 \eea
+\end{itemize}
 
 The most important corollary of (\ref{eq:sec:ortho-condition}) is that any tensor on space-time which was constructed as the pull-back of a tensor on the material space will   automatically be orthogonal. That is, for the schematic example (\ref{eq:sec:coord-pull-bacj}),
 \bea
 u^aN_{ab\cdots z}  = u^bN_{ab\cdots z}  =\cdots = u^zN_{ab\cdots z}=  0.
 \eea
 
-The integral of the particle number density form $n_{ABC}$ over some volume in the material manifold $\mathfrak{X}$ is the number of particles in that volume (by definition). The pull-back of the particle volume-form to   space-time   is
+The integral of the particle number density form $n_{ABC}$ over some volume in the material manifold $\matmanif$ is the number of particles in that volume (by definition). The pull-back of the particle volume-form to   space-time   is
 \bea
 n_{abc} = \psi^\star n_{ABC}.
 \eea
@@ -311,19 +450,20 @@ It should therefore be clear that the particle number density current $n^a$, whi
 
 \subsection{Material metric}
 \label{sec:mat-metric}
-We invoke the existence of a metric $k_{AB}$ whose volume form is the particle density form $n_{ABC}$ introduced in Section \ref{sec:mpnd}. This metric will enable us to introduce a Levi-Civita connection in the material manifold, which can be pulled-back to space-time to aid the evaluation of derivatives of material tensors. Before we explain this fairly complicated construction we shall elucidate some other useful structures on the material manifold.
+We invoke the existence of a metric $k_{AB}$ on the material manifold $\matmanif$ whose volume form is the particle density form $n_{ABC}$ introduced in Section \ref{sec:mpnd}. This metric will enable us to introduce a Levi-Civita connection in the material manifold, which can be pulled-back to space-time to aid the evaluation of derivatives of material tensors. Before we explain this fairly complicated construction we shall elucidate some other useful structures on the material manifold.
 
-Tensor indices on the material manifold can be contracted with the indices of other material tensors. Equivalently, indices on tensors on space-time can also be contracted with those of other space-time tensors (a space-time scalar can be formed if contraction leaves no spare indices). Space-time tensors can be the pulled-back version of a material tensor. As an example, consider $C_{abc\cdots} = \psi^{\star} C_{ABC\cdots}$, formed from the pull-back of some material tensor. Then,
+
+Indices on material tensors can be contracted with the indices of other material tensors. Equivalently, indices on space-time tensors    can also be contracted with those of other space-time tensors (a space-time scalar can be formed if contraction leaves no spare indices). Importantly, space-time tensors can be the pulled-back version of a material tensor, as in the discussion in the previous section. As an example, consider an arbitrary material tensor $A_{ABC\cdots}$ which is ``pulled-back'' to give a space-time tensor $A_{abc\cdots}$ according to the usual prescription $A_{abc\cdots} = \psi^{\star}A_{ABC\cdots}$. Then, after contracting some indices with the space-time metric,
 \bea
-D_{c\cdots} =  g^{ab}C_{abc \cdots} = g^{ab}\psi^{\star} C_{ABC\cdots}
+B_{c\cdots} =  g^{ab}A_{abc \cdots} = g^{ab}\psi^{\star} A_{ABC\cdots}
 \eea
-is a legitimate space-time tensor.  One can also     contract indices of material tensors on the material manifold $\mathfrak{X}$, with the push-forward of space-time tensors. As an example, consider the push-forward of the inverse space-time metric tensor 
+is a legitimate space-time tensor.  One can also     contract indices of material tensors on the material manifold $\matmanif$, with the push-forward of space-time tensors. As an example, consider the push-forward of the inverse space-time metric tensor 
 \bse
 \bea
 \label{eq:sec:push-fwd-metric}
 g^{AB} = \psi_{\star} g^{ab} 
 \eea
-being contracted with a material tensor,
+being contracted with an arbitrary material tensor,
 \bea
 g^{AB} C_{ABC\cdots} = \psi_{\star} g^{ab}C_{ABC\cdots}.
 \eea
@@ -332,29 +472,35 @@ g^{AB} C_{ABC\cdots} = \psi_{\star} g^{ab}C_{ABC\cdots}.
 g^{AB} = \psi_{\star}\gamma^{ab},
 \eea
 \ese 
-where we remind that $\gamma^{ab}$ is the orthogonal part of the space-time metric as defined in (\ref{decomp_g-u-h}). Note that $g^{AB}$ is the push-forward of the space-time metric to the material manifold: it does not necessarily coincide with the material metric $k_{AB}$. Infact, quantifying its non-coincidence is extremely important in the construction of a material.
+where we remind that $\gamma^{ab}$ is the orthogonal part of the space-time metric as defined in (\ref{decomp_g-u-h}). 
 
-With this in mind, we define a  tensor  $\eta_{AB}$ on the material manifold $\mathfrak{X}$ (which depends on the number density $n$), such that the push-forward of the space-time metric $g^{AB}$ is exactly the inverse of $\eta_{AB}$ when the material is in its unsheared state. That is,  $g^{AC}\eta_{CB} = {\delta^A}_B$ (the Kronecker-delta) when the energy is at its minimum $\epsilon = \check{\epsilon}(n)$. What this means is that $g^{AB} = \eta^{-1AB}$ in what is henceforth defined as the \textit{unsheared state}. Therefore, the deviation of the actual value of $g^{AB}$ from $\eta^{-1AB}$, which we write as
+Note that $g^{AB}$ is the push-forward of the space-time metric to the material manifold, and does not necessarily coincide with the material metric $k_{AB}$. Infact, quantifying its non-coincidence is extremely important in quantifying the state of a  material. With this in mind, we define a material tensor  $\eta_{AB}$, which depends on the number density $n$, such that the push-forward of the space-time metric $g^{AB}$ is exactly the inverse of $\eta_{AB}$ when the material is in its unsheared state. That is,  $g^{AC}\eta_{CB} = {\delta^A}_B$ (the Kronecker-delta) when the energy is at its minimum $\epsilon = \check{\epsilon}(n)$. What this means is that $g^{AB} = \eta^{-1AB}$ in what is henceforth defined as the \textit{unsheared state}. Consequently, the deviation of the actual value of $g^{AB}$ from $\eta^{-1AB}$, which we write as
 \bea
 \label{material-space-s}
 s^{AB} =\tfrac{1}{2}\left( g^{AB} - \eta^{-1AB}\right),
 \eea
-quantifies the shear of the system.  Writing the volume form of $\eta_{AB}$ as $\epsilon_{ABC}$ it follows that
+quantifies the shear of the system.  
+
+Writing the volume form of $\eta_{AB}$ as $\epsilon_{ABC}$ it follows that
 \bea
 n_{ABC} = n \epsilon_{ABC}.
 \eea
 Note that   $\epsilon_{abc} = \psi^{\star}\epsilon_{ABC}$.
 The particle density form $n_{ABC}$ is a fixed material space tensor, and is independent of $n$. 
 
-It is now useful, aiding physical insight, to define $k_{AB}$ which is the metric on the material manifold $\mathfrak{X}$. $k_{AB}$ is conformal to $\eta_{AB}$ and has the particle density form $n_{ABC}$  as its volume form. Therefore
+It is now useful and helps physical insight, to define the material tensor $k_{AB}$ as the metric on the material manifold $\matmanif$. $k_{AB}$ is conformal to $\eta_{AB}$, and has the particle density form $n_{ABC}$  as its volume form. Therefore
 \bea
 \label{eq:k-eta-n-defn}
 k_{AB} = n^{2/3}\eta_{AB}.
 \eea
-That is, the (square-root of the) determinant of $k_{AB}$ is the particle number density, $n$:
+This tells us that the (square-root of the) determinant of $k_{AB}$ is the particle number density, $n$:
 \bea
 n = \sqrt{\det k_{AB}}.
 \eea
+See \fref{fig:obj_links} for a cartoon of the relationship between the material metric $k_{AB}$ and particle form $n_{ABC}$.
+
+ \input{form_metric_link} 
+
 The pull-back of $k_{AB}$ gives a space-time tensor,
 \bea
 \label{eq:sec:k_abdefn}
@@ -365,7 +511,7 @@ and will play an important role in what follows.  Specifically, using (\ref{eq:s
 \label{pullbackk}
 k_{ab} =  {\psi^A}_a{\psi^B}_b k_{AB}.
 \eea
-An application of   (\ref{eq:sec:ortho-condition}) is that when interpreting $k_{ab}$ as a  space-time field, it is orthogonal
+An application of   (\ref{eq:sec:ortho-condition}) is that since $k_{ab}$ is a  space-time field, it is orthogonal
 \bea
 u^ak_{ab}=0.
 \eea
@@ -404,7 +550,7 @@ From the pull-back of the relationship (\ref{eq:k-eta-n-defn}) we obtain
 {k^a}_b = n^{2/3}{\eta^a}_b.
 \eea
 
-Since we have set everything up so that $n^2$ is the determinant of $k_{ab}$, it follows from (\ref{eq:sec:k-eta-n-pb}) that ${\eta^a}_b$ is a unimodular tensor:
+Since we have set everything up so that $n^2$ is the determinant of $k_{ab}$, it follows from (\ref{eq:sec:k-eta-n-pb}) that ${\eta^a}_b$ is a uni-modular tensor:
 \bea
 \det({\eta^a}_b)=1.
 \eea 
@@ -448,21 +594,22 @@ where $[X]^{\cdot}$ denotes the material derivative of $X$. After using (\ref{ev
 
 
 
-
+\subsection{Material covariant derivative}
 It is convenient at this point to introduce the covariant derivative on the material manifold which is compatible with the material metric. Let $\overline{\widetilde{\nabla}}_A$ be the Levi-Civita connection for $k_{AB}$; i.e.,
 \bea
-\overline{\widetilde{\nabla}}_A k_{BC}=0.
+\overline{\widetilde{\nabla}}_C k_{AB}=0.
 \eea
-The push-forward $\overline{\widetilde{\nabla}}_a$ is carried over to be acted onto space-time tensors, and so is taken to be the orthogonal projection of some space-time derivative $\widetilde{\nabla}_a$ according to
+There is a reason for our including two different ``accents'' above the del-symbol.
+The pushed-forward version of $\overline{\widetilde{\nabla}}_A$, denoted as $\overline{\widetilde{\nabla}}_a$, is allowed to act on space-time tensors; note that it will be orthogonal, and so is taken to be the orthogonal projection of some space-time derivative $\widetilde{\nabla}_a$ according to
 \bea
 \overline{\widetilde{\nabla}}_a{A^{b\cdots}}_{c\cdots} = {\gamma^{d}}_a{\gamma^b}_e\cdots {\gamma^f}_c\cdots\widetilde{\nabla}_d{A^{c\cdots}}_{f\cdots}.
 \eea
-For any space-time vector $Y^a$,
+For any space-time vector $Y^a$ the difference between any two connections can be written as
 \bea
 \label{eq:sec:intro-d-defn-flsdhfkdgh}
-\overline{\widetilde{\nabla}}_aY^c = \overline{\nabla}_aY^c + {\mathfrak{D}^c}_{ab}Y^b
+\left(\overline{\widetilde{\nabla}}_a- \overline{\nabla}_a\right)Y^c = {\mathfrak{D}^c}_{ab}Y^b
 \eea
-in which  $ {\mathfrak{D}^c}_{ab}$ is the (symmetric) relativistic elasticity difference tensor \footnote{The conditions required for this definition to hold are} defined as
+in which  $ {\mathfrak{D}^c}_{ab}$ is the (symmetric) relativistic   difference tensor \footnote{The conditions required for this definition to hold are} defined as
 \bea
 \label{eq:sec:defn-D-ela-diff-tensor}
 {\mathfrak{D}^c}_{ab} = \tfrac{1}{2}k^{-1cd}\left( \overline{\nabla}_ak_{bd} + \overline{\nabla}_bk_{ad} - \overline{\nabla}_dk_{ab}\right),
@@ -471,7 +618,8 @@ where $k^{-1cd}$ is defined via
 \bea
 k^{-1cd} k_{ca} = {\gamma^d}_a, 
 \eea
-and is orthogonal $ k^{-1cd}u_c = 0$.
+and is orthogonal $ k^{-1cd}u_c = 0$. Due to the applications in mind, we actually call ${\mathfrak{D}^c}_{ab}$ the relativistic elasticity difference tensor.
+
 Using this construction, one finds that $\overline{\widetilde{\nabla}}_a$ is the connection which is compatible with $k_{ab}$,
 \bea
 \label{bartildenabk=0}
@@ -498,7 +646,7 @@ The second term in braces, $\overline{ {\nabla}}_a{g^{ef}}$, vanishes by (\ref{e
 
 \subsection{Constructing the set of scalar invariants}
 \label{sec-setscalinvs}
-We will formally introduce it later, but we are interested in constructing  the equation of state $\rho$ which will be a scalar function of the state of the system which is integrated to give the action. There are a few different sets of scalar invariants one could use: formally they are identical, but different choices will enhance, or hide,  insight  into the  physical behavior. And so, we are interested in finding  the complete list of scalar invariants which will specify the state of the system. 
+We will formally introduce it later, but we are interested in constructing  the equation of state $\rho$ which will be a scalar function of the state of the system which is integrated to give the action. There are a few different sets of scalar invariants one could use: formally they are identical, but different choices will enhance, or hide,  insight  into the  physical behavior. And so, we are interested in finding  the complete list of scalar invariants which will specify the state of the system.  The invariants are constructed from the pull-back of the material metric, ${k^a}_b$.
 
 As a candidate set of invariants, note that \textit{the} three independent scalar invariants of the mixed components of the pulled-back material metric ${k^a}_b$ are
 \bea
@@ -514,7 +662,7 @@ Since $n_{ABC}$ is the volume form of $k_{AB}$, the particle number density $n$ 
 n^2 = \det({k^a}_b) = \tfrac{1}{3!}\left([\rbm{k}]^3 - 3[\rbm{k}][\rbm{k}^2] + 2 [\rbm{k}^3]\right).
 \eea
 
-We  could use $\{I_1,I_2,I_3\}$ as the list of invariants which could be the arguments of the equation of state, but we shall instead choose $n$ and  the independent scalar invariants of the unimodular tensor ${\eta^a}_b$, defined in (\ref{eq:sec:etamixed-defn}) since this will help the comparison between solid and fluid descriptions. The important consequence of   unimodularity is that     ${\eta^a}_b$   only has two independent invariants (rather than 3 which could be expected from a symmetric rank-2 tensor in 3D).  The invariants are linked via the Cayley-Hamilton theorem as
+We  could use $\{I_1,I_2,I_3\}$ as the list of invariants which could be the arguments of the equation of state, but we shall instead choose $n$ and  the independent scalar invariants of the uni-modular tensor ${\eta^a}_b$, defined in (\ref{eq:sec:etamixed-defn}) since this will help the comparison between solid and fluid descriptions. The important consequence of   uni-modularity is that     ${\eta^a}_b$   only has two independent invariants (rather than 3 which could be expected from a symmetric rank-2 tensor in 3D).  The invariants are linked via the Cayley-Hamilton theorem as
 \bea
 \label{eq:sec:eta-link-invariants}
 3! = [\gbm{\eta}]^3 - 3 [\gbm{\eta}][\gbm{\eta}^2] + 2 [\gbm{\eta}^3].
@@ -534,7 +682,7 @@ and
 \rho = \rho\left(n, [\gbm{\eta}],\left[\gbm{\eta}^2\right]\right).
 \eea
 \ese
-We remind that ${k^a}_b$ is a tensor whose volume form is $n_{ABC}$ and (squared) determinant is the particle number density, $n$. Secondly, ${\eta^a}_b$ is a unimodular tensor whose inverse $\eta^{-1AB}$ co-incides with the push-forward of the space-time metric when the material is in the unsheared state. The latter is somewhat favorable, since it becomes easy to connect to a scenario in which the solid ``becomes'' like a fluid, since $\rho$ becomes independent of $[\gbm{\eta}^n]$.
+We remind that ${k^a}_b$ is the pull-back of a tensor whose volume form is $n_{ABC}$ and (squared) determinant is the particle number density, $n$. Secondly, ${\eta^a}_b$ is a uni-modular tensor whose inverse $\eta^{-1AB}$ co-incides with the push-forward of the space-time metric when the material is in the unsheared state. The latter formulation is somewhat favorable, since it becomes easy to connect to a scenario in which the solid ``becomes'' like a fluid, since $\rho$ becomes independent of $[\gbm{\eta}^n]$.
  
  
 Before we continue it is worth noting some useful ways to compute derivatives of functions which depend on quantities which regularly appear in the construction, most notably functions which depend on $n$ or ${\eta^a}_b$.
@@ -673,6 +821,7 @@ S_{ab} \defn \half \left( k_{ab} - \overline{k}_{ab}\right),
 \eea
 quantifying the difference between the actual value of $k_{ab}$ and its value in the fiducial state.
 
+\cleardoublepage
 \section{Quantifying the state of the material}
 Armed with the map, material metric, and set of scalar invariants, it remains to understand how to quantify the state of the material in terms of its effects on space-time. This quantification is acheived by constructing a material action which can be appended to the Einstein-Hilbert action, and from which one can derive the energy-momentum tensor which sources the gravitational field equations. 
 
@@ -841,7 +990,7 @@ After rewriting the equation of state $\rho$ in terms of an energy per particle,
 \label{eq:sec:pab-eps}
 P_{ab} = 2n\pd{\epsilon}{g^{ab}}.
 \eea
-When the energy per particle $\epsilon$ is written in a (still general) way to only depend on the number density $n$ and unimodular tensor ${\eta^a}_b$, i.e., $\epsilon = \epsilon(n, {\eta^a}_b)$, we can use (\ref{eq:sec:Zneta}) to further evaluate the pressure tensor (\ref{eq:sec:pab-eps}), yielding the rather attractive expression
+When the energy per particle $\epsilon$ is written in a (still general) way to only depend on the number density $n$ and uni-modular tensor ${\eta^a}_b$, i.e., $\epsilon = \epsilon(n, {\eta^a}_b)$, we can use (\ref{eq:sec:Zneta}) to further evaluate the pressure tensor (\ref{eq:sec:pab-eps}), yielding the rather attractive expression
 \bea
 \label{eq:sec:press-scal-aniso}
 P_{ab} = p \gamma_{ab} + \pi_{ab} ,
@@ -858,7 +1007,7 @@ and the (traceless) anisotropic stress tensor
 \pi_{ab} = 2 n \eta_{c\langle a}\pd{\epsilon}{{\eta^{b\rangle}}_c}.
 \eea
 \ese
-This highlights that dependence of $\epsilon$ on the number density $n$ is linked to isotropic pressure $p$, and dependence of $\epsilon$ on the unimodular tensor ${\eta^a}_b$ is linked to anistropic stress $\pi_{ab}$.
+This highlights that dependence of $\epsilon$ on the number density $n$ is linked to isotropic pressure $p$, and dependence of $\epsilon$ on the uni-modular tensor ${\eta^a}_b$ is linked to anistropic stress $\pi_{ab}$.
 
 There is nothing ``imperfect'' about the construction of the substance so far: there is no dissipation,   everything is conserved, and is constructed from a very geometrical point of view. However, the pressure tensor (\ref{eq:sec:press-scal-aniso}) has anisotropic stress (\ref{anso-press}). For a \textit{fluid} this would signal an imperfection, but it is exactly this anisotropic stress which makes the theory  that of a  \textit{solid}.
 
@@ -912,7 +1061,7 @@ and where the three quantities appearing in the pressure (\ref{example_isotp-jfg
 \eea
 
 
-
+\cleardoublepage
 \section{Equation of motion}
 Obtaining the equation of state and energy-momentum tensor is clearly only part of the story. One must also obtain equations of motion: these come from the conservation equation
 \bea
@@ -1148,7 +1297,7 @@ u^a\nabla^bT_{ab}=0.
 It then follows that the orthogonal projection of (\ref{eq:sec:cons_eom}) implies the vanishing of (\ref{eq:eom_EA}).
  
 
-
+\cleardoublepage
 \section{The Carter-Quintana perfect solid}
 Carter and Quintana conclude their paper with an exposition of the equations for a \textit{perfect elastic solid}.  Before we give their equation of state and energy-momentum tensor, we shall discuss physical issues regarding the existence (or otherwise) of locally relaxed states of the material.
 \subsection{Strain and shear tensors}
@@ -1441,6 +1590,7 @@ since (\ref{eq:sec:sr-eval-1}) becomes
 \eea
 in which a prime is used to denote derivative with respect to the sole argument of the given function.
 
+\cleardoublepage
 \section{General isotropic configurations of elastic solids}
 The aim of this section is to understand the physics of elastic solids in isotropic configurations. We will study (a) elastic stars, (b) stars immersed in an elastic solid. The former problem has been studied before, but under the guise of ``anisotropic stars'', without mention of the anisotropy coming from elasticity. The latter problem is relevant for understanding how an elastic ``bath'' could affect the properties of compact objects (specifically, we will be looking out for some analogue of a ``screen''). 
 
@@ -1740,19 +1890,23 @@ The only non-zero entry of the conservation equation $\nabla_a{T^a}_b=0$ is
 \ese
 The system of three equations (\ref{eq:gen-TVO-aniso}) constitute the \textit{generalized Tolman-Oppenheimer-Volkov} equations, where a star is constructed from an anisotropic fluid. Notice that there are three equations for five unknowns (i.e., $m(r), \nu(r), \rho(r), \qsubrm{p}{r}(t)$, and $\qsubrm{p}{t}(r)$). And so, two ``equations of state'' must be given: these are typically taken to relate the pressures to the density. Note that the metric variable $\nu$ does not appear in (\ref{eq:gen-TVO-aniso-1}) or (\ref{eq:gen-TVO-aniso-3}): it does not need to be solved for at the same time as $m$ and $\qsubrm{p}{r}$ (this is statement which helps computations).
 
-There are some simple circumstances under which the generalized TOV equations become analytically soluble \cite{1974ApJ...188..657B}. When the density is taken to be constant throughout the star, $\rho = \rho_0$, it is simple to integrate (\ref{eq:gen-TVO-aniso-1}) to obtain $m(r) = \frac{4\pi G}{3}\rho_0 r^3$. We now assume an equation of state (which is the final piece of information required to close the system of equations) in the form
+There are some simple circumstances under which the generalized TOV equations become analytically soluble \cite{1974ApJ...188..657B}. When the density is taken to be constant throughout the star, $\rho = \rho_0$, it is simple to integrate (\ref{eq:gen-TVO-aniso-1}) to obtain 
+\bea
+m(r) = \frac{4\pi G}{3}\rho_0 r^3.
+\eea
+ We now assume an equation of state (which is the final piece of information required to close the system of equations) in the form
 \bse
 \bea
-\qsubrm{p}{t} = \qsubrm{p}{r} + Cf(\qsubrm{p}{r},r) \left( \rho + \qsubrm{p}{r}\right)r^n,
+\qsubrm{p}{t} = \qsubrm{p}{r} + Af(\qsubrm{p}{r},r) \left( \rho + \qsubrm{p}{r}\right)r^n,
 \eea
 with the function $f$ given by
 \bea
 f(\qsubrm{p}{r},r) = \frac{\rho + 3 \qsubrm{p}{r}}{1 - 2m/r},
 \eea
 \ese
-and where there are two free parameters, $C$ and $n$. Using this,  (\ref{eq:gen-TVO-aniso-3}) can be written as
+and where there are two free parameters, $A$ and $n$. Using this,  (\ref{eq:gen-TVO-aniso-3}) can be written as
 \bea
-\qsubrm{p}{r}' = - \left( \rho_0 + \qsubrm{p}{r}\right) \left( \rho_0 + 3\qsubrm{p}{r}\right)  \frac{ \frac{4\pi G}{3} - 2Cr^{n-2}}{1-\frac{8\pi G \rho_0}{3}r^2}r.
+\qsubrm{p}{r}' = - \left( \rho_0 + \qsubrm{p}{r}\right) \left( \rho_0 + 3\qsubrm{p}{r}\right)  \frac{ \frac{4\pi G}{3} - 2Ar^{n-2}}{1-\frac{8\pi G \rho_0}{3}r^2}r.
 \eea
 When $n=2$, this can be integrated to give
 \bea
@@ -1760,7 +1914,7 @@ When $n=2$, this can be integrated to give
 \eea
 with
 \bea
-\qsubrm{p}{r}(r=R)=0,\qquad m(R) = M,\qquad Q = \half - \frac{3C}{4\pi G}.
+\qsubrm{p}{r}(r=R)=0,\qquad m(R) = M,\qquad Q = \half - \frac{3A}{4\pi G}.
 \eea
 The pressure at the centre of the configuration is given by
 \bea
@@ -1770,11 +1924,11 @@ The critical combination of $M$ and $R$ for which the central pressure becomes i
 \bea
 \qsubrm{\left(2M/R\right)}{crit} = 1- \left(\frac{1}{3}\right)^{1/Q} .
 \eea
-One requires $\qsubrm{\left(2M/R\right)}{crit}\geq 0$ for physical systems. This is known as \textit{Buchdahl's inequality} \cite{PhysRev.116.1027, 1964ApJ...140..434T} (although it also exists for more general setups than that which we are considering here). In the perfect-fluid case there is no anisotropy, $C = 0$, and so $Q= 1/2$, and so
+One requires $\qsubrm{\left(2M/R\right)}{crit}\geq 0$ for physical systems. This is known as \textit{Buchdahl's inequality} \cite{PhysRev.116.1027, 1964ApJ...140..434T} (although it also exists for more general setups than that which we are considering here). In the perfect-fluid case there is no anisotropy, $A = 0$, and so $Q= 1/2$, and so
 \bea
 \qsubrm{\left(2M/R\right)}{crit} = 8/9.
 \eea
-When $C = 2\pi G /3$, one has $Q=0$ and thus
+When $A = 2\pi G /3$, one has $Q=0$ and thus
 \bea
 \qsubrm{\left(2M/R\right)}{crit} = 1,
 \eea
@@ -1876,7 +2030,9 @@ where
 \eea
 \ese
 These can be interpreted as the mass of the star, the mass of the dark substance inside the star, and the mass of the dark substance outside of the star (i.e., in the cosmology).
-\section{Mixing solids, fluid, and scalar fields}
+
+\cleardoublepage
+\section{Mixing solids, fluids, and scalar fields}
 We may also be interested in composite descriptions where there are solids interacting with scalar fields or fluids.
 \subsection{Solids and fluids}
 We are interested in constructing the action for a fluid coupled to a solid. It is useful to note that in Alkistis et al \cite{Pourtsidou:2013nha} consider a fluid coupled to a scalar field.
@@ -1912,7 +2068,33 @@ We cannot (or at least, we are not aware of how to) construct all invariants out
 \bea
 \ld = \ld(g_{ab},n^a, {\eta^a}_b,\phi, \partial_a\phi).
 \eea
-Then the variation in the function $\ld$ is given by
+In a cosmological context, one can isolate the projections of the relevant quantities, at the level of the  background:
+\bse
+\label{cosm-bg-info-mix-1}
+\bea
+g_{ab} = \gamma_{ab} - u_au_b,\qquad \partial_a\phi = - \dot{\phi}u_a,\qquad n^a = n u^a,\qquad {\eta^a}_b = {\gamma^a}_c{\gamma_b}^d {\eta^c}_d.
+\eea
+Note that by orthogonality
+\bea
+{\eta^a}_b\partial_a\phi= n^a{\eta^b}_a=0.
+\eea
+Also, on the background, the uni-modular tensor ${\eta^a}_b$ is strictly isotropic, and so completely decomposes as
+\bea
+{\eta^a}_b = \omega{\gamma^a}_b.
+\eea
+Thus,
+\bea
+[\gbm{\eta}] = 3\omega,\qquad [\gbm{\eta}^2] = 3\omega^2.
+\eea
+\ese
+By combining (\ref{cosm-bg-info-mix-1}) we find that on the cosmological background there are only 5 scalar invariants, and so the Lagrangian for the background is a function with 5 arguments:
+\bea
+\ld = \ld\left(\phi, n, \omega, u^a\partial_a\phi, \partial^a\phi\partial_a\phi\right).
+\eea
+
+
+
+The variation in the function $\ld$ is given by
 \bea
 \delta \ld = \pd{\ld}{g_{ab}}\lp g_{ab} + \pd{\ld}{n^a}\lp n^a + \pd{\ld}{{\eta^a}_b} \lp {\eta^a}_b + \pd{\ld}{\phi}\lp \phi + \pd{\ld}{\partial_a\phi}  \partial_a\lp\phi.
 \eea
@@ -2221,14 +2403,15 @@ A simplified example is where the Lagrangian splits as
 \eea
 That is,  $\qsubrm{\ld}{s}$ is only dependent on $\phi^0$ and its space-time gradient (which includes its time-like gradient), and $\qsubrm{\ld}{e}$ is only dependent of the scalars which don't have a time-like gradient (that makes $\qsubrm{\ld}{e}$ the action for an elastic solid). With this setup, $\qsubrm{\ld}{s}$ is   the Lagrangian for a ``normal'' scalar field (generically of $k$-essence type), since it depends only on $\phi^0$ and
 \bea
-\mu_a = {\phi^0}_{,a}.
+\mu_a = {\phi^0}_{,a},
 \eea
+the gradient 1-form.
 Hence, (\ref{eq:sec:g00}) becomes
 \bea
 \overline{g}^{00} = \overline{g}^{ab}\mu_a\mu_b = - \mu^2.
 \eea
 
-Since we are working in the separable case, neither $\qsubrm{\ld}{s}$ or $\qsubrm{\ld}{e}$ will depend on $\overline{g}^{0A}$ -- this means that the ``entrainment'' effect vanishes, and 
+Since we are working in the separable case, neither $\qsubrm{\ld}{s}$ or $\qsubrm{\ld}{e}$ will depend on $\overline{g}^{0A}$; this means that the ``entrainment'' effect vanishes, and 
 \bea
 L_{A0}=0
 \eea
@@ -2375,6 +2558,8 @@ I_1 =  \overline{g}{^0}_0 + \overline{g}{^A}_A,
 I_2  =   \overline{g}{}{^0}_0\overline{g}{}{^A}_A-      \overline{g}{}{^A}_0\overline{g}{}{^0}_A +\half \left[ \overline{g}{}{^A}_A\overline{g}{}{^B}_B -  \overline{g}{}{^A}_B\overline{g}{}{^B}_A  \right]
 \eea
 \ese
+
+\cleardoublepage
 \section{Generalization away from orthogonal mappings}
 Our aim here is to use the previous sections results and ideas to construct a theory for whom the orthogonality of the mappings (\ref{eq:sec:ortho-condition}) doesn't hold. We will keep to the notion of a material metric, $k_{AB}$, and coordinates $\phi^A$ on the material space; we carry on using (\ref{eq:sec:config_gradient}) to define the configuration gradients:
 \bea
@@ -2477,6 +2662,8 @@ and the components of this new configuration gradient satisfy
 \bea
 u^a{\widehat{\phi}^{\widehat{A}}}{}_{,a}=0.
 \eea
+
+\cleardoublepage
 \section{Skyrmion and ferromagnetic dark energy}
  In this section we want to review some  ``material models'' which have been extensively studied in the literature, albeit within the context of field theory and particularly within the soliton community. When a soliton is constructed in a theory mildly more complicated than a (real) scalar field theory it is usual for the language of ``mappings'' and an ``extra metric'' to be used. The difference in topologies of the space-time and field manifolds ends up introducing interesting topological soliton solutions.
 
@@ -2549,6 +2736,8 @@ The equations of motion of the $\phi^I$ can be read off from (\ref{eq:sec:var-sk
 \bea
 \nabla_{(\mu} \left(   \mathcal{E}^{\mu\nu} \gamma_{IJ}\partial_{\nu)}\phi^I  \right)=0.
 \eea
+
+\cleardoublepage
 \section{Higher order perturbations}
 This is a quick review of language obtained from some of Carter's notes \cite{Carter:1997pb} on brane dynamics.  We note that a very recent article \cite{Gao:2014ula} obtained some similar expressions, with applications to dRGT massive gravity in mind. There are also papers with higher-order cosmological perturbation theory in mind (see e.g., \cite{Bruni:1996im}).
 
@@ -2677,6 +2866,7 @@ with
 \eea
 \ese
 
+\cleardoublepage
 \section{Final discussion}
 \begin{itemize}
 \item Whats the point?

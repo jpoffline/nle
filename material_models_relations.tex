@@ -1,0 +1,43 @@
+
+\tikzstyle{block} = [fill=red!20, draw,rectangle,  text centered, rounded corners, minimum height=2em]
+\tikzstyle{block2} = [fill=blue!20,draw,rectangle,  text centered, rounded corners, minimum height=2.5em]
+\tikzstyle{block3} = [fill=green!20,draw,rectangle,  text centered, rounded corners, minimum height=2em]
+\tikzstyle{block4} = [fill=yellow!5,draw,rectangle,   dotted, text centered, rounded corners, minimum height=2em]
+
+\tikzstyle{line} = [draw,  -latex,   thick]
+\tikzstyle{line2} = [draw,  latex-,   thick]
+\tikzstyle{cloud} = [ minimum height=2em]
+
+\begin{figure}[!t]
+\begin{centering}
+\begin{tikzpicture}[node distance = 2cm, auto]
+    % Place nodes
+    \node [block2] (materialmodels) {{\bf Material models}};
+    \node [block3, right of=materialmodels, node distance=5cm] (imperfect) {Viscous};
+%    \node [block3, left of=materialmodels, node distance=7cm] (kv) {Visco-elastic solid};
+    \node [block3, below right = 1.5cm of materialmodels, node distance=2cm] (solid) {Solid};		
+    \node [block3, above left = 1.5cm of materialmodels, node distance=2.5cm] (mixtures) {Mixture};
+    \node [block3, above right = 1.5cm of materialmodels, node distance=5cm] (plastic) {Plastic};    
+    \node [block3, below left = 1.5cm of materialmodels, node distance=5cm] (fluids) {Fluid};
+    \node [block4, below left = 0.5cm of solid, node distance=5cm] (cosmology) {\small Cosmology};
+    \node [block4, below right = 0.5cm of solid, node distance=4cm] (nonlinear) {\small Compact objects};
+        \node [block, above right = 1.25cm of mixtures, node distance=2cm] (solidscalar) {\small Solid+scalar};
+        \node [block, right of=solidscalar, node distance=4cm] (fluidscalar) {\small Fluid+scalar};        
+    % Draw edges
+    \draw [line] (materialmodels) -- node{\scriptsize perfect}(solid);
+    \draw [line] (materialmodels) -- node{\scriptsize example}(fluids);
+    \draw [line] (materialmodels) -- node{\scriptsize imperfect}(imperfect);
+    \draw [line] (materialmodels) -- node{\scriptsize extra}(mixtures);    
+    \draw [line] (materialmodels) -- node{\scriptsize extra}(plastic);        
+    \draw [line] (solid) -- node{\scriptsize zero rigidity}(fluids);     
+    \draw [line] (solid) -- node{\scriptsize linear}(cosmology);        
+    \draw [line] (solid) -- node{\scriptsize non-linear}(nonlinear);           
+%    \draw [line] (kv) --  node{\scriptsize Kelvin-Voigt}(cosmology);             
+    \draw [line] (mixtures) -- node{\scriptsize hyper-elastic}(solidscalar);             
+    \draw [line] (solidscalar) -- node{\scriptsize sub-case}(fluidscalar);         
+%    \draw [line] (kv) --  (cosmology);                                
+\end{tikzpicture}
+\caption{Road-map containing some of the simplest material models. This picture coarsely shows how some of the common classes of materials are related. For example, we see that a fluid is a perfect solid with zero rigidity. We have also shown that the linear theory of solids has been applied to cosmology, and the non-linear theory to compact objects (such as neutron stars).}\label{fig:shem_roadmap}
+\end{centering}
+\end{figure}
+ 

@@ -3,6 +3,7 @@
 \NeedsTeXFormat{LaTeX2e}[1996/06/01]
 \usepackage[usenames]{color} 
 \usepackage{amsmath,amssymb}
+%\usepackage{times}
 \usepackage[top=2.5cm,left=3cm,right=3cm,bottom=3cm,foot=1cm,]{geometry}
 \linespread{1.3}
 \usepackage[breaklinks, colorlinks, citecolor=blue]{hyperref}
@@ -16,11 +17,31 @@
 \usepackage{url}
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
-%\usepackage{fancyhdr}
-%\pagestyle{headings}
+\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhead[RO,LE]{ }
+%\fancyhead[LO]{ }
+%\fancyhead[LE]{\rightmark}
+%\fancyfoot[C]{}
+%\fancyfoot[RO]{\thepage}
+%\fancyfoot[LE]{\thepage}
+%\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}{}}
+\pagestyle{fancy}
+\fancyhf{}
+%\fancyhead[LE,RO]{Share\LaTeX}
+%\fancyhead[RE,LO]{Guides and tutorials}
+\fancyhead[CE,CO]{\leftmark}
+%\fancyhead[LE,RO]{\thepage}
+\fancyhead[CE]{\rightmark}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
 
-\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}{}}
+\usepackage{tikz}
+\usetikzlibrary{intersections, shapes, arrows, positioning}
 
+
+\newcommand\Dist[1]{\phantom{\rule{#1}{4pt}}}
 
 \input{defs}
 
@@ -39,7 +60,7 @@
 \begin{abstract}
 \input{abstract}
 \end{abstract}
-\clearpage
+\cleardoublepage
 \tableofcontents
- 
+
 \clearpage
