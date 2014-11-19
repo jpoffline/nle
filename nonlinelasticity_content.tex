@@ -32,7 +32,7 @@ G_{ab} = 8 \pi G \left(T_{ab} + U_{ab}\right).
 \eea
 The tensor $U_{ab}$ contains all the deviations or deformations (to begin using the terminology we aim to develop) of the field equations which describe the actual Universe away from the GR (+ standard matter content) predictions. 
 
-The modern cosmology community is busy with developing candidate theories which could provide the components of the tensor $U_{ab}$, and with working out the observation consequences of their given form of the tensor.  We would like to suggest a different approach (or at least, a different philosophy for attacking the problem). Explaining this approach, and showing how it can be used, is the subject of this paper.
+The modern cosmology community is busy with developing candidate theories which could provide the components of the tensor $U_{ab}$, and with working out the observational consequences of their given form of the tensor by using observational probes such as the distances to supernovae, the Cosmic Microwave Background radiation, and the effects of the evolution of gravitational perturbations on the propagation of photons.  We would like to suggest a different approach (or at least, a different philosophy for attacking the problem). Explaining this approach, and showing how it can be used, is the subject of this paper.
 
 In the theory of deformations (in particular, we have in mind   theories of relativistic elasticity) one imagines two states of a material. The first state is a relaxed configuration, and the second is a strained configuration. The deformation which was imparted on the material to take it from being relaxed to being strained isn't necessarily small (if it was small, one would  speak about linear elasticity theory). The theory of deformations prescribes a tool-kit for writing down terms in the field equations which are allowed, given classes or forms of deformation. For example, if the deformation is performed ``on'' some perfect fluid or perfect solid, then it is known that the quantities $U_{ab}$ takes on the form
 \bea
@@ -40,26 +40,30 @@ In the theory of deformations (in particular, we have in mind   theories of rela
 \eea
 The energy-momentum tensors written above \textit{become} those for a fluid or solid when some extra theoretical structure is used. Namely, an \textit{equation of state}. For readers who are used to the literature in modern cosmology, this phrase is often used to describe the link between the dark energy pressure $P$ and density $\rho$, via an equation of the form $P(t) = w(t) \rho(t)$. In the context of material models, an equation of state is the Lagrangian density.
 
-When one constructs ``conventional'' models of dark energy or modified gravity, one has a some freedom to choose various types of quantities: these are, e.g., functional forms of the potential, or the kinetic terms which appear in the Lagrangian density. This may seem like an obvious point, but the choice of a restriction on a theory can have implications for (a) its applicability, and (b) its physical naturalness/interpretation. 
+When one constructs ``conventional'' models of dark energy or modified gravity, one has a some freedom to choose various types of quantities: these are, e.g., functional forms of the potential, or the kinetic terms which appear in the Lagrangian density. This may seem like an obvious point, but the choice of a restriction on a theory can have implications for (a) its applicability, and (b) its physical naturalness/interpretation. This is a particularly pertintant point, and so therefore we want to take inspiration from the extremely well developed field of the \textit{mechanics of solids}.
 
 
 \subsection{Fluids and solids}
-The distinction between a \textit{fluid} and a \textit{solid} isn't one of the best explained concepts in the literature. Fluids are commonly used as a   description for the content of the Universe in cosmology: but they are only a sub-class of a more general description for ``content''; or, to perhaps use a  more physically transparent terminology: for materials. A more general  description of material is that of a solid; obviously, we won't go so far as to say \textit{the}  general material description. Below we will outline some of the salient pieces to the construction of a material model: full explanations are given in the rest of this paper.
+The distinction between a \textit{fluid} and a \textit{solid} isn't one of the best explained concepts in the literature. Fluids are commonly used as a   description for the content of the Universe in cosmology: but they are only a sub-class of a more general description for ``content''. To perhaps use a  more physically transparent terminology: for materials. A more general  description of material is that of a solid; obviously, we won't go so far as to say \textit{the}  general material description. Below we will outline some of the salient pieces to the construction of a material model: full explanations are given in the rest of this paper.
 
-In the descriptions of both solids and fluids  one has a notion of a \textit{material metric} ${k^a}_b$ on a \textit{material space}, whose determinant is related to the particle number density, $n$. A convenient decomposition of this metric is ${k^a}_b = n^{2/3}{\eta^a}_b$. With this decomposition of   ${k^a}_b$, the conformal metric ${\eta^a}_b$ is uni-modular, i.e., it has unit determinant. The action for both a fluid and a solid is of the form 
+In the descriptions of both solids and fluids  one has a notion of a \textit{material metric} $k_{AB}$ on a \textit{material space}, whose determinant is related to the particle number density, $n = \sqrt{\det k_{AB}}$. A convenient decomposition of this metric is ${k^A}_B = n^{2/3}{\eta^A}_B$. With this decomposition of   ${k^A}_B$, the conformal metric ${\eta^A}_B$ is uni-modular, i.e., it has unit determinant. Note that all indices are of ``capital latin'' type: this indicates that they correspond to quantities defined on the material manifold. Such quantities can be ``pulled-back'' to the space-time manifold. For example, the components of the uni-modular tensor in the space-time manifold are constructed from the $\phi^A$ (the coordinates on the material manifold: physically they specify the locations of the particles) and $k_{AB}$ via
+\bea
+\eta_{ab} = n^{-2/3}k_{AB}\partial_a\phi^A\partial_b\phi^B.
+\eea
+
+The action for the material is constructed by integrating the Lagrangian density whose arguments are all possible scalar quantities formed from the available structures in space-time which are the pulled-back counterparts of structures on the material manifold. Schematically put, the material Lagrangian can be written as $\ld = \ld({k^a}_b)$, although this has not yet made manifest the scalar arguments.
+The action for both a fluid and a solid is of the general form 
 \bea
 \label{eq:intro-solid-action}
 S = \int \dd^4x\, \sqrt{-g}\, \ld\left(n, \left[ \gbm{\eta}\right],\left[\gbm{\eta}^2\right]\right).
 \eea
-Since this is the ``answer'' from which everything else is obtained  it is worth taking a little time to explain the interpretation of various terms. Firstly, $n$ is the number density of particles and is identified with the determinant of the material metric $n = \sqrt{\det k_{AB}}$ on the material manifold (the coordinates $\phi^A$ specify the locations of the particles on the material manifold). The square-braces in (\ref{eq:intro-solid-action}) denote traces of the mixed components of the uni-modular tensor, ${\eta^a}_b = \gamma^{ac}\eta_{cb}$. That is, the action (\ref{eq:intro-solid-action}) is dependant upon the two independent invariants of the tensor
-\bea
-\eta_{ab} = n^{-2/3}k_{AB}\partial_a\phi^A\partial_b\phi^B.
-\eea
-It is useful to split up the Lagrangian density   as $\ld = n \epsilon$, where $\epsilon$ is the energy per particle and $n$ retaints its interpretation as the particle number density. In the  cases of   fluids or solids, $\epsilon$ is a function with the following dependencies:
+The square-braces in (\ref{eq:intro-solid-action}) denote traces of the mixed components of the uni-modular tensor, ${\eta^a}_b = \gamma^{ac}\eta_{cb}$. 
+
+It is useful to split up the Lagrangian density   as $\ld = n \epsilon$, where $\epsilon$ is the energy per particle and $n$ retains its interpretation as the particle number density. In the  cases of   fluids or solids, $\epsilon$ is a function with the following dependencies:
 \bea
 \qsubrm{\epsilon}{fluid} = \qsubrm{\epsilon}{fluid}(n),\qquad \qsubrm{\epsilon}{solid} = \qsubrm{\epsilon}{solid}(n, {\eta^a}_b).
 \eea
-This makes the distinction between solids and fluids explicit: it is the dependence of the energy per particle on the uni-modular tensor ${\eta^a}_b$ which makes the description that of a solid rather than a fluid. Later on we will see that the physical consequence of this dependence is that the substance is able to support anisotropic stress (whereas fluids can't): this manifests as \textit{rigidity}. It is worth noting that a fluid is a highly symmetric solid, and a pressureless fluid has $\qsubrm{\epsilon}{fluid}(n) = \overline{\epsilon}_0$, a constant.
+This makes the distinction between solids and fluids explicit: it is the dependence of the energy per particle on the uni-modular tensor ${\eta^a}_b$ which makes the description that of a solid rather than of a fluid. Later on we will see that the physical consequence of this dependence is that the substance is able to support anisotropic stress (whereas fluids can't): this manifests as \textit{rigidity}. It is worth noting that a fluid is a highly symmetric solid, and a pressureless fluid has $\qsubrm{\epsilon}{fluid}(n) = \overline{\epsilon}_0$, a constant.
 
 In \fref{fig:shem_roadmap} we show how the materials are related.
 
@@ -92,7 +96,7 @@ Another  concept which is used is that of a \textit{perfect fluid}. This is supp
 \bea
 T_{ab} = \rho u_au_b + P\gamma_{ab},
 \eea
-in which $\rho$ and $P$ are the  fluid's energy density and pressure respectively, $u^a$ is the velocity of the fluid and $\gamma_{ab} = g_{ab} + u_au_b$ is the orthogonal projection operator. If the energy-momentum tensor for a \textit{fluid} is not of this form (for example, if there is anisotropic stress or heat flux) then the \textit{fluid} is said to be   \textit{imperfect}. We are deliberately being careful about only using the term \textit{fluid}: a solid can be categorised in a similar sense, but a perfect solid manifestly has an anisotropic part to the energy-momentum tensor (this is a distinguishing feature of a solid from a fluid).
+in which $\rho$ and $P$ are the  fluid's energy density and pressure respectively, $u^a$ is the velocity of the fluid and $\gamma_{ab} = g_{ab} + u_au_b$ is the orthogonal projection operator. If the energy-momentum tensor for a \textit{fluid} is not of this form (for example, if there is anisotropic stress or heat flux) then the \textit{fluid} is said to be   \textit{imperfect}. We are deliberately being careful about only using the term \textit{fluid}: a solid can be categorised in a similar sense, but a perfect solid manifestly has an anisotropic part to the energy-momentum tensor (this  distinguishes a solid from a fluid).
 
 
 In some sense the main result of this review is to obtain an understanding of the theory of a relativistic solid: useful geometric structures on the manifold of particle locations, the action, and energy-momentum tensor. It is rather involved, but is worthwhile since expressions and formulae obtain physical meaning.
@@ -110,7 +114,7 @@ u^au_a = -1,\qquad u^a \gamma_{ab}=0.
 We use the orthogonally projected derivative
 \bea
 \label{eq:orth-proj-deri-defn}
-\overline{\nabla}_a{A^{b\cdots}}_{c\cdots} = {\gamma^{d}}_a{\gamma^b}_e\cdots {\gamma^f}_c\cdots\nabla_d{A^{c\cdots}}_{f\cdots}
+\overline{\nabla}_a{A^{b\cdots}}_{c\cdots} = {\gamma^{d}}_a{\gamma^b}_e\cdots {\gamma^f}_c\cdots\nabla_d{A^{e\cdots}}_{f\cdots}
 \eea
 and the expansion (extrinsic curvature) tensor
 \bea
@@ -201,16 +205,16 @@ The coordinates of the undeformed medium are represented by $\overline{x}^a$, an
 \bea
  x^a =  \overline{x}^a+\xi^a(x^b) .
 \eea
-The crucial piece here is the deformation vector, $\xi^a(x^b)$, which as we explicitly show, is dependent upon the space-time coordinates (different locations can deform by different amounts).
+The crucial piece here is the deformation vector, $\xi^a(x^b)$, which as have we explicitly shown via our notation, is dependent upon the space-time coordinates (different locations can deform by different amounts).
 
-The metric of a space-time which contains a perturbed medium is given by
+The metric of a space-time which contains a perturbed medium is given by expanding the metric to linear order in intrinsic metric perturbations, $h_{ab}$, and in the deformation vector,
 \bea
 \label{metric-perts-elastic}
 g_{ab} = \overline{g}_{ab} +h_{ab} + 2 \nabla_{(a}\xi_{b)}.
 \eea
 The metric of the unperturbed space-time is $\overline{g}_{ab}$, and the metric fluctuations due to ``intrinsic'', or extra-material contents, is given by $h_{ab}$. The presence of the perturbed medium is encapsulated by the term involving the deformation field, 
 \bea
-\xi^a(x^b) = x^a - \overline{x}^a.
+\xi^a = x^a - \overline{x}^a.
 \eea
 One may recognise the final term is (\ref{metric-perts-elastic}) as that which arises in standard perturbation theory after one performs the diffeomorphism 
 \bea
@@ -267,7 +271,7 @@ Of course, the given physical material may require an amalgamation of the two ca
 \label{kv-solid}
 \sigma^{ij} = E^{ijkl}\varepsilon_{kl}+ V^{ijkl}\dot{\varepsilon}_{kl}.
 \eea
-These models describe visco-elastic solids (also known as Kelvin-Voigt solids). Since (\ref{kv-solid}) contains both the elastic (\ref{e-solid}) and viscous (\ref{v-solid}) as sub-cases, we will proceed with the Kelvin-Voigt expression (\ref{kv-solid}). Using (\ref{non-rel-strain-defn}) and (\ref{kv-solid}), the equation of motion (\ref{nonrela-eom}) is
+The expression (\ref{kv-solid}) describes visco-elastic solids (also known as Kelvin-Voigt solids). Since (\ref{kv-solid}) contains both the elastic (\ref{e-solid}) and viscous (\ref{v-solid}) models as sub-cases, we will proceed with the Kelvin-Voigt expression (\ref{kv-solid}). Using (\ref{non-rel-strain-defn}) and (\ref{kv-solid}), the equation of motion (\ref{nonrela-eom}) is
 \bea
 \label{eom-kv-nonreal}
 \rho \ddot{\xi}^i = E^{ijkl}\partial_j\partial_{(k}\xi_{l)} + V^{ijkl}\partial_j\partial_{(k}\dot{\xi}_{l)}. 

@@ -1,11 +1,11 @@
 \contentsline {section}{\numberline {1}Introduction}{7}{section.1}
 \contentsline {subsection}{\numberline {1.1}Deformation theory and cosmology}{8}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Fluids and solids}{9}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Conventions}{11}{subsection.1.3}
-\contentsline {subsubsection}{\numberline {1.3.1}First, second, and third fundamental tensors}{12}{subsubsection.1.3.1}
+\contentsline {subsection}{\numberline {1.2}Fluids and solids}{10}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Conventions}{12}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}First, second, and third fundamental tensors}{13}{subsubsection.1.3.1}
 \contentsline {subsection}{\numberline {1.4}Perturbed solids}{14}{subsection.1.4}
-\contentsline {subsubsection}{\numberline {1.4.1}Non-relativistic solids}{15}{subsubsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.2}Relativistic solids}{17}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.1}Non-relativistic solids}{16}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Relativistic solids}{18}{subsubsection.1.4.2}
 \contentsline {section}{\numberline {2}Describing non-linear materials}{19}{section.2}
 \contentsline {subsection}{\numberline {2.1}The material manifold, particle number density, and map}{19}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Material metric}{23}{subsection.2.2}
