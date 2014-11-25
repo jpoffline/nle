@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  21 NOV 2014 09:58
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  21 NOV 2014 18:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -938,22 +938,22 @@ Overfull \hbox (3.7895pt too wide) in paragraph at lines 1898--1901
  []
 
 [53] [54] [55] [56]
-Overfull \hbox (7.03015pt too wide) in alignment at lines 2064--2066
+Overfull \hbox (19.24805pt too wide) in alignment at lines 2064--2066
  [][][] []
  []
 
 [57
 
 ] [58] [59] [60] [61] [62] [63]
-Overfull \hbox (6.49095pt too wide) in paragraph at lines 2401--2404
+Overfull \hbox (6.49095pt too wide) in paragraph at lines 2418--2421
 \OT1/cmr/m/n/12 The con-di-tion for $\OML/cmm/m/it/12 ^^P[]$ \OT1/cmr/m/n/12 to
  be an in-trin-sic char-ac-ter-is-tic vec-tor is there-fore that $[](\OMS/cmsy/
 m/n/12 Q[]\OT1/cmr/m/n/12 ) =
  []
 
-[64] [65] [66] [67] [68
+[64] [65] [66] [67] [68] [69
 
-] [69] [70] [71
+] [70] [71
 
 ] [72] [73
 
@@ -974,21 +974,21 @@ Package Fancyhdr Warning: \headheight is too small (14.49998pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[83] <images/mapping1.pdf, id=1792, 458.94144pt x 257.18774pt>
+[83] <images/mapping1.pdf, id=1798, 458.94144pt x 257.18774pt>
 File: images/mapping1.pdf Graphic file (type pdf)
 
 <use images/mapping1.pdf>
 Package pdftex.def Info: images/mapping1.pdf used on input line 276.
 (pdftex.def)             Requested size: 321.2568pt x 180.0302pt.
 
-<images/mapping3.pdf, id=1793, 455.07393pt x 284.26pt>
+<images/mapping3.pdf, id=1799, 455.07393pt x 284.26pt>
 File: images/mapping3.pdf Graphic file (type pdf)
 
 <use images/mapping3.pdf>
 Package pdftex.def Info: images/mapping3.pdf used on input line 283.
 (pdftex.def)             Requested size: 318.54956pt x 198.98064pt.
 
-<images/mapping2.pdf, id=1794, 455.71852pt x 224.95863pt>
+<images/mapping2.pdf, id=1800, 455.71852pt x 224.95863pt>
 File: images/mapping2.pdf Graphic file (type pdf)
 
 <use images/mapping2.pdf>
@@ -1027,9 +1027,9 @@ Package rerunfilecheck Info: File `nonlinelasticity.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11.
  ) 
 Here is how much of TeX's memory you used:
- 20567 strings out of 493488
- 380262 string characters out of 3141326
- 493509 words of memory out of 3000000
+ 20571 strings out of 493488
+ 380318 string characters out of 3141326
+ 493511 words of memory out of 3000000
  22428 multiletter control sequences out of 15000+200000
  27617 words of font info for 101 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1060,10 +1060,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2012/t
 exmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2012
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/
 2012/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on nonlinelasticity.pdf (99 pages, 735517 bytes).
+Output written on nonlinelasticity.pdf (99 pages, 738968 bytes).
 PDF statistics:
- 2476 PDF objects out of 2487 (max. 8388607)
- 2300 compressed objects within 23 object streams
- 1019 named destinations out of 1200 (max. 500000)
+ 2483 PDF objects out of 2487 (max. 8388607)
+ 2306 compressed objects within 24 object streams
+ 1023 named destinations out of 1200 (max. 500000)
  576 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -39,11 +39,11 @@
 \contentsline {section}{\numberline {7}Mixing solids, fluids, and scalar fields}{57}{section.7}
 \contentsline {subsection}{\numberline {7.1}Solids and fluids}{57}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Solids and scalar fields}{57}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Hyper-elasticity as a road to mixing scalars and solids}{58}{subsection.7.3}
-\contentsline {subsubsection}{\numberline {7.3.1}Hyper-elasticity}{58}{subsubsection.7.3.1}
-\contentsline {subsubsection}{\numberline {7.3.2}The symplectic current, and evaluation of sound speeds}{63}{subsubsection.7.3.2}
-\contentsline {subsubsection}{\numberline {7.3.3}Separable case}{64}{subsubsection.7.3.3}
-\contentsline {subsubsection}{\numberline {7.3.4}Remark on fluids}{66}{subsubsection.7.3.4}
+\contentsline {subsection}{\numberline {7.3}Hyper-elasticity as a road to mixing scalars and solids}{59}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Hyper-elasticity}{59}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.2}The symplectic current, and evaluation of sound speeds}{64}{subsubsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.3}Separable case}{65}{subsubsection.7.3.3}
+\contentsline {subsubsection}{\numberline {7.3.4}Remark on fluids}{67}{subsubsection.7.3.4}
 \contentsline {subsubsection}{\numberline {7.3.5}Non-separable case}{67}{subsubsection.7.3.5}
 \contentsline {section}{\numberline {8}Generalization away from orthogonal mappings}{69}{section.8}
 \contentsline {section}{\numberline {9}Skyrmion and ferromagnetic dark energy}{71}{section.9}

@@ -44,7 +44,7 @@ When one constructs ``conventional'' models of dark energy or modified gravity, 
 
 
 \subsection{Fluids and solids}
-The distinction between a \textit{fluid} and a \textit{solid} isn't one of the best explained concepts in the literature. Fluids are commonly used as a   description for the content of the Universe in cosmology: but they are only a sub-class of a more general description for ``content''. To perhaps use a  more physically transparent terminology: for materials. A more general  description of material is that of a solid; obviously, we won't go so far as to say \textit{the}  general material description. Below we will outline some of the salient pieces to the construction of a material model: full explanations are given in the rest of this paper.
+The distinction between a \textit{fluid} and a \textit{solid} isn't one of the best explained concepts in the literature. Fluids are commonly used as a description for the ``source term'' in a gravitational theory, since they are both mathematically simple and physically intuitive. But fluids are only a sub-class of a more general description for ``content''. To perhaps use a  more physically transparent terminology: for materials. A more general  description of material is that of a solid; obviously, we won't go so far as to say \textit{the}  general material description. Below we will outline some of the salient pieces to the construction of a material model: full explanations are given in the rest of this paper.
 
 In the descriptions of both solids and fluids  one has a notion of a \textit{material metric} $k_{AB}$ on a \textit{material space}, whose determinant is related to the particle number density, $n = \sqrt{\det k_{AB}}$. A convenient decomposition of this metric is $k_{AB} = n^{2/3}\eta_{AB}$. With this decomposition of   $k_{AB}$, the conformal metric $\eta_{AB}$ is uni-modular, i.e., it has unit determinant. Note that all indices are of ``capital latin'' type: this indicates that they correspond to quantities defined on the material manifold. Such quantities can be ``pulled-back'' to the space-time manifold. For example, the components of the uni-modular tensor in the space-time manifold are constructed from the set of three scalars $\phi^A$  and $k_{AB}$ via
 \bea
@@ -738,12 +738,12 @@ The Lagrangian that results is that for a massive scalar field. This example is 
 There are supposed to be $n$ fields here, and so $I = 1, \ldots, n$, and the set of symmetric quantities $ \mathfrak{k}_{IJ}$ are supposed to play the role of a  metric in field space.
 Before we continue we want to make it plainly clear that this isn't the most general Lagrangian density that can be constructed out of single derivatives. 
 
- Suppose that the energy gets minimized when the fields $\Phi^I$ are consigned to live on a sub-manifold, $\mathcal{V}$ say, of dimension $q \leq n$; in this state the potential energy $V(\Phi^I)=0$. The ``vacuum manifold'' $\mathcal{V}$ can be coordinatized by $q$ scalars $\phi^A$, say, with $A = 1, \ldots, q$. Hence, the original set of fields $\Phi^I$ are some function of the fields $\phi^A$,
+ Suppose that the energy gets minimized when the fields $\Phi^I$ are consigned to live on a sub-manifold, $\mathcal{V}$ say, of dimension $q \leq n$; in this state the potential energy $V(\Phi^I)=0$. The ``vacuum manifold'' $\mathcal{V}$ can be coordinatized by $q$ scalars $\phi^A$, say, with $A = 1, \ldots, q$. Hence, when the configuration is in its relaxed state the original set of fields $\Phi^I$ are expressible as a function of the fields $\phi^A$,
 \bea
 \label{eq:sec:relaxed-config}
-\Phi^I = \Phi^I(\phi^A),
+\Phi^I = \Phi^I(\phi^A).
 \eea
-when the configuration is in its relaxed state. From (\ref{eq:sec:relaxed-config}) it is clear that
+By simple application of the chain rule,  (\ref{eq:sec:relaxed-config}) provides
 \bea
 \label{eq:sec:parti-phiI-phiA}
 \partial_{a}\Phi^I = \pd{\Phi^I}{\phi^A}\partial_{a}\phi^A.
@@ -2053,20 +2053,37 @@ Suppose one had two fluids; each fluid have currents $a^{\mu}$ and $b^{\mu}$. Th
 a\defn (-a^{\mu}a_{\mu})^{1/2},\qquad x \defn (-a^{\mu}b_{\mu})^{1/2},\qquad b = (-b^{\mu}b_{\mu})^{1/2}.
 \eea
 \subsection{Solids and scalar fields}
-The theory of a solid was constructed from all invariants of the elements of the set $\{n, u^a, {\eta^a}_b\}$. Note that in \cite{Pourtsidou:2013nha} a similar question was asked, but for a fluid; thus, they formed all invariants out of $\{n, u^a,\phi, \nabla_a\phi\}$. Thus, the Lagrangian for a scalar+fluid mixture has at most four scalar arguments, and can be written as
+The theory of a solid which we have considered in this review was constructed from all invariants of the elements of the set $\{n, u^a, {\eta^a}_b\}$. In \cite{Pourtsidou:2013nha} a similar question was asked, but for a fluid: they asked for the general theory of a scalar+fluid mixture; thus, they found all invariants formed out of the relevant fields, which are $\{n, u^a,\phi, \nabla_a\phi\}$. There are at most four scalar invariants, and so the Lagrangian for a scalar+fluid mixture has at most four scalar arguments, and can be written as
 \bea
 \qsubrm{\ld}{s+f} =\qsubrm{\ld}{s+f}\left( n, \phi, u^a\nabla_a\phi,\nabla_a\phi\nabla^a\phi\right).
 \eea
 
  Suppose we now had a scalar field in the matter action: we now want to form all invariants from the set $\{n, u^a, {\eta^a}_b, \phi, \nabla_a\phi\}$. See Section \ref{sec:hyperelasticity} for a discussion on hyper-elasticity which may be more helpful.
 
-It seems that for the solid+scalar mixture, the invariants are
+For the solid+scalar mixture, there is a tower of invariants. For example, the first few are
 \bea
-\bigg\{ n, \quad [\gbm{\eta}],\quad [\gbm{\eta}^2],\quad u^a\nabla_a\phi,\quad\nabla^a\phi\nabla_a\phi,\quad {\eta^a}_b\nabla_a\phi\nabla^b\phi,\quad {\eta^a}_b{\eta^b}_c\nabla_a\phi\nabla^c\phi,\qquad \ldots\bigg\}
+\bigg\{ \phi, \quad n,\quad u^a\nabla_a\phi,\quad\nabla^a\phi\nabla_a\phi, \quad [\gbm{\eta}],\quad [\gbm{\eta}^2],\quad {\eta^a}_b\nabla_a\phi\nabla^b\phi,\quad {\eta^a}_b{\eta^b}_c\nabla_a\phi\nabla^c\phi,\quad \ldots\bigg\}\nonumber\\
 \eea
-Define
+The first four above are present in the scalar+fluid mixture: the rest are only present in the scalar+solid mixture. To aid the construction of allowed invariants, it is useful to define the quantity
 \bea
 {C^a}_b{}^c \defn {\eta^a}_b\nabla^c\phi.
+\eea
+The second useful step  in cataloguing the terms is by keeping track of the number of space-time derivatives. This is done by replacing $x^a\rightarrow Mx^a$, and keeping track of the powers of $M$. First of all, note that the uni-modular tensor has 2-powers of $M$,
+\bea
+\eta_{ab} = n^{-2/3} k_{AB} \partial_a\phi^A\partial_b\phi^B \rightarrow \frac{1}{M^2}n^{-2/3} k_{AB} \partial_a\phi^A\partial_b\phi^B.
+\eea
+Hence, the $\qsuprm{n}{th}$-trace of $\gbm{\eta}$ carries $2n$-powers of $M$,
+\bea
+[\gbm{\eta}^n] \rightarrow \frac{1}{M^{2n}}[\gbm{\eta}^n].
+\eea
+Also,
+\bea
+{C^a}_b{}^c  \rightarrow \frac{1}{M^3}{C^a}_b{}^c.
+\eea
+{\bf Is this true? $\eta$ has unit determinant, which links the cubic and quadratic invariants...}
+Hence, $n$-copies of allowed contractions of ${C^a}_{b}{}^c$ and $m$ of $\nabla\phi$ are replaced with
+\bea
+(\nabla\phi)^m(C)^n \rightarrow \frac{1}{M^{m + 3n}}(\nabla\phi)^m(C)^n.
 \eea
 Then we can form
 \bea
