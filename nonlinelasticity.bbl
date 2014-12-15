@@ -151,6 +151,10 @@ B.~Carter, {\it {Essentials of classical brane dynamics}},  {\em
 B.~Carter, {\it {Classical Dynamics of Strings and Branes, with Application to
   Vortons}},  \href{http://xxx.lanl.gov/abs/1112.2094}{{\tt arXiv:1112.2094}}.
 
+\bibitem{Carter:1973zz}
+B.~Carter, {\it {Speed of Sound in a High-Pressure General-Relativistic
+  Solid}},  {\em Phys.Rev.} {\bf D7} (1973) 1590--1593.
+
 \bibitem{Battye:2013er}
 R.~A. Battye and J.~A. Pearson, {\it {Massive gravity, the elasticity of
   space-time and perturbations in the dark sector}},  {\em Phys.Rev.} {\bf D88}
@@ -190,9 +194,10 @@ L.~Amendola, G.~Ballesteros, and V.~Pettorino, {\it {Effects of modified
 E.~V. Linder, {\it {Are Scalar and Tensor Deviations Related in Modified
   Gravity?}},  \href{http://xxx.lanl.gov/abs/1407.8184}{{\tt arXiv:1407.8184}}.
 
-\bibitem{Carter:1973zz}
-B.~Carter, {\it {Speed of Sound in a High-Pressure General-Relativistic
-  Solid}},  {\em Phys.Rev.} {\bf D7} (1973) 1590--1593.
+\bibitem{Lukacs:1976ja}
+B.~Lukacs, {\it {Robertson-Walker Type Solutions with Carter and Quintana Type
+  Elasticity}},  {\em Acta Phys. Hung.} (1976).
+  \url{http://www.iaea.org/inis/collection/NCLCollectionStore/_Public/08/313/8313697.pdf}.
 
 \bibitem{GRG_giulio_1993}
 G.~Magli, {\it Axially symmetric, uniformly rotating neutron stars in general

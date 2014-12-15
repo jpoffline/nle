@@ -13,45 +13,45 @@ Repeated entry---line 1031 of file nle.bib
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Green1991462"
 Warning--can't use both author and editor fields in carter_springer_cond
-You've used 83 entries,
+You've used 84 entries,
             2166 wiz_defined-function locations,
-            1086 strings with 16210 characters,
-and the built_in function-call counts, 26315 in all, are:
-= -- 2793
-> -- 678
+            1093 strings with 16427 characters,
+and the built_in function-call counts, 26488 in all, are:
+= -- 2810
+> -- 682
 < -- 0
-+ -- 263
-- -- 180
-* -- 1957
-:= -- 3443
-add.period$ -- 88
-call.type$ -- 83
-change.case$ -- 79
++ -- 265
+- -- 181
+* -- 1967
+:= -- 3471
+add.period$ -- 90
+call.type$ -- 84
+change.case$ -- 80
 chr.to.int$ -- 0
-cite$ -- 84
-duplicate$ -- 1458
-empty$ -- 2497
-format.name$ -- 180
-if$ -- 6866
+cite$ -- 85
+duplicate$ -- 1469
+empty$ -- 2519
+format.name$ -- 181
+if$ -- 6911
 int.to.chr$ -- 0
-int.to.str$ -- 83
-missing$ -- 308
-newline$ -- 256
-num.names$ -- 83
-pop$ -- 319
+int.to.str$ -- 84
+missing$ -- 312
+newline$ -- 259
+num.names$ -- 84
+pop$ -- 324
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1121
+skip$ -- 1122
 stack$ -- 0
 substring$ -- 1669
-swap$ -- 698
+swap$ -- 699
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 186
-width$ -- 85
-write$ -- 856
+while$ -- 187
+width$ -- 86
+write$ -- 865
 (There were 2 error messages)

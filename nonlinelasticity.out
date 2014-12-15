@@ -19,49 +19,51 @@
 \BOOKMARK [2][-]{subsection.3.2}{The equation of state and material action}{section.3}% 19
 \BOOKMARK [2][-]{subsection.3.3}{Variation of the material action and measure-weighted variation}{section.3}% 20
 \BOOKMARK [2][-]{subsection.3.4}{The energy-momentum tensor}{section.3}% 21
-\BOOKMARK [2][-]{subsection.3.5}{Example equation of state}{section.3}% 22
-\BOOKMARK [1][-]{section.4}{Equation of motion}{}% 23
-\BOOKMARK [2][-]{subsection.4.1}{Speed of sound}{section.4}% 24
-\BOOKMARK [2][-]{subsection.4.2}{Equations of motion from the action}{section.4}% 25
-\BOOKMARK [1][-]{section.5}{The Carter-Quintana perfect solid}{}% 26
-\BOOKMARK [2][-]{subsection.5.1}{Strain and shear tensors}{section.5}% 27
-\BOOKMARK [2][-]{subsection.5.2}{The equation of state}{section.5}% 28
-\BOOKMARK [2][-]{subsection.5.3}{The energy-momentum tensor}{section.5}% 29
-\BOOKMARK [2][-]{subsection.5.4}{The quasi-Hookean solid}{section.5}% 30
-\BOOKMARK [2][-]{subsection.5.5}{Exact non-linear equations of motion}{section.5}% 31
-\BOOKMARK [2][-]{subsection.5.6}{Slow roll parameter}{section.5}% 32
-\BOOKMARK [1][-]{section.6}{General isotropic configurations of elastic solids}{}% 33
-\BOOKMARK [2][-]{subsection.6.1}{Eigenvalue decomposition}{section.6}% 34
-\BOOKMARK [2][-]{subsection.6.2}{Static spherically symmetric configurations}{section.6}% 35
-\BOOKMARK [3][-]{subsubsection.6.2.1}{My spherical symmetry calculations}{subsection.6.2}% 36
-\BOOKMARK [2][-]{subsection.6.3}{Stars immersed in an elastic solid}{section.6}% 37
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Example model}{subsection.6.3}% 38
-\BOOKMARK [1][-]{section.7}{Mixing solids, fluids, and scalar fields}{}% 39
-\BOOKMARK [2][-]{subsection.7.1}{Solids and fluids}{section.7}% 40
-\BOOKMARK [2][-]{subsection.7.2}{Solids and scalar fields}{section.7}% 41
-\BOOKMARK [2][-]{subsection.7.3}{Hyper-elasticity as a road to mixing scalars and solids}{section.7}% 42
-\BOOKMARK [3][-]{subsubsection.7.3.1}{Hyper-elasticity}{subsection.7.3}% 43
-\BOOKMARK [3][-]{subsubsection.7.3.2}{The symplectic current, and evaluation of sound speeds}{subsection.7.3}% 44
-\BOOKMARK [3][-]{subsubsection.7.3.3}{Separable case}{subsection.7.3}% 45
-\BOOKMARK [3][-]{subsubsection.7.3.4}{Remark on fluids}{subsection.7.3}% 46
-\BOOKMARK [3][-]{subsubsection.7.3.5}{Non-separable case}{subsection.7.3}% 47
-\BOOKMARK [1][-]{section.8}{Generalization away from orthogonal mappings}{}% 48
-\BOOKMARK [1][-]{section.9}{Skyrmion and ferromagnetic dark energy}{}% 49
-\BOOKMARK [1][-]{section.10}{Higher order perturbations}{}% 50
-\BOOKMARK [1][-]{section.11}{Final discussion}{}% 51
-\BOOKMARK [1][-]{appendix.A}{Tensor invariants}{}% 52
-\BOOKMARK [1][-]{appendix.B}{Relation to statistical cumulants}{}% 53
-\BOOKMARK [1][-]{appendix.C}{Symplectic current}{}% 54
-\BOOKMARK [2][-]{subsubsection.C.0.6}{Symplectic structure}{appendix.C}% 55
-\BOOKMARK [1][-]{appendix.D}{Equations of motion from a partial theory}{}% 56
-\BOOKMARK [1][-]{appendix.E}{Pull-back formalism \340 la Arkani-Hamed}{}% 57
-\BOOKMARK [2][-]{subsection.E.1}{Setup}{appendix.E}% 58
-\BOOKMARK [2][-]{subsection.E.2}{Studying the link field}{appendix.E}% 59
-\BOOKMARK [2][-]{subsection.E.3}{The internal transformation is a coordinate shift}{appendix.E}% 60
-\BOOKMARK [2][-]{subsection.E.4}{Example: massive gravity}{appendix.E}% 61
-\BOOKMARK [1][-]{appendix.F}{Multi-constituent fluids}{}% 62
-\BOOKMARK [2][-]{subsection.F.1}{Two constituent model}{appendix.F}% 63
-\BOOKMARK [2][-]{subsection.F.2}{Including dissipative effects}{appendix.F}% 64
-\BOOKMARK [2][-]{subsection.F.3}{Example of the equation of state}{appendix.F}% 65
-\BOOKMARK [1][-]{appendix.G}{Saint-Venant compatibility conditions}{}% 66
-\BOOKMARK [1][-]{equation.G.5}{References}{}% 67
+\BOOKMARK [2][-]{subsection.3.5}{Solid \040fluid \040}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.6}{Example equation of state}{section.3}% 23
+\BOOKMARK [1][-]{section.4}{Equation of motion and propagation of sound}{}% 24
+\BOOKMARK [2][-]{subsection.4.1}{Equations of motion from the action}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.2}{The fluid equations}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.3}{Speed of sound}{section.4}% 27
+\BOOKMARK [1][-]{section.5}{The Carter-Quintana perfect solid}{}% 28
+\BOOKMARK [2][-]{subsection.5.1}{Strain and shear tensors}{section.5}% 29
+\BOOKMARK [2][-]{subsection.5.2}{The equation of state}{section.5}% 30
+\BOOKMARK [2][-]{subsection.5.3}{The energy-momentum tensor}{section.5}% 31
+\BOOKMARK [2][-]{subsection.5.4}{The quasi-Hookean solid}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.5}{Exact non-linear equations of motion}{section.5}% 33
+\BOOKMARK [2][-]{subsection.5.6}{Slow roll parameter}{section.5}% 34
+\BOOKMARK [1][-]{section.6}{General isotropic configurations of elastic solids}{}% 35
+\BOOKMARK [2][-]{subsection.6.1}{Eigenvalue decomposition}{section.6}% 36
+\BOOKMARK [2][-]{subsection.6.2}{Static spherically symmetric configurations}{section.6}% 37
+\BOOKMARK [3][-]{subsubsection.6.2.1}{My spherical symmetry calculations}{subsection.6.2}% 38
+\BOOKMARK [2][-]{subsection.6.3}{Stars immersed in an elastic solid}{section.6}% 39
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Example model}{subsection.6.3}% 40
+\BOOKMARK [1][-]{section.7}{Mixing solids, fluids, and scalar fields}{}% 41
+\BOOKMARK [2][-]{subsection.7.1}{Solids and fluids}{section.7}% 42
+\BOOKMARK [2][-]{subsection.7.2}{Solids and scalar fields}{section.7}% 43
+\BOOKMARK [2][-]{subsection.7.3}{Hyper-elasticity as a road to mixing scalars and solids}{section.7}% 44
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Hyper-elasticity}{subsection.7.3}% 45
+\BOOKMARK [3][-]{subsubsection.7.3.2}{The symplectic current, and evaluation of sound speeds}{subsection.7.3}% 46
+\BOOKMARK [3][-]{subsubsection.7.3.3}{Separable case}{subsection.7.3}% 47
+\BOOKMARK [3][-]{subsubsection.7.3.4}{Remark on fluids}{subsection.7.3}% 48
+\BOOKMARK [3][-]{subsubsection.7.3.5}{Non-separable case}{subsection.7.3}% 49
+\BOOKMARK [1][-]{section.8}{Generalization away from orthogonal mappings}{}% 50
+\BOOKMARK [1][-]{section.9}{Skyrmion and ferromagnetic dark energy}{}% 51
+\BOOKMARK [1][-]{section.10}{Higher order perturbations}{}% 52
+\BOOKMARK [1][-]{section.11}{Final discussion}{}% 53
+\BOOKMARK [1][-]{appendix.A}{Tensor invariants}{}% 54
+\BOOKMARK [1][-]{appendix.B}{Relation to statistical cumulants}{}% 55
+\BOOKMARK [1][-]{appendix.C}{Symplectic current}{}% 56
+\BOOKMARK [2][-]{subsubsection.C.0.6}{Symplectic structure}{appendix.C}% 57
+\BOOKMARK [1][-]{appendix.D}{Equations of motion from a partial theory}{}% 58
+\BOOKMARK [1][-]{appendix.E}{Pull-back formalism \340 la Arkani-Hamed}{}% 59
+\BOOKMARK [2][-]{subsection.E.1}{Setup}{appendix.E}% 60
+\BOOKMARK [2][-]{subsection.E.2}{Studying the link field}{appendix.E}% 61
+\BOOKMARK [2][-]{subsection.E.3}{The internal transformation is a coordinate shift}{appendix.E}% 62
+\BOOKMARK [2][-]{subsection.E.4}{Example: massive gravity}{appendix.E}% 63
+\BOOKMARK [1][-]{appendix.F}{Multi-constituent fluids}{}% 64
+\BOOKMARK [2][-]{subsection.F.1}{Two constituent model}{appendix.F}% 65
+\BOOKMARK [2][-]{subsection.F.2}{Including dissipative effects}{appendix.F}% 66
+\BOOKMARK [2][-]{subsection.F.3}{Example of the equation of state}{appendix.F}% 67
+\BOOKMARK [1][-]{appendix.G}{Saint-Venant compatibility conditions}{}% 68
+\BOOKMARK [1][-]{equation.G.5}{References}{}% 69
