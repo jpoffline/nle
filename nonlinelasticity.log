@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.17)  12 DEC 2014 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.17)  16 JAN 2015 10:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -10,8 +10,8 @@ Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (./head_article.tex
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -816,12 +816,12 @@ LaTeX Font Info:    ... okay on input line 49.
 * \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=28.45274pt
-* \marginparwidth=111.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=85.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -891,6 +891,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./abstract.tex) [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [2
 
 ] (./nonlinelasticity.toc [3])
@@ -904,182 +910,218 @@ LaTeX Font Info:    Try loading font information for OMS+cmr on input line 15.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
  [5
 
 
-] [6]
-(./material_models_relations.tex) [7] [8] [9] [10] [11] [12] [13
+] [6] [7]
+(./material_models_relations.tex) [8] [9] [10] [11] [12] [13] [14] [15]
+[16
 
-] [14] [15]
-(./form_metric_link.tex) [16] [17]
+] [17]
+Overfull \hbox (4.88554pt too wide) in paragraph at lines 420--422
+\OT1/cmr/m/n/12 This prop-erty can be ex-tremely use-ful. For ex-am-ple, con-si
+der the ex-pres-sion $\OML/cmm/m/it/12 u[]\OMS/cmsy/m/n/12 r[]\OML/cmm/m/it/12 
+N[]$\OT1/cmr/m/n/12 ,
+ []
+
+[18] [19] [20] [21] (./form_metric_link.tex) [22]
+Overfull \hbox (11.80962pt too wide) in paragraph at lines 626--628
+\OT1/cmr/m/n/12 Since $\OML/cmm/m/it/12 n[] \OT1/cmr/m/n/12 = 0$ (by def-i-ni-t
+ion) it fol-lows that $([] \OML/cmm/m/it/12 k[]\OT1/cmr/m/n/12 )[] = 0$, and th
+ere-fore $\OML/cmm/m/it/12 k[]k[] \OT1/cmr/m/n/12 =
+ []
+
+[23]
 LaTeX Font Info:    Try loading font information for U+euf on input line 667.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/ueuf.fd
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [18] [19]
-[20] [21] [22] [23
+) [24]
+[25] [26] [27] [28] [29] [30
 
-] [24] [25]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1079.
-
+] [31] [32] [33] [34] [35]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 1079.
+(hyperref)                removing `math shift' on input line 1111.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1079.
+(hyperref)                removing `\rightarrow' on input line 1111.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1079.
+(hyperref)                removing `math shift' on input line 1111.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 1079.
+(hyperref)                removing `math shift' on input line 1111.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1079.
+(hyperref)                removing `\rightarrow' on input line 1111.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1079.
+(hyperref)                removing `math shift' on input line 1111.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Lambda' on input line 1079.
+(hyperref)                removing `math shift' on input line 1111.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1079.
+(hyperref)                removing `\Lambda' on input line 1111.
 
-[26] [27] [28
 
-] [29] [30] [31] [32] [33] [34
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1111.
 
-] [35] [36] [37] [38] [39] [40
+[36] [37] [38
+
+] [39] [40] [41] [42] [43] [44] [45
+
+] [46] [47] [48] [49] [50]
+[51] [52
+
+] [53] [54
+
+] [55] [56] [57] [58]
+Overfull \hbox (6.31578pt too wide) in alignment at lines 1971--1973
+ [][][] []
+ []
+
+[59] [60]
+Overfull \hbox (3.7895pt too wide) in paragraph at lines 2045--2048
+\OT1/cmr/m/n/12 The sys-tem of three equa-tions ([][]7.38[][]) con-sti-tute the
+ \OT1/cmr/m/it/12 gen-er-al-ized Tolman-Oppenheimer-
+ []
+
+[61] [62] [63] [64]
+Overfull \hbox (19.24805pt too wide) in alignment at lines 2211--2213
+ [][][] []
+ []
+
+[65
+
+] [66] [67] [68] [69] [70] [71] [72] [73]
+Overfull \hbox (6.49095pt too wide) in paragraph at lines 2649--2652
+\OT1/cmr/m/n/12 The con-di-tion for $\OML/cmm/m/it/12 ^^P[]$ \OT1/cmr/m/n/12 to
+ be an in-trin-sic char-ac-ter-is-tic vec-tor is there-fore that $[](\OMS/cmsy/
+m/n/12 Q[]\OT1/cmr/m/n/12 ) =
+ []
+
+[74] [75] [76] [77] [78] [79] [80] [81
+
+] [82] [83
+
+] [84] [85] [86
+
+]) [87] [88
 
 ]
-[41] [42] [43] [44] [45] [46] [47] [48] [49
-
-] [50] [51] [52] [53] [54] [55]
-[56] [57] [58] [59
-
-] [60] [61
-
-] [62] [63
-
-] [64]) [65
-
-] [66
-
-] (./appendixcontent.tex
+(./appendixcontent.tex
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 35.
 
-[67] [68] [69] [70] <images/mapping1.pdf, id=1791, 458.94144pt x 257.18774pt>
+[89] [90] [91] [92]
+
+Package Fancyhdr Warning: \headheight is too small (14.49998pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[93] <images/mapping1.pdf, id=1927, 458.94144pt x 257.18774pt>
 File: images/mapping1.pdf Graphic file (type pdf)
 
 <use images/mapping1.pdf>
 Package pdftex.def Info: images/mapping1.pdf used on input line 276.
 (pdftex.def)             Requested size: 321.2568pt x 180.0302pt.
 
-<images/mapping3.pdf, id=1792, 455.07393pt x 284.26pt>
+<images/mapping3.pdf, id=1928, 455.07393pt x 284.26pt>
 File: images/mapping3.pdf Graphic file (type pdf)
 
 <use images/mapping3.pdf>
 Package pdftex.def Info: images/mapping3.pdf used on input line 283.
 (pdftex.def)             Requested size: 318.54956pt x 198.98064pt.
 
-<images/mapping2.pdf, id=1793, 455.71852pt x 224.95863pt>
+<images/mapping2.pdf, id=1929, 455.71852pt x 224.95863pt>
 File: images/mapping2.pdf Graphic file (type pdf)
 
 <use images/mapping2.pdf>
 Package pdftex.def Info: images/mapping2.pdf used on input line 290.
 (pdftex.def)             Requested size: 319.00078pt x 157.46997pt.
+ [94] [95 <./images/mapping1.pdf> <./images/mapping3.pdf>]
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.07225pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[71] [72 <./images/mapping1.pdf> <./images/mapping3.pdf>]
-
-Package natbib Warning: Citation `Green1991462' on page 73 undefined on input l
+Package natbib Warning: Citation `Green1991462' on page 96 undefined on input l
 ine 329.
 
-[73 <./images/mapping2.pdf>] [74] [75] [76] [77] [78]) (./nonlinelasticity.bbl
-[79] [80] [81] [82])
+[96 <./images/mapping2.pdf>] [97] [98] [99] [100] [101] [102] [103])
+(./nonlinelasticity.bbl [104] [105] [106]
+Overfull \hbox (2.35294pt too wide) in paragraph at lines 285--290
+\OT1/cmr/m/n/12 [[][]\OT1/cmtt/m/n/12 http://mnras.oxfordjournals.org/content/2
+97/4/1189.full.pdf+html[][]\OT1/cmr/m/n/12 ].  
+ []
+
+[107] [108]
+Overfull \hbox (2.35294pt too wide) in paragraph at lines 422--427
+\OT1/cmr/m/n/12 [[][]\OT1/cmtt/m/n/12 http://www.worldscientific.com/doi/pdf/10
+.1142/S0219530507000973[][]\OT1/cmr/m/n/12 ].  
+ []
+
+)
 
 Package natbib Warning: There were undefined citations.
 
-[83] [84]
+[109]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 11.
  (./nonlinelasticity.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 11.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11.
 Package rerunfilecheck Info: File `nonlinelasticity.out' has not changed.
-(rerunfilecheck)             Checksum: F403A3D9EDB1E4F77442772538956B09;5295.
+(rerunfilecheck)             Checksum: 2ADC3DB992FB3A86E39C0C1072197CE2;5361.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11.
  ) 
 Here is how much of TeX's memory you used:
- 22694 strings out of 493117
- 438545 string characters out of 6135432
- 528254 words of memory out of 5000000
- 24670 multiletter control sequences out of 15000+600000
- 24799 words of font info for 91 fonts, out of 8000000 for 9000
+ 22763 strings out of 493117
+ 439598 string characters out of 6135432
+ 527736 words of memory out of 5000000
+ 24694 multiletter control sequences out of 15000+600000
+ 27853 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,14n,67p,1171b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2014/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/euler/eufm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on nonlinelasticity.pdf (84 pages, 882065 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on nonlinelasticity.pdf (109 pages, 763222 bytes).
 PDF statistics:
- 2508 PDF objects out of 2984 (max. 8388607)
- 2334 compressed objects within 24 object streams
- 1035 named destinations out of 1200 (max. 500000)
- 592 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2629 PDF objects out of 2984 (max. 8388607)
+ 2441 compressed objects within 25 object streams
+ 1088 named destinations out of 1200 (max. 500000)
+ 600 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -205,7 +205,7 @@ The physical picture one should constantly keep in mind is that a continuous med
 
 
 \subsubsection{Non-relativistic solids}
-A non-relativistic solid is one for whom there are no gravitational effects. As examples, one imagines an eraser, rubber band, trampolines: these kinds of materials.
+A non-relativistic solid is one for whom there are no gravitational effects. As examples, one imagines an eraser, rubber band, trampolines: these kinds of materials. Another distinguishing feature (of non-relativistic solids from relativistic ones) is that the pressure of the solid is negligible.
 
 The locations within a relaxed non-relativistic solid are denoted by $x^i$. Under a deformation the coordinates alter according to 
 \bea
@@ -701,12 +701,15 @@ The second term in braces, $\overline{ {\nabla}}_a{g^{ef}}$, vanishes by (\ref{e
 \eea
 
 
-\subsection{Constructing the set of scalar invariants}
+\subsection{Constructing   scalar invariants}
 \label{sec-setscalinvs}
-We will formally introduce it later, but we are interested in constructing  the equation of state $\rho$ which will be a scalar function of the state of the system, and is integrated to give the action. There are a few different sets of scalar invariants one could use: formally they are identical, but different choices will enhance, or hide,  insight  into the  physical behavior. And so, we are interested in finding  the complete list of scalar invariants which will specify the state of the system.  The invariants are constructed from the pull-back of the material metric, ${k^a}_b$.
+We will formally introduce it later, but we are interested in constructing  the equation of state $\rho$ which will be a scalar function of the state of the system, and is integrated to give the action. What this requires, from the theoretical construction which concerns us at the moment, is an understanding of the allowed scalar quantities one can form from objects which specify the state of the system.  The scalar invariants are constructed from the pull-back of the material metric, ${k^a}_b$.
 
-As a candidate set of invariants, note that \textit{the} three independent scalar invariants of the mixed components of the pulled-back material metric ${k^a}_b$ are
+There are a few different sets of scalar invariants one could use: formally they will be identical, but different choices will help or hide  insight  into the  physical behavior. And so, we are interested in finding  the complete list of scalar invariants which will specify the state of the system.  
+
+As a candidate set of invariants,   \textit{the} three independent scalar invariants of the mixed components of the pulled-back material metric ${k^a}_b$ are
 \bea
+\label{invs-i1i2i3}
 I_1 = [\rbm{k}],\qquad I_2 = [\rbm{k}^2],\qquad I_3 = [\rbm{k}^3],
 \eea
 in which we   denoted   traces with square braces,
@@ -714,12 +717,13 @@ in which we   denoted   traces with square braces,
 I_n = \Tr(\rbm{k}^n) = [\rbm{k}^n] = {k^a}_b{k^b}_c\cdots{k^f}_a ,
 \eea
 with ${k^a}_b$ defined from $k_{ab}$ via (\ref{eq:sec:defn-kmixed}). This is a complete list of independent invariants (any other invariants can be computed from these) due to the orthogonality of ${k^a}_b$ (\ref{eq:sec:orthn-k}).
+
 Since $n_{ABC}$ is the volume form of $k_{AB}$, the particle number density $n$ is also a scalar invariant of ${k^a}_b$; by the Cayley-Hamilton theorem, the determinant is related to the other invariants via
 \bea
 n^2 = \det({k^a}_b) = \tfrac{1}{3!}\left([\rbm{k}]^3 - 3[\rbm{k}][\rbm{k}^2] + 2 [\rbm{k}^3]\right).
 \eea
 
-We  could use $\{I_1,I_2,I_3\}$ as the list of invariants which could be the arguments of the equation of state, but we shall instead choose $n$ and  the independent scalar invariants of the uni-modular tensor ${\eta^a}_b$, defined in (\ref{eq:sec:etamixed-defn}) since this will help the comparison between solid and fluid descriptions. The important consequence of   uni-modularity is that     ${\eta^a}_b$   only has two independent invariants (rather than 3 which could be expected from a symmetric rank-2 tensor in 3D).  The invariants are linked via the Cayley-Hamilton theorem as
+We  could use $\{I_1,I_2,I_3\}$ as defined in (\ref{invs-i1i2i3}) as the list of invariants which could be the arguments of the equation of state, but we shall also consider the particle number density $n$ and  the independent scalar invariants of the uni-modular tensor ${\eta^a}_b$, defined in (\ref{eq:sec:etamixed-defn}) since this will help the comparison between solid and fluid descriptions. The important consequence of   uni-modularity is that     ${\eta^a}_b$   only has two independent invariants (rather than 3 which could be expected from a symmetric rank-2 tensor in 3D).  The invariants are linked via the Cayley-Hamilton theorem as
 \bea
 \label{eq:sec:eta-link-invariants}
 3! = [\gbm{\eta}]^3 - 3 [\gbm{\eta}][\gbm{\eta}^2] + 2 [\gbm{\eta}^3].
@@ -763,9 +767,18 @@ where the angular brackets denote the symmetric trace-free part of the tensor, a
 u^a\pd{n}{g^{ab}} =0,\qquad u^a\pd{Y}{g^{ab}}=0,\qquad u^a\pd{Z}{g^{ab}}=0.
 \eea
  
-
-
-
+\note{Fill this in...}
+\bse
+\bea
+\pd{[\rbm{k}]}{g^{ab}} = 
+\eea
+\bea
+\pd{[\rbm{k}^2]}{g^{ab}} = 
+\eea
+\bea
+\pd{[\rbm{k}^3]}{g^{ab}} = 
+\eea
+\ese
 \subsection{Deformations about a relaxed state}
 It is   important to understand how to deal with a deformed medium. Before we give some explicit expressions for  deformations of the solid, we shall illustrate the philosophy via ``non-linear sigma models'' from field theory.
 \subsubsection{Example from non-linear sigma models}
@@ -880,7 +893,7 @@ quantifying the difference between the actual value of $k_{ab}$ and its value in
 
 \cleardoublepage
 \section{Quantifying the state of the material}
-Armed with the map, material metric, and set of scalar invariants, it remains to understand how to quantify the state of the material in terms of its effects on space-time. This quantification is acheived by constructing a material action which can be appended to the Einstein-Hilbert action, and from which one can derive the energy-momentum tensor which sources the gravitational field equations. 
+Armed with the map, material metric, and set of scalar invariants, it remains to understand how to quantify the state of the material. This will guided by understanding the effects of the material on space-time. This quantification is acheived by constructing a material action which can be appended to the Einstein-Hilbert action, and from which one can derive the energy-momentum tensor which sources the gravitational field equations. 
 
 Along the way there are various useful auxiliary quantities, and useful pieces of technology that can be used to help understand what is going on.
 
@@ -891,30 +904,24 @@ We define the \textit{constant  volume shear tensor}
 {s^a}_b = \tfrac{1}{2}\left( {\gamma^a}_b-{\eta^a}_b \right).
 \eea
 This is a space-time tensor which quantifies the difference between the actual value of ${\gamma^a}_b$ and the unsheared value ${\eta^a}_b$ as described in Section \ref{sec:mat-metric}. The definition (\ref{eq:sec:cons-vol-shear-tenor}) follows from the pull-back of (\ref{material-space-s}), which was defined in the material manifold.
+
+\note{Do something to build intuition of $s_{ab}$}
 \subsection{The equation of state and material action}
 \label{sec:eos-introd}
-The idea is to compute everything from a ``master function'' (to use Carter's terminology). This master function will be the piece of freedom which corresponds to the specification of the type or class of materials under consideration (much like a potential function $V(\phi)$ controls what types of canonical scalar field theories one is studying). 
+The idea is to quantify the state of the material  from a ``master function'' (to use Carter's terminology). This master function will be the piece of freedom which corresponds to the specification of the type or class of materials under consideration. This is much like the specification of the potential function $V(\phi)$ which controls what types of canonical scalar field theories one is studying. 
 
-It is  the energy density $\rho$  which plays the role of the master function; in what follows we will refer to $\rho$ as the \textit{equation of state}. On a first pass  we write down a material action given by the integral of the equation of state which has, as its sole arguments, the components of the pulled-back material metric:
+For a material, the energy density, $\rho$,    plays the role of the master function; in what follows we will refer to $\rho$ as the \textit{equation of state}. On a first pass  we write down a material action given by the integral of the equation of state which has, as its sole arguments, the mixed components of the pulled-back material metric:
 \bea
 \label{material-action-k-no-invaraints-1}
 \qsubrm{S}{M} =  \int \dd^4x\,\sqrt{-g}\, \rho\left( {k^a}_b\right).
 \eea 
-However, our discussion in Section \ref{sec-setscalinvs} has shown that we can go further, and we can realise that $\rho$ is a  function of any possible scalar invariants discussed in Section \ref{sec-setscalinvs}, and so the material action is given by the general expression
+This is as far as one can go in generality without asking anything further of the material. However, if one demands that the material is isotropic (i.e., impose $SO(3)$ symmetry upon the material) then this constitutes a constraint on  $\rho$ as being a  function of any possible scalar invariants discussed in Section \ref{sec-setscalinvs}. With this constraint imposed, the material action is given the integral of a tri-variate scalar function,
 \bea
 \label{eq:matter-action-material}
 \qsubrm{S}{M} = \int \dd^4x\,\sqrt{-g}\, \rho\left([\rbm{k}],\left[\rbm{k}^2\right],\left[\rbm{k}^3\right]\right).
 \eea
-We should note that the assumption of $\rho$ being a function of the invariants of ${k^a}_b$ is akin to asking that the material is isotropic. 
-The energy-momentum tensor is   derived from varying $\qsubrm{S}{M}$ using the usual expression,
-\bea
-T_{ab} = - \frac{2}{\sqrt{-g}}\frac{\delta \qsubrm{S}{M}}{\delta g^{ab}},
-\eea
-which gives
-\bea
-\label{eq:sec:EMT-defn}
-T_{ab} = -\rho g_{ab} + 2 \pd{\rho}{g^{ab}}.
-\eea
+
+
 It is convenient to re-express the equation of state in terms of the particle number density $n$ and the energy per particle, $\epsilon$, via
 \bea
 \label{eq:decomp_n_rho_ep}
@@ -1000,27 +1007,43 @@ Let us now return to the   problem at hand: evaluation of (\ref{eq;deltaS-materi
 which can be used to obtain
 \bea
 \label{eq:eom_scalars-hkjdfhdkj73982-4637}
-\Diamond\rho = \half \left( - \rho g_{ab} + 2\pd{\rho}{g^{ab}}\right)\lp g^{ab},
+\Diamond\rho = \half \left( - \rho g_{ab} + 2\pd{\rho}{g^{ab}}\right)\lp g^{ab}.
 \eea
-which we remind is the integrand of the first variation of the action. 
+We remind that (\ref{eq:eom_scalars-hkjdfhdkj73982-4637}) is the integrand of the first variation of the action. 
 
 \subsection{The energy-momentum tensor}
-The quantity in braces in (\ref{eq:eom_scalars-hkjdfhdkj73982-4637}) is precisely the definition of the energy-momentum tensor
+We have in mind that the material constitutes only part of the dynamics of the entire ``universe'': there is also the  possibility of gravitational dynamics (not nessecarily limited to those prescribed by General Relativity), and also other matter,  fluid, or scalar-field sources. In the case that General Relativity provides the gravitational dynamics, the gravitational field equations are given by
+\bea
+G_{ab} = 8 \pi G \sum_{\rm i} \qsuprm{T}{i}_{ab},
+\eea
+where $\qsuprm{T}{i}_{ab}$ is the energy-momentum tensor for the $\qsuprm{\rm i}{th}$ source. Below we will be concerned with computing the energy-momentum tensor for the material. We will only use the symbol $T_{ab}$ for the material's energy-momentum tensor, but one should keep in mind that it can be added to any additional energy-momentum tensors.
+
+The energy-momentum tensor is   derived from varying the material action $\qsubrm{S}{M}$ using the usual expression,
+\bea
+\label{emt-defn-variation}
+T_{ab} = - \frac{2}{\sqrt{-g}}\frac{\delta \qsubrm{S}{M}}{\delta g^{ab}}.
+\eea
+The quantity in braces in (\ref{eq:eom_scalars-hkjdfhdkj73982-4637}) is precisely the variation requires to work out the right-hand-side of (\ref{emt-defn-variation}); and so, the energy-momentum tensor is given by 
 \bea
 \label{eq:sec:TAB_material-pre-ortho}
 T_{ab} = - \rho g_{ab} + 2\pd{\rho}{g^{ab}}.
 \eea
-We are able to further evaluate this expression, and in particular we can deduce   the ``types'' of contributions to $T_{ab}$ from knowledge of what $\rho$ is a function of.
-Since $\rho = \rho\left({k^a}_b\right)$, using (\ref{eq:pd-Y-g-k}) gives
+We are able to further evaluate this expression, and in particular we can deduce   the ``types'' of contributions to $T_{ab}$ from knowledge of what $\rho$ is a function of. Since the equation of state only depends on the mixed components of the pulled-back material metric,
 \bea
-\pd{\rho}{g^{ab}} = k_{c(a}\pd{\rho}{{k^{b)}}_c},
+\label{eq:eos-assumed-form}
+\rho = \rho\left({k^a}_b\right),
 \eea
-which, by virtue of (\ref{eq:sec:orthn-k}), means that
+using (\ref{eq:pd-Y-g-k}) gives an expression for the final term in (\ref{emt-defn-variation}):
+\bea
+\pd{\rho}{g^{ab}} = k_{c(a}\pd{\rho}{{k^{b)}}_c}.
+\eea
+Since the right-hand-side of this expression is orthogonal by virtue of (\ref{eq:sec:orthn-k}), so is the left-hand-side,
 \bea
 \label{eq:eom_scalars-hkjdfhdkj73982-4637-1}
 u^a\pd{\rho}{g^{ab}} =0.
 \eea
-And so, assuming an equation of state $\rho$ has been given as a function of the components of the pulled-back material metric ${k^a}_b$, the energy-momentum tensor of the solid (\ref{eq:sec:TAB_material-pre-ortho}) is given by
+And so, assuming an equation of state $\rho$ has been given in the form of (\ref{eq:eos-assumed-form}), the energy-momentum tensor of the solid (\ref{eq:sec:TAB_material-pre-ortho}) can be written as
+\bse
 \bea
 \label{eq:sec:emt-solid}
 T_{ab} = \rho u_au_b + P_{ab},
@@ -1030,11 +1053,16 @@ in which the pressure tensor $P_{ab}$ is given by
 \label{pressuretensor}
 P_{ab} = 2 \pd{\rho}{g^{ab}} - \rho \gamma_{ab}.
 \eea
+\ese
 By virtue of (\ref{eq:eom_scalars-hkjdfhdkj73982-4637-1}) the pressure tensor (\ref{pressuretensor}) is orthogonal,
 \bea
  u^aP_{ab}=0.
 \eea
-The important thing to note is that there is no heat flux term in $T_{ab}$: this a consequence of the orthogonality of the mapping between the material manifold and spacetime. 
+The important thing to note is that there is no heat flux term in $T_{ab}$:
+\bea
+u^a{\gamma^b}_c T_{ab} = 0.
+\eea
+This a consequence of the orthogonality of the mapping between the material manifold and spacetime. 
 
 After using the solid form of the energy-momentum tensor (\ref{eq:sec:emt-solid}), the variation of the energy density (\ref{eq:sec:vary-rho-1}) can be written as
 \bea
@@ -1047,7 +1075,11 @@ After rewriting the equation of state $\rho$ in terms of an energy per particle,
 \label{eq:sec:pab-eps}
 P_{ab} = 2n\pd{\epsilon}{g^{ab}}.
 \eea
-When the energy per particle $\epsilon$ is written in a (still general) way to only depend on the number density $n$ and uni-modular tensor ${\eta^a}_b$, i.e., $\epsilon = \epsilon(n, {\eta^a}_b)$, we can use (\ref{eq:sec:Zneta}) to further evaluate the pressure tensor (\ref{eq:sec:pab-eps}), yielding the rather attractive expression
+When the energy per particle $\epsilon$ is written in a (still general) way to only depend on the number density $n$ and the components of the  uni-modular tensor ${\eta^a}_b$, i.e., 
+\bea
+\epsilon = \epsilon(n, {\eta^a}_b),
+\eea
+we can use (\ref{eq:sec:Zneta}) to further evaluate the pressure tensor (\ref{eq:sec:pab-eps}), yielding the rather attractive expression
 \bea
 \label{eq:sec:press-scal-aniso}
 P_{ab} = p \gamma_{ab} + \pi_{ab} ,
@@ -1070,7 +1102,7 @@ We remind that the energy density is given by
 \ese
 This highlights that dependence of $\epsilon$ on the number density $n$ is linked to isotropic pressure $p$, and dependence of $\epsilon$ on the uni-modular tensor ${\eta^a}_b$ is linked to anistropic stress $\pi_{ab}$.
 
-
+Note that we have not assumed the material to be isotropic: at no point did we ask for the equation of state to be constructed out of the scalar invariants of ${\eta^a}_b$ or ${k^a}_b$. When we do so we will find some simplifications.
 
 There is nothing ``imperfect'' about the construction of the substance so far: there is no dissipation,   everything is conserved, and is constructed from a very geometrical point of view. However, the pressure tensor (\ref{eq:sec:press-scal-aniso}) has anisotropic stress (\ref{anso-press}). For a \textit{fluid} this would signal an imperfection, but it is exactly this anisotropic stress which makes the theory  that of a  \textit{solid}.
 
@@ -1088,7 +1120,9 @@ The theory, as constructed, is the general description for a perfect solid. The 
 where $\epsilon_0$ is a constant, one finds that $\rho = - p$.  That is, the theory is that of a cosmological constant (the Lagrangian is just $\ld = \epsilon_0$, a constant).
 
 \subsection{Example equation of state}
-It is instructive to specify an example equation of state and obtain the energy-momentum tensor. We will make the same choice as described in \cite{Karlovini:2002fc}.    To begin with it is useful to recall the covariant form of the constant volume shear tensor (\ref{eq:sec:cons-vol-shear-tenor}), which we repeat here for completeness:
+It is instructive to specify an example equation of state and obtain the energy-momentum tensor. We will make the same choice as described in \cite{Karlovini:2002fc}, and write down a particular equation of state (which is only a subset of all the possible models) for isotropic materials.    
+
+To begin with it is useful to recall the covariant form of the constant volume shear tensor (\ref{eq:sec:cons-vol-shear-tenor}), which we repeat here for completeness:
 \bea
 s_{ab} = \tfrac{1}{2}(\gamma_{ab} - \eta_{ab}).
 \eea
@@ -1100,7 +1134,7 @@ In matrix form these respectively read
 \bea
 \rbm{s} = \tfrac{1}{2}(\rbm{1} - \gbm{\eta}),\qquad \hat{\rbm{s}} = \tfrac{1}{2}(\gbm{\eta}^{-1} - \rbm{1}).
 \eea
-In \cite{Karlovini:2002fc} the equation of state  $\epsilon$ is picked  to be a function of the particle number density $n$ and a particular combination of the invariant of ${\eta^a}_b$. The explicit form of $\epsilon$ is
+The equation of state  $\epsilon$ is chosen  to be a function of the particle number density $n$ and a particular combination of the invariant of ${\eta^a}_b$. The explicit form of $\epsilon$ is
 \bea
 \label{eq:sec:epsilon-pick-form-example}
 \epsilon = \check{\epsilon}_0(n) + \frac{\check{\mu}(n)}{n}\overline{s}^2,
@@ -1114,7 +1148,7 @@ Notice that by using the Cayley-Hamilton relation (\ref{eq:sec:eta-link-invarian
 \bea
 \overline{s}^2 = \tfrac{1}{24}\left( [\gbm{\eta}]^2 - [\gbm{\eta}^2] \right)[\gbm{\eta}] - \tfrac{3}{4}.
 \eea
-Using (\ref{eq:sec:epsilon-pick-form-example}) matter action is therefore given by
+Using (\ref{eq:sec:epsilon-pick-form-example}) the material action is therefore given by
 \bea
 \qsubrm{S}{M} = \int \dd^4x\,\sqrt{-g}\,  \bigg\{ n\check{\epsilon}_0 +  \tfrac{1}{36}{\check{\mu}}{ }\left( [\gbm{\eta}]^3 -[\gbm{\eta}^3] - 24\right)\bigg\}.
 \eea
@@ -1142,26 +1176,29 @@ Obtaining the equation of state and energy-momentum tensor is clearly only part 
 \label{eq:sec:cons-eq-gen}
 \nabla_aT^{ab}=0.
 \eea
-If the material is the only source to the gravitational field equations, then (\ref{eq:sec:cons-eq-gen}) follows by diffeomorphism invariance, and also by the Bianchi identity. We will proceed by first proving this statment, then continue by providing a useful way to write down  (\ref{eq:sec:cons-eq-gen}) in a rather physically intuitive manner.
+If the material is the only source to the gravitational field equations, then (\ref{eq:sec:cons-eq-gen}) follows by diffeomorphism invariance, and also by the Bianchi identity. If there are multiple sources to the gravitational field equations, then (\ref{eq:sec:cons-eq-gen}) holds if and only if $T^{ab}$ is interpreted as the sum of the individual energy-momentum tensors (of which the materials EMT can be an additive contribution). Only in  the case when these sources are ``decoupled'', their individual energy-momentum tensors are independently conserved.
+
+We will proceed by first proving this statement, then continue by providing a useful way to write down  (\ref{eq:sec:cons-eq-gen}) in a rather physically intuitive manner.
 
 \subsection{Equations of motion from the action}
-The   action will be a function of the metric $g^{ab}$, and a set of scalars $\phi^A$ and their derivatives $  \partial_a\phi^A$ (and possibly other material space tensors; we leave that out for now). Thus, the action can be written as
+Without assuming the existence of the pulled-back material metric, one should be convinced that the action will be a function of the metric $g^{ab}$,  a set of scalars $\phi^A$ representing the particle positions in the material manifold, and their derivatives $  \partial_a\phi^A$. There may  be other material space tensors, but we shall leave that complicating possibility out for now. With these considerations, the action can be written as
 \bea
 \qsubrm{S}{M} = \int \dd^4x\,\sqrt{-g}\, \rho\left( g^{ab}, \phi^A, \partial_a\phi^A\right).
 \eea
-Under Lagrangian variations $\lp$ in the available fields, $g^{ab}$ and $\phi^A$, the variation in the action is
+Under Lagrangian variations $\lp$ in the available fields, $g^{ab}$ and $\phi^A$, the corresponding variation in the action is
 \bea
 \lp \qsubrm{S}{M}  = \int \dd^4x\,\sqrt{-g}\, \left[ \half T_{ab} \lp g^{ab} - \mathcal{E}_A\lp \phi^A \right].
 \eea
-Set set $T_{ab}$ to be the energy-momentum tensor, as defined in the usual manner, 
+We set $T_{ab}$ to be the energy-momentum tensor, as defined in the usual manner, 
 \bea
 T_{ab} = - \frac{2}{\sqrt{-g}}\frac{\delta \qsubrm{S}{M}}{\delta g^{ab}} = 2\pd{\rho}{g^{ab}} - \rho g_{ab},
 \eea
-and
+and the contribution to $\lp \qsubrm{S}{M}$ multiplying the perturbed scalars is
 \bea
 \mathcal{E}_A = \nabla_a\left( \pd{\rho}{\partial_a{\phi^A}}\right)- \pd{\rho}{\phi^A} .
 \eea
-We used the symbol $\lp$ to   stand for ``some'' arbitrary variation operator which acts on the fields: we have not yet specified what generates the variation. As we now show, this has given us a clear notational method for imposing general covariance. We will, without loss of generality, assume that $\lp$ has two parts:
+
+We used the symbol $\lp$ to   stand for ``some'' arbitrary variation operator which acts on the fields: we have not yet specified what generates the variation. As we now show, this has given us a clear notational method for imposing general covariance. We will, without loss of generality, assume that $\lp$ decomposes into two parts:
 \bea
 \lp = \ep + \delta_{\xi}.
 \eea
@@ -1169,27 +1206,27 @@ The first part, $\ep$, will be due to intrinsic variations, and $\delta_{\xi}$ w
 \bea
 \delta_{\xi} g^{ab} = - 2 \nabla^{(a}\xi^{b)},\qquad  \delta_{\xi} \phi^A = \xi^a\partial_a\phi^A.
 \eea
-After using these expressions and integrating by parts, the   variation in the action due to variations in fthe space-time coordinates  is given by
+After using these expressions and integrating by parts, the   variation in the action generated by space-time coordinate transformation  is given by
 \bea
-\delta_{\xi} \qsubrm{S}{M} = \int \dd^4x\,\sqrt{-g} \bigg[ \xi^a\left( \nabla_bT^{ab} - \mathcal{E}_A\partial_a\phi^A \right) \bigg].
+\label{eq:diff-var-SM}
+\delta_{\xi} \qsubrm{S}{M} = \int \dd^4x\,\sqrt{-g} \bigg[ \xi^a\left( \nabla_bT^{ab} - \mathcal{E}_A\,\partial_a\phi^A \right) \bigg].
 \eea
 In a similar, and simpler fashion, the variation in the action due to the intrinsic variations of the fields is
 \bea
-\ep \qsubrm{S}{M}  = \int \dd^4x\,\sqrt{-g}\, \left[ \half T_{ab} \ep g^{ab} - \mathcal{E}_A\ep \phi^A \right].
+\ep \qsubrm{S}{M}  = \int \dd^4x\,\sqrt{-g}\, \left[ \half T_{ab} \ep g^{ab} - \mathcal{E}_A\,\ep \phi^A \right].
 \eea
 We can use this to obtain the functional derivative of the action with respect to the intrinsic variations in the scalars,
 \bea
 \label{eq:eom_EA}
 \frac{\ep \qsubrm{S}{M} }{\ep \phi^A} = - \mathcal{E}_A.
 \eea
-The variational principle demands that this expression must vanish.
-General covariance requires the action to be invariant under changes in the coordinates, and so $\delta_{\xi} \qsubrm{S}{M} =0$ when
+The variational principle demands that this expression must vanish, and yields the equation of motion satisfied by the scalars $\phi^A$.
+General covariance requires the action to be invariant under changes in the coordinates. We read off from (\ref{eq:diff-var-SM}) that $\delta_{\xi} \qsubrm{S}{M} =0$ for arbitrary $\xi^a$ when
 \bea
 \label{eq:sec:cons_eom}
-\nabla^bT_{ab} = \mathcal{E}_A\partial_a\phi^A.
+\nabla^bT_{ab} = \mathcal{E}_A\,\partial_a\phi^A.
 \eea
-This gives us a link between conservation of energy-momentum and the equations of motion of the scalars.
-Concretely, energy-momentum conservation only holds if the equations of motion of the $\phi^A$ are satisfied. Put another way: conservation of energy-momentum implies the equations of motion of the elastic medium are satisfied. Due to the orthogonality of the mapping (\ref{eq:sec:ortho-condition})   
+This links  conservation of energy-momentum and the equations of motion of the scalars. Put another way: energy-momentum conservation implies the satisfaction of the equations of motion of the elastic medium. Due to the orthogonality of the mapping (\ref{eq:sec:ortho-condition})   
 \bea
 u^a\partial_a\phi^A = 0,
 \eea
@@ -1204,6 +1241,8 @@ It then follows that the orthogonal projection of (\ref{eq:sec:cons_eom}) implie
 Therefore, conservation of energy-momentum guarantees that the scalars $\phi^A$ satisfy their equation of motion.
 
 \subsection{The fluid equations}
+Inspired by the result of the previous section, we now present the conservation equations in a physically intuitive manner.
+
 Using the solid form (\ref{eq:sec:emt-solid}) for $T_{ab}$ the two independent (i.e., time-like and orthogonal) projections of the conservation equation (\ref{eq:sec:cons-eq-gen}) are
 \bse
 \bea
@@ -1217,7 +1256,7 @@ Using the solid form (\ref{eq:sec:emt-solid}) for $T_{ab}$ the two independent (
 \ese
 We used the orthogonally projected derivative $\overline{\nabla}_b$, as defined in (\ref{eq:orth-proj-deri-defn})
 
-If the energy per particle $\epsilon$ is a function only of the scalar invariants of ${k^a}_b$ (regardless of what the invariants are), then using (\ref{eq:sec:pab-eps}) in conjunction with (\ref{overlineDB}), the orthogonally projected derivative of the pressure tensor is
+If the energy per particle $\epsilon$ is a function only of the components ${k^a}_b$ (regardless of whether the material is isotropic), then using (\ref{eq:sec:pab-eps}) in conjunction with (\ref{overlineDB}), the orthogonally projected derivative of the pressure tensor can be written as
 \bea
 \label{eq:sec:overlineP}
 \overline{\nabla}_bp^{ab} = \left({E^{ab}}_{cd} - {\gamma^{a}}_c{p^b}_d\right){\mathfrak{D}^{cd}}_b,
@@ -1243,7 +1282,7 @@ E^{abcd} = E^{cdab}
 \eea
 in addition to the simple symmetries (\ref{eq:defn-E-12}).
 
-At a later stage it will be convenient to use the relativistic \textit{Hadamard elasticity tensor},  ${A^{ab}}_{cd}$, defined via the elasticity tensor via
+It will be convenient to use the relativistic \textit{Hadamard elasticity tensor},  ${A^{ab}}_{cd}$, defined via the elasticity tensor via
 \bea
 \label{eq:defn-rel-hadamard-1}
 {A^{ab}}_{cd} \defn {E^{ab}}_{cd} - {\gamma^{a}}_c{p^b}_d.
@@ -1412,7 +1451,7 @@ The elasticity tensor $E^{abcd}$ relates to $K^{abcd}$ via
 \bea
 E^{abcd} = n K^{abcd}.
 \eea
-Hence the energy density can be written as
+Hence, since $\rho = n \epsilon$, the energy density can be written as
 \bea
 \rho = \frac{n}{n_0}\rho_0 + \tfrac{1}{2}E^{abcd}e_{ab}e_{cd},
 \eea
@@ -1445,7 +1484,7 @@ When $\epsilon$ does have an absolute minimum, at some particle number density $
 \ese
 
 \subsection{The equation of state}
-The compressional distortion tensor is supposed to vanish, $\tau_{ab}=0$,  the reference tensors satisfy
+The ``physics'' of the solid that Carter and Quintana had in mind was that it was supposed to have vanishing compressional distortion. That is, the compressional distortion tensor is supposed to vanish, $\tau_{ab}=0$. This means that  the reference tensors satisfy
 \bse
 \bea
 [\eta_{ab}]^{\cdot} = \tfrac{2}{3}\eta_{ab}\Theta,
@@ -1468,10 +1507,10 @@ One can obtain
 The solid is supposed to be isotropic with respect to its unsheared states. Hence, the energy per particle (recall, $\rho = \epsilon n$, and $\epsilon$ is the energy per particle) is a function only of invariants. There are a maximum of three invariants: they are taken to be the particle number density $n$ and the two independent invariants of the shear tensor ${s^a}_b$. The particular combination of these are taken to be
 \bse
 \bea
-s^2 &\defn& \left( \eta^{-1ad}\eta^{-1bc} - \tfrac{1}{3}\eta^{-1ab}\eta^{-1cd}\right)s_{ab}s_{cd}=  \lceil\rbm{s}^2\rceil - \tfrac{1}{3}\lceil\rbm{s}\rceil^2,
+s^2 \defn \left( \eta^{-1ad}\eta^{-1bc} - \tfrac{1}{3}\eta^{-1ab}\eta^{-1cd}\right)s_{ab}s_{cd}=  \lceil\rbm{s}^2\rceil - \tfrac{1}{3}\lceil\rbm{s}\rceil^2,
 \eea
 \bea
-l &\defn&\eta^{-1ab}\eta^{-1cd}\eta^{-1ef}s_{bc}s_{de}s_{fa}= \lceil\rbm{s}^3\rceil.
+l \defn\eta^{-1ab}\eta^{-1cd}\eta^{-1ef}s_{bc}s_{de}s_{fa}= \lceil\rbm{s}^3\rceil.
 \eea
 \ese
 We used the   notation $\lceil\rbm{X}\rceil$ for traces which are taken with $\eta^{-1ab}$ (as opposed to $[\rbm{X}]$ which was used to denote traces with $g^{ab}$): this choice is for simplicity of the resulting formulae and does not lose generality.  
@@ -1688,6 +1727,24 @@ since (\ref{eq:sec:sr-eval-1}) becomes
 \qsubrm{\epsilon}{slow} = \frac{3}{2}\left[ 1 + nx' + \frac{4}{3}s^2y' - 2 lz'\right],
 \eea
 in which a prime is used to denote derivative with respect to the sole argument of the given function.
+
+\cleardoublepage
+\section{The solid action}
+Recall from (\ref{eq:matter-action-material}) that the action for the solid can be written as a tri-variant function whose arguments are the three independent scalar invariants formed from the mixed-components of the pulled-back material metric:
+\bea
+S = \int \dd^4x\, \sqrt{-g}\, \ld\left( [\rbm{k}], [\rbm{k}^2], [\rbm{k}^3]\right).
+\eea
+Our focus in this section is on providing useful ways to construct workable sub-theories from this action.
+
+Suppose we counted the terms by keeping track of the number of derivatives. The pulled-back material metric ${k^a}_b$ has two space-time derivatives, and so the $\qsubrm{n}{th}$-trace has $2n$-inverse-powers of a mass-scale $M$,
+\bea
+[\rbm{k}^n] \sim \frac{1}{M^{2n}}.
+\eea
+We can use this to write the complete list of terms in the solid-action which come with a given power of $M$. Up to sixth-order the Lagrangian density is 
+\bea
+\ld =\frac{1}{M^2} b\,[\rbm{k}] + \frac{1}{M^4} \left(c_1\, [\rbm{k}^2] + c_2\, [\rbm{k}]^2\right) + \frac{1}{M^6}\left(d_1\,[\rbm{k}^3] + d_2\,[\rbm{k}][\rbm{k}^2] + d_3\,[\rbm{k}]^3 \right) + \ldots.
+\eea
+We have introduced the dimensionless coefficients, $\{b, c_i, d_i\}$, to control the strength which which a given term influences the action.
 
 \cleardoublepage
 \section{General isotropic configurations of elastic solids}
@@ -2263,26 +2320,26 @@ Note that
 \label{sec:hyperelasticity}
 The idea of hyper-elasticity \cite{Carter:2006cw} may give an elegant insight as to how to incorporate general coupling between a solid and a scalar field.
 \subsubsection{Hyper-elasticity}
-Suppose the theory can be constructed from a Lagrangian density $\ld$ formed as a function of $(p+1)$ scalar fields and their gradients,
+Suppose the theory is constructed from a Lagrangian density $\ld$ formed as a general function of $({\rm p}+1)$-scalar fields and their space-time gradients,
 \bea
 \label{eq:sec:lag-gen-hyper-nsjk}
-\ld = \ld \left(\phi^0, \phi^1, \ldots, \phi^p,\partial_a\phi^0,\partial_a \phi^1, \ldots,\partial_a \phi^p\right)
+\ld = \ld \left(\phi^0, \phi^1, \ldots, \phi^{\rm p},\partial_a\phi^0,\partial_a \phi^1, \ldots,\partial_a \phi^{\rm p}\right).
 \eea
- where the derivatives are with respect to worldsheet coordinates $\overline{x}^a$, with $a = 0, \ldots, p$. The background has a metric $g_{\mu\nu}$ with $\mu = 0, \ldots, p+q$. Note that the worldsheet has co-dimension $q$. The background induces a metric on the worldsheet 
+The derivatives are with respect to worldsheet coordinates $\overline{x}^a$, with $a = 0, \ldots, {\rm p}$. The background has a metric $g_{\mu\nu}$ with $\mu = 0, \ldots, {\rm p}+q$. Note that the worldsheet has co-dimension $q$. The background induces a metric on the worldsheet 
 \bea
 \label{eq:induces-met-hyper}
 \overline{g}_{ab} = g_{\mu\nu} {x^{\mu}}_{,a}{x^{\nu}}_{,b}.
 \eea
 The determinant $\overline{g}$ of the worldsheet metric is used as the measure with which to integrate the Lagrangian density to give the action:
 \bea
-S = \int \dd^{p+1}\overline{x}\sqrt{|\overline{g}|}\,\ld.
+S = \int \dd^{{\rm p}+1}\overline{x}\sqrt{|\overline{g}|}\,\ld.
 \eea
 The worldsheet metric must have Lorentzian signature, and the field gradients must be independant. This means that the fields can be used as a set of coordinates on the worldsheet, 
 \bea
 \label{hyoer-coord-phi}
 \overline{x}^a = \phi^a,
 \eea
-and thus the Lagrangian density $\ld$ will depend on just the undifferentiated values $\phi^a$ and on the set of induced metric components $\overline{g}_{ab}$ (there will be $\tfrac{1}{2}p(p+1)$ of these).
+and thus the Lagrangian density $\ld$ will depend on just the undifferentiated values $\phi^a$ and on the set of induced metric components $\overline{g}_{ab}$ (there will be $\tfrac{1}{2}{\rm p}({\rm p}+1)$ of these).
 
 The worldsheet energy-momentum tensor will always be given by
 \bea
@@ -2294,8 +2351,8 @@ and the corresponding hyper-elasticity tensor on the world-sheet is
 \label{hyper-ET}
 \mathfrak{C}^{abcd} = \frac{1}{\sqrt{-\overline{g}}}\pd{\sqrt{-\overline{g}}T^{ab}}{\overline{g}_{cd}}.
 \eea
-We should note that the hyper-elasticity tensor is related to the elasticity tensor $E^{abcd}$, but it is not exactly the same. There is a  minor, and one major difference: first, $\mathfrak{C}^{abcd}  \sim - 2E^{abcd}$. Secondly, the elasticity tensor is purely orthogonal (i.e., purely spatial in the sense that $u_aE^{abcd}=0$), whereas the hyper-elasticity tensor is not.
-These worldsheet tensors can be pulled back to give  background space-time tensors via
+We should note that the hyper-elasticity tensor is related to the elasticity tensor $E^{abcd}$, but it is not exactly the same. There is a  minor, and one major difference. First, there is a multiplicative factor of ``$-2$'' that distinguishes them, $\mathfrak{C}^{abcd}  \sim - 2E^{abcd}$. Secondly, the elasticity tensor is purely orthogonal (i.e., purely spatial in the sense that $u_aE^{abcd}=0$), whereas the hyper-elasticity tensor is not.
+These worldsheet tensors can be pulled-back to give  background space-time tensors via
 \bse
 \bea
 T^{\mu\nu} = T^{ab} {x^{\mu}}_{,a}{x^{\nu}}_{,b} = 2\pd{\ld}{\overline{g}_{\mu\nu}} + \ld \overline{g}^{\mu\nu},
@@ -2345,11 +2402,11 @@ g_{\mu\nu} &=& \overline{g}_{\mu\nu} + \perp_{\mu\nu},\\
 &=& \gamma_{\mu\nu} - u_{\mu}u_{\nu} + \perp_{\mu\nu}.
 \eea
 
-For the system to ``be'' classified as hyper-elastic, the system should include a sub-system of ordinary elastic type. That is, all scalar fields except one ($\phi^0$, say) only have space-like gradients; i.e., their configuration gradients satisfy the orthogonality condition (\ref{eq:sec:ortho-condition}). What this means is that
+Now that we have established a technology for dealing with these hyper-elastic materials, we can move back to the main goal of describing what we actually mean by hyper-elastic. For the system to ``be'' classified as hyper-elastic, the system should include a sub-system of ordinary elastic type. That is, all scalar fields except one ($\phi^0$, say) only have space-like gradients; i.e., their configuration gradients satisfy the orthogonality condition (\ref{eq:sec:ortho-condition}). What this means is that
 \bse
 \bea
 \label{eq:sec:single-out-phi0}
-u^a{\phi^A}_{,a}=0,\qquad \mbox{with}\qquad A= 1,\ldots, p,
+u^a{\phi^A}_{,a}=0,\qquad \mbox{with}\qquad A= 1,\ldots, {\rm p},
 \eea
 with $\overline{g}_{ab}u^au^b=-1$, but
 \bea
@@ -2365,29 +2422,38 @@ Using (\ref{eq:worldsheet-special-1}) it is apparent that there are  three ``typ
 \bse
 \label{eq:sec:things-for-lag-to-depend-on-hyper}
 \bea
-\label{eq:sec:g00}
-\overline{g}^{00} &=& \overline{g}^{ab}{\phi^0}_{,a}{\phi^0}_{,b},\\
-\overline{g}^{A0} &=& \overline{g}^{ab}{\phi^A}_{,a}{\phi^0}_{,b},\\
-\overline{g}^{AB} &=& \overline{g}^{ab}{\phi^A}_{,a}{\phi^B}_{,b}.
+\label{eq:sec:things-for-lag-to-depend-on-hyper-a}
+\overline{g}^{00} = \overline{g}^{ab}\mu_a\mu_b,
+\eea
+\bea
+\overline{g}^{A0} = \overline{g}^{ab}{\psi^A}_{a}\mu_b,
+\eea
+\bea
+\overline{g}^{AB} = \overline{g}^{ab}{\psi^A}_{a}{\psi^B}_{b}.
 \eea
 \ese
-Setting
-\bea
-\mu_a = {\phi^0}_{,a},\qquad {\psi^A}_a = {\phi^A}_{,a},
-\eea
-the components (\ref{eq:sec:things-for-lag-to-depend-on-hyper}) become
+we set
 \bse
 \bea
-\overline{g}^{00} &=& \overline{g}^{ab}\mu_a\mu_b,\\
-\overline{g}^{A0} &=& \overline{g}^{ab}{\psi^A}_{a}\mu_b,\\
-\overline{g}^{AB} &=& \overline{g}^{ab}{\psi^A}_{a}{\psi^B}_{b}.
+\label{def-mu-cov}
+\mu_a = {\phi^0}_{,a},
+\eea
+\bea
+{\psi^A}_a = {\phi^A}_{,a}.
 \eea
 \ese
 These are the components of the induced metric on which the Lagrangian $\ld$ can depend. The Lagrangian $\ld$ will be a function of
 \bea
 \ld = \ld\left(\overline{g}^{00},\overline{g}^{A0},\overline{g}^{AB}\right).
 \eea
-Since $\overline{g}^{AB}$ are the components of a $p\times p$ matrix there are $p$ invariants that can be formed from $\overline{g}^{AB}$ alone. There is one invariant that can be formed from $\overline{g}^{A0}$ alone, and $\overline{g}^{00}$ is already an invariant. This is just something to bear in mind before we explicitly give the catalogue of invariants.
+Note that (\ref{eq:sec:single-out-phi0}) implies that
+\bea
+u^a {\psi^A}_{a} = 0.
+\eea
+One can perhaps recognise $\mu_a$ as defined in (\ref{def-mu-cov}) as a space-time covector whose components are the space-time derivatives of a scalar, $\mu_a = \partial_a\phi^0$. We will explicitly refer to this interpretation later on, but also note that $\overline{g}^{00}$ as defined in (\ref{eq:sec:things-for-lag-to-depend-on-hyper-a}) corresponds to the ``kinetic term'' which would appear in the canonical action for the scalar field $\phi^0$; $\overline{g}^{00} = \mu^a\mu_a = \partial^a\phi^0\partial_a\phi^0$.
+
+
+Since $\overline{g}^{AB}$ are the components of a ${\rm p}\times {\rm p}$ matrix there are ${\rm p}$ scalar invariants that can be formed from $\overline{g}^{AB}$ alone. There is one invariant that can be formed from $\overline{g}^{A0}$ alone, and $\overline{g}^{00}$ is already an invariant. This is just something to bear in mind before we explicitly give the catalogue of invariants.
 
 By (\ref{eq:sec:single-out-phi0}), it follows that
 \bea
@@ -2403,12 +2469,7 @@ after writing the worldsheet metric in the usual way,
 Since the Lagrangian only depends on the field gradients ${\phi^a}_{,b}$ via the induced metric components, the generic variation in the Lagrangian density (\ref{eq:sec:lag-gen-hyper-nsjk}) will be given by
 \bea
 \label{eq"lag-var-x-g}
-\delta\ld = \pd{\ld}{\phi^a}\delta\phi^a+\pd{\ld}{\overline{g}^{ab}}\delta\overline{g}^{ab}.
-\eea
-After separating out the coordinates (\ref{eq:worldsheet-special-1}), this variation becomes
-\bea
-\label{var-lag-hyper}
-\delta\ld = \pd{\ld}{\phi^0}\delta\phi^0 + \pd{\ld}{\phi^A}\delta\phi^A + L_{00}\delta\overline{g}^{00} +2L_{A0}\delta\overline{g}^{A0} +L_{AB}\delta\overline{g}^{AB},
+\delta\ld = \pd{\ld}{\phi^a}\delta\phi^a+L_{ab} \delta\overline{g}^{ab}.
 \eea
 in which we defined the partial derivatives of $\ld$ with respect to $\overline{g}^{ab}$ as
 \bse
@@ -2422,6 +2483,13 @@ The contravariant components of $L^{ab}$ are given by
 \eea
 \ese
 The tensor $L_{ab}$ is a worldsheet tensor.
+After separating out the coordinates (\ref{eq:worldsheet-special-1}), the variation (\ref{eq"lag-var-x-g}) becomes
+\bea
+\label{var-lag-hyper}
+\delta\ld = \pd{\ld}{\phi^0}\delta\phi^0 + \pd{\ld}{\phi^A}\delta\phi^A + L_{00}\delta\overline{g}^{00} +2L_{A0}\delta\overline{g}^{A0} +L_{AB}\delta\overline{g}^{AB}.
+\eea
+
+
 
 These are the required ingredients for computing the energy-momentum tensor (\ref{hyper-EMT}). One finds
 \bea
@@ -2447,6 +2515,47 @@ p^{ab} = \gamma^{ab}\ld - 2 {\gamma^a}_c{\gamma^b}_dL^{cd}.
 \eea
 \ese
 The existence of the $L_{A0}$ term in (\ref{var-lag-hyper})   gives rise to the heat flux contribution (\ref{eq:sec:hyer-heat}). Later on we will give an example where the Lagrangian density separates into  ``scalar'' and ``solid'' terms with no interaction between the two: this will switch off the heat flux. The $L_{00}$ term also gives rise to the extra contribution to the energy density (\ref{eq:sec:hyper-en-hfdkhfg}) compared to the equivalent expression for a perfect solid which we gave in (\ref{CQPF-rho}). 
+
+We can use this to compute the class of forces to the conservation equations due to the explicit mixing term, $L_{A0}$. Suppose that we write the energy-momentum tensor (\ref{eq:sec:etm-hyper-general}) as
+\bea
+T^{ab} = \breve{T}^{ab} + \widehat{T}^{ab},
+\eea
+in which the first term includes the pure time-like and pure space-like contributions present from the solid and scalar without any mixing, and the second term is the term explicitly present due to their mixing:
+\bse
+\bea
+\label{mizing-Tab-breve}
+\breve{T}^{ab} = \rho u^au^b  + p^{ab},
+\eea
+\bea
+\label{mizing-Tab-hat}
+\widehat{T}^{ab} = 2q^{(a}u^{b)}.
+\eea
+\ese
+One of the important points we want to emphasise about this construction is that $\widehat{T}^{ab}$ contains the deviations of the full energy-momentum tensor $T^{ab}$ from its perfect solid form (note that the perfect solid, fluid, and scalar field cases are contained within an expression of the form $\breve{T}^{ab}$).
+Then, the conservation of $T^{ab}$ implies that the divergence of (\ref{mizing-Tab-breve}) satisfies a forced conservation equation given by
+\bea
+\nabla_a\breve{T}^{ab} = f^b,
+\eea
+in which we defined the force to be proportional to the divergence of the mixing contribution to the overall energy-momentum tensor,
+\bea
+f^b \defn -\nabla_a\widehat{T}^{ab}.
+\eea
+By computing the divergence of (\ref{mizing-Tab-hat}) one finds
+\bea
+-f^b = u^b \overline{\nabla}_aq^a + {\gamma^b}_a \dot{q}^a + 2{K^c}_a{\gamma^{(a}}_cq^{b)},
+\eea
+from which one obtains the two independent projections of the force: 
+\bse
+\bea
+\label{force-projs-a}
+u_af^a = \overline{\nabla}_aq^a,
+\eea
+\bea
+\label{force-projs-b}
+{\gamma^c}_b f^b = - {\gamma^c}_a\dot{q}^a - 2 {K^d}_a{\gamma^{(c}}_dq^{a)}.
+\eea
+\ese
+Notice that (\ref{force-projs-a}) informs us that $q^a$ is required to be space-varying for the time-like projection of the conservation of $\breve{T}^{ab}$ to be broken. We remind that $q^a$ is defined from the $L_{ab}$ via (\ref{eq:sec:hyer-heat}).
 
 To be able to compute the hyper-elasticity tensor (\ref{hyper-ET}) one also needs
 \bea
@@ -2547,17 +2656,24 @@ Using (\ref{eq:hyper-hadamar-1}) for the hyper-Hadamard tensor, the characterist
 \subsubsection{Separable case}
 A simplified example is where the Lagrangian splits as
 \bea
-\ld(\phi^0,\ldots, \phi^p,{\phi^0}_{,a},\ldots,{\phi^p}_{,a})  = \qsubrm{\ld}{s}(\phi^0,{\phi^0}_{,a}) + \qsubrm{\ld}{e}(\phi^1, \ldots, {\phi^p}_{,a},{\phi^1}_{,a},\ldots,{\phi^p}_{,a}).
+\label{eq:sec:lag-sep-proto}
+\ld(\phi^0,\ldots, \phi^p,{\phi^0}_{,a},\ldots,{\phi^p}_{,a})  = \qsubrm{\ld}{s}(\phi^0,{\phi^0}_{,a}) + \qsubrm{\ld}{e}(\phi^1, \ldots, {\phi^p},{\phi^1}_{,a},\ldots,{\phi^p}_{,a}).
 \eea
-That is,  $\qsubrm{\ld}{s}$ is only dependent on $\phi^0$ and its space-time gradient (which includes its time-like gradient), and $\qsubrm{\ld}{e}$ is only dependent of the scalars which don't have a time-like gradient (that makes $\qsubrm{\ld}{e}$ the action for an elastic solid). With this setup, $\qsubrm{\ld}{s}$ is   the Lagrangian for a ``normal'' scalar field (generically of $k$-essence type), since it depends only on $\phi^0$ and
+That is,  $\qsubrm{\ld}{s}$ is only dependent on $\phi^0$ and its space-time gradient (which includes its time-like gradient), and $\qsubrm{\ld}{e}$ is only dependent of the scalars which don't have a time-like gradient. This restruction  makes $\qsubrm{\ld}{e}$ the Lagrangian density for an elastic solid. With this setup, $\qsubrm{\ld}{s}$ is   the Lagrangian for a ``normal'' scalar field (generically of $k$-essence type), since it depends only on $\phi^0$ and
 \bea
 \mu_a = {\phi^0}_{,a},
 \eea
-the gradient 1-form.
-Hence, (\ref{eq:sec:g00}) becomes
+the gradient 1-form. 
+Hence, (\ref{eq:sec:things-for-lag-to-depend-on-hyper-a}) becomes
 \bea
 \overline{g}^{00} = \overline{g}^{ab}\mu_a\mu_b = - \mu^2.
 \eea
+This is just the ``kinetic scalar'' corresponding to the scalar field $\phi^0$.
+Thus, in a more familiar language, we are asking for the Lagrangian density (\ref{eq:sec:lag-sep-proto}) to split as
+\bea
+\ld = \qsubrm{\ld}{s}\left( \phi^0, - \mu^2\right) + \qsubrm{\ld}{e}\left(\phi^A, \overline{g}^{AB}\right).
+\eea
+The first term is the general Lagrangian for a $k$-essence scalar field theory, and the second is a general elastic solid Lagrangian of the type we have discussed throughout the entire review.
 
 Since we are working in the separable case, neither $\qsubrm{\ld}{s}$ or $\qsubrm{\ld}{e}$ will depend on $\overline{g}^{0A}$; this means that the ``entrainment'' effect vanishes, and 
 \bea
@@ -2571,11 +2687,12 @@ L_{00} = \pd{\ld}{\overline{g}^{00}} = - \pd{\qsubrm{\ld}{s}}{\mu^2},
 and
 \bea
 \label{eq:sec:sep-press-find}
-L_{AB} = \pd{\qsubrm{\ld}{e}}{\overline{g}^{AB}} = \tfrac{1}{2}\left( \qsubrm{\ld}{e} \gamma_{AB} - P_{AB}\right),
+L_{AB} = \pd{ {\ld}{ }}{\overline{g}^{AB}} = \tfrac{1}{2}\left( \qsubrm{\ld}{e} \gamma_{AB} - P_{AB}\right),
 \eea
 \ese
 where $P_{AB}$ is the pressure tensor of the medium, definable as
 \bea
+\label{sep-press-case-dhsjkhk1}
 P^{AB} = \frac{2}{\sqrt{|\gamma|}}\pd{\sqrt{|\gamma|}\qsubrm{\ld}{e}}{\gamma_{AB}},
 \eea
 in clear analogy with the worldsheet energy-momentum tensor (\ref{hyper-EMT}). Note that we have used (\ref{eq:sec:overlineg-gamma}) to set $\overline{g}_{AB} = \gamma_{AB}$.
@@ -2645,9 +2762,12 @@ In this separated case the cross-component of the characteristic matrix (\ref{ch
 \mathcal{Q}_{0A}=0.
 \eea
 This gives a decoupling of the characteric modes $\zeta^a$ for the scalar and elastic parts.
-\subsubsection{Remark on fluids}
-We would like to remark about perfect fluids. A perfect fluid is characterised by the Lagrangian only being a function of the determinant of the material metric: in the language of this section, that is $\qsubrm{\ld}{e} = \qsubrm{\ld}{e}(|\gamma_{AB}|)$, where $|\gamma_{AB}|$ is supposed to be the determinant of $\gamma_{AB}$.
-It is useful to recall the identity
+\subsubsection{Reduction to the fluid case}
+We would like to remark about the reduction of the theory to include only perfect fluids. A perfect fluid is characterised by the Lagrangian only being a function of the determinant of the material metric: in the language of this section, that is 
+\bea
+\qsubrm{\ld}{e} = \qsubrm{\ld}{e}(|\gamma_{AB}|),
+\eea
+where $|\gamma_{AB}|$ denotes the determinant of $\gamma_{AB}$. It is useful to recall the identity
 \bea
 \pd{|\gamma|}{\gamma^{AB}} = - |\gamma|\gamma_{AB}.
 \eea
@@ -2655,11 +2775,15 @@ In this case the spatial parts of (\ref{L_ab_under-one}) evaluate to
 \bea
 L_{AB} = - \qsubrm{L}{F}\gamma_{AB},\qquad \qsubrm{L}{F} \defn |\gamma|\pd{\qsubrm{\ld}{e}}{|\gamma|},
 \eea
-and the pressure tensor becomes
+and the equivalent of (\ref{sep-press-case-dhsjkhk1}) is
+\bea
+P_{AB} = \left( \qsubrm{\ld}{e} + 2 \qsubrm{L}{F}\right)\gamma_{AB}.
+\eea
+The pressure tensor becomes
 \bea
 P^{ab} = \qsubrm{P}{F} \gamma^{ab},
 \eea
-with
+with the pressure scalar being given by
 \bea
 \qsubrm{P}{F} = \qsubrm{\ld}{e} + 2 \qsubrm{L}{F}.
 \eea
@@ -2707,8 +2831,8 @@ I_2  =   \overline{g}{}{^0}_0\overline{g}{}{^A}_A-      \overline{g}{}{^A}_0\ove
 \eea
 \ese
 
-\cleardoublepage
-\section{Generalization away from orthogonal mappings}
+
+\subsection{Generalization away from orthogonal mappings}
 Our aim here is to use the previous sections results and ideas to construct a theory for whom the orthogonality of the mappings (\ref{eq:sec:ortho-condition}) doesn't hold. We will keep to the notion of a material metric, $k_{AB}$, and coordinates $\phi^A$ on the material space; we carry on using (\ref{eq:sec:config_gradient}) to define the configuration gradients:
 \bea
 {\phi^A}_{,a} = {\psi^A}_a.
