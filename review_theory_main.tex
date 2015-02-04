@@ -1,11 +1,11 @@
 
-\documentclass[a4paper, 12pt, twoside]{article}
+\documentclass[a4paper, 12pt]{article}
 \NeedsTeXFormat{LaTeX2e}[1996/06/01]
 \usepackage[usenames]{color} 
 \usepackage{amsmath,amssymb}
 %\usepackage{times}
 \usepackage[top=2.5cm,left=3cm,right=3cm,bottom=3cm,foot=1cm,]{geometry}
-%\linespread{1.3}
+\linespread{1.3}
 \usepackage[breaklinks, colorlinks, citecolor=blue]{hyperref}
 \usepackage{multirow,array,graphicx}
 \usepackage{sidecap,epstopdf,dcolumn}
@@ -26,16 +26,7 @@
 %\fancyfoot[RO]{\thepage}
 %\fancyfoot[LE]{\thepage}
 %\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}{}}
-\pagestyle{fancy}
-\fancyhf{}
-%\fancyhead[LE,RO]{Share\LaTeX}
-%\fancyhead[RE,LO]{Guides and tutorials}
-\fancyhead[CE,CO]{\leftmark}
-%\fancyhead[LE,RO]{\thepage}
-\fancyhead[CE]{\rightmark}
-\fancyfoot[LE,RO]{\thepage}
-\renewcommand{\headrulewidth}{0.5pt}
-\renewcommand{\footrulewidth}{0.5pt}
+
 
 \usepackage{tikz}
 \usetikzlibrary{intersections, shapes, arrows, positioning}
@@ -47,11 +38,8 @@
 
 
 \begin{document}
-
-
-%\title{{\bf Dark energy with a map: \\ Importing techniques from non-linear elastic media into modified gravity}}
-\title{The theory of relativistic solids and their applications 1: the theory}
-\author{\sc{Jonathan A. Pearson\footnote{E-mail: \href{mailto:j.pearson@nottingham.ac.uk}{j.pearson@nottingham.ac.uk}}}\\ \\ \it{School of Physics \& Astronomy} \\ \it{University of Nottingham} \\ \it{Nottingham, NG7 2RD} \\ and \\ \it{Centre for Particle Theory,} \\\it{Department of Mathematical Sciences,}\\\it{Durham University, South Road,} \\\it{Durham, DH1 3LE, U.K.} \\ \\  }
+\title{\sc Relativistic solids and their applications 1: reviewing the construction}
+\author{\sc{Jonathan A. Pearson\footnote{E-mail: \href{mailto:j.pearson@nottingham.ac.uk}{j.pearson@nottingham.ac.uk}}}\\ \\ \it{School of Physics \& Astronomy} \\ \it{University of Nottingham} \\ \it{Nottingham, NG7 2RD} }
 
 \date{\today}
 
@@ -59,9 +47,14 @@
 
 \maketitle
 \begin{abstract}
-\input{abstract}
+The non-relativistic theory of solids is highly developed, has extensive applications, and is very intuitive. On the other hand, the relativistic theory of solids is relatively under-developed and has not been applied to many situations. The purpose of this article is to act as a dictionary to translate ideas and mathematics between the communities of neutron star and cosmologists. \note{Purpose}, \note{Highlights}, 
 \end{abstract}
-\cleardoublepage
+%\clearpage
 \tableofcontents
-
+%\clearpage
+\input{review_theory}
 \clearpage
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{JHEP}
+\bibliography{nle}
+\end{document}

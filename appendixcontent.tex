@@ -716,3 +716,205 @@ And so
 \bea
 \delta {R^a}_{bec} = \overline{g}^{ad}\left( \delta g_{f(b}{R^f}_{d)ce} + \nabla_c\nabla_{[d}\delta g_{b]e} + \nabla_e\nabla_{[b}\delta g_{d]c} \right)
 \eea
+
+
+\section{Skyrmion and ferromagnetic dark energy}
+ In this section we want to review some  ``material models'' which have been extensively studied in the literature, albeit within the context of field theory and particularly within the soliton community. When a soliton is constructed in a theory mildly more complicated than a (real) scalar field theory it is usual for the language of ``mappings'' and an ``extra metric'' to be used. The difference in topologies of the space-time and field manifolds ends up introducing interesting topological soliton solutions.
+
+As a first non-trivial example, in the Skyrmion model it is natural to speak of a map $\phi : M \rightarrow N$, where $M$ is the 4D space-time manifold whose (pseudo-Riemannian) metric is $g_{\mu\nu}$ and $N$ is the 3D manifold whose Riemannian metric is $\gamma_{IJ}$. The  Lagrangian density for the Skyrmion model is given by
+\bse
+\label{eq:sec:lag-sky-model}
+\bea
+\label{eq:sec:lag-sky}
+\qsubrm{\ld}{Sky} = - \half [\rbm{S}] + \frac{1}{4}\alpha^2\left([\rbm{S}^2] -    [\rbm{S}]^2\right),
+\eea
+where we have used the bracket-notation for the trace, for example $[\rbm{S}] = {S^{\alpha}}_{\alpha}$, and where the rank-2 tensor in question is
+\bea
+\label{sky-pull-b-metric}
+S_{\alpha\beta} = \gamma_{IJ} \partial_{\alpha}\phi^I \partial_{\beta}\phi^J.
+\eea
+\ese
+See \cite{pdes_gr_rendall, Bizon:2007qz} for a presentation of the Skyrmion model written in this way. This is the pull-back of the metric $\gamma_{IJ}$. Note that we are using the mostly-positive signature. One is able to form Skyrmion configurations in space-time: these are topological solitons \cite{dur4361} which have been extensively studied in the field theory literature, mostly for the purposes of modelling atomic nuclei. It is therefore rather clear that this setup produces extended objects in space-time: these are \textit{materials}. 
+
+There exists multi-scalar generalizations of the galileon and Horndeski theories, for example \cite{Deffayet:2010zh, Padilla:2010de, Hinterbichler:2010xn, Padilla:2012dx}. There one of the main building blocks is $X_{IJ}  = \tfrac{1}{2}\nabla_{\alpha}\phi_I \nabla^{\alpha}\phi_J$. \textbf{Is this equivalent to (\ref{sky-pull-b-metric}) or not? I think this is the push-forward of $g$, rather than (\ref{sky-pull-b-metric}) which is the pull-back of $h$ }. There is some related work in \cite{Padilla:2010ir}. Gibbons made a note about energy conditions in the Skyrme model \cite{Gibbons:2003cp}, and concluded that the Skyrme term probably isn't a good dark energy candidate.
+
+A simple sub-model is Lagrangian with $\alpha=0$ and metric $\gamma_{IJ} =  \tfrac{1}{2}\delta_{IJ}$, where $\delta_{IJ}$ is the Kronecker-delta. The Lagrangian density is thus
+\bea
+\ld = -\tfrac{1}{4}\delta_{IJ} \partial^{\mu}\phi^I\partial_{\mu}\phi^J = - \frac{1}{4}\partial_{\mu}\gbm{\phi}\cdot\partial^{\mu}\gbm{\phi}.
+\eea
+In the field theory literature this is referred to as an $O(3)$-sigma model. When $\gbm{\phi}$ is a unit vector the theory describes the dynamics of a (non-relativistic) ferromagnet; this unit constraint is usually enforced via a Lagrange multiplier:
+\bea
+\label{eq:sec_o3-lag}
+\ld =  - \frac{1}{4}\partial_{\mu}\gbm{\phi}\cdot\partial^{\mu}\gbm{\phi} + \lambda\left(\eta^2-\gbm{\phi}\cdot\gbm{\phi}\right).
+\eea
+
+The ferromagnets described by this theory are known to posess exact analytic solutions which are rational functions in the complex number $z = x + \ci y$, Hopf knots,  isolated and leapfrogging vortex rings (in a modified ``anisotropic'' version of the theory). The equations of motion that follow from the Lagrangian density (\ref{eq:sec_o3-lag}) are
+\bea
+\square\gbm{\phi} +\eta^{-2} \left( \nabla^{\mu}\gbm{\phi}\cdot\nabla_{\mu}\gbm{\phi}\right)\gbm{\phi}=\rbm{0}.
+\eea
+We enforce the unit constraint, thus removing $\lambda$ from the equations of motion, by computing the second derivative of $\gbm{\phi}\cdot\gbm{\phi}=\eta^2$, and using the resulting formula in the equation of motion. 
+
+In \cite{Shchigolev:2013gfa} the cosmology of sigma-models are computed.
+
+The solutions of field theories such as the Skyrmion model (\ref{eq:sec:lag-sky-model}) which are generally searched for are  localised objects (they are the topological solitons). These solutions can be thought about as providing some energy-momentum tensor, $T_{\mu\nu}$, which sits on the right-hand-side of the Einstein field equations.
+
+For the perturbations of the two relevant invariants which appear in the Lagrangian we obtain
+\bse
+\label{eq:sec:per-sky-terms}
+\bea
+\delta\left({S^{\alpha}}_{\alpha}\right) = g^{\mu\nu} \delta S_{\mu\nu} - S^{\mu\nu} \delta g_{\mu\nu},
+\eea
+\bea
+\delta\left(S^{\alpha\beta}S_{\alpha\beta} \right) = 2 S^{\mu\nu} \delta S_{\mu\nu} - 2{S^{(\mu}}_{\alpha}S^{\nu)\alpha}\delta g_{\mu\nu}.
+\eea
+Also, the perturbation of the pulled-back metric (\ref{sky-pull-b-metric}) is 
+\bea
+\delta S_{\mu\nu} = \partial_{\mu}\phi^I\partial_{\nu}\phi^J\delta \gamma_{IJ} + 2\gamma_{IJ}\partial_{(\mu}\phi^I \partial_{\nu)}\delta\phi^J.
+\eea
+\ese
+Using (\ref{eq:sec:per-sky-terms}) the variation of the Skyrmion Lagrangian density (\ref{eq:sec:lag-sky}) can be written as
+\bea
+\label{eq:sec:var-sky-lah}
+\delta \ld = \half \mathcal{E}^{\mu\nu}\partial_{\mu}\phi^I\partial_{\nu}\phi^J\delta \gamma_{IJ} -\nabla_{(\mu} \left(   \mathcal{E}^{\mu\nu} \gamma_{IJ}\partial_{\nu)}\phi^I  \right)\delta\phi^J- \half  T^{\mu\nu} \delta g_{\mu\nu}  ,
+\eea
+after integrating by parts, and by setting
+\bse
+\bea
+\mathcal{E}^{\mu\nu} \defn      \alpha^2 S^{\mu\nu}  -\left(1+ \alpha^2{S^{\alpha}}_{\alpha}\right)g^{\mu\nu}   ,
+\eea
+\bea
+T^{\mu\nu}\defn \alpha^2 {S^{(\mu}}_{\alpha}S^{\nu)\alpha} -  \left(1+ \alpha^2{S^{\alpha}}_{\alpha}\right)S^{\mu\nu} .
+\eea
+\ese
+The equations of motion of the $\phi^I$ can be read off from (\ref{eq:sec:var-sky-lah}) as
+\bea
+\nabla_{(\mu} \left(   \mathcal{E}^{\mu\nu} \gamma_{IJ}\partial_{\nu)}\phi^I  \right)=0.
+\eea
+
+\section{Higher order perturbations}
+This is a quick review of language obtained from some of Carter's notes \cite{Carter:1997pb} on brane dynamics.  We note that a very recent article \cite{Gao:2014ula} obtained some similar expressions, with applications to dRGT massive gravity in mind. There are also papers with higher-order cosmological perturbation theory in mind (see e.g., \cite{Bruni:1996im}).
+
+Let $\xi^{\mu}$ be the components of a vector at a position with coordinates $x^{\mu}$. Then let there be an affinely parameterized geodesic (with affine parameter $\epsilon$) beginning at $x^{\mu}$ and for whom the initial normalised tangent vector is the $\xi^{\mu}$. What this means is that we shall have initial conditions $x^{\mu}_{\{0\}} = x^{\mu}, \dot{x}^{\mu}_{\{0\}} = \xi^{\mu}$ corresponding to the geodesic equation
+\bea
+\ddot{x}^{\mu}_{\{\epsilon\}} +\cs{\mu}{\alpha}{\beta}{}_{\{\epsilon\}}\dot{x}^{\alpha}_{\{\epsilon\}} \dot{x}^{\beta}_{\{\epsilon\}} =0.
+\eea
+The solution will be given by an expression of the form
+\bea
+x^{\mu}_{\{\epsilon\}} = x^{\mu} + \epsilon \$_{\xi} x^{\mu} + \epsilon^2\tfrac{1}{2!} \$_{\xi}^2x^{\mu}+ \epsilon^3\tfrac{1}{3!} \$_{\xi}^3x^{\mu} + \mathcal{O}(\epsilon^4),
+\eea
+with $\$_{\xi}$ denoting differentiation with respect to the affine parameter given that the initial tangent is $\xi^{\mu}$. For the first, second, and third orders one has
+\bse
+\label{eq:diff_doll_x}
+\bea
+\$_{\xi} x^{\mu}  = \xi^{\mu},
+\eea
+\bea
+\$_{\xi}^2 x^{\mu} = - \cs{\mu}{\lambda}{\nu}\xi^{\lambda}\xi^{\nu},
+\eea
+\bea
+\$_{\xi}^3 x^{\mu} = \left( \cs{\mu}{\lambda}{\alpha}\cs{\lambda}{\rho}{\sigma} - \partial_{\sigma}\cs{\mu}{\alpha}{\rho} \right)\xi^{\alpha}\xi^{\rho}\xi^{\sigma}.
+\eea
+\ese
+Carter's plan was to use this to create a systematic calculus which can be used to generalize perturbation theory to higher orders. To explain this further, we are well aware that to first order in the displacement vector,  the infinitesimal Lagrangian $\lp$ and Eulerian $\ep$ perturbations are related via the Lie derivative,
+\bea
+\lp - \ep = \lied{\xi},
+\eea
+in which $\lied{\xi}$ denotes the Lie derivative operator along the vector $\xi^{\mu}$.
+One then wants to construct finite Lagrangian $\qsubrm{\Delta}{L}$ and Eulerian $\qsubrm{\Delta}{E}$ perturbations in some expansion
+\bse
+\bea
+\qsubrm{\Delta}{L} &=& \lp + \tfrac{1}{2}\qsubrm{\delta}{L}^2 + \ldots,\\
+\qsubrm{\Delta}{E} &=& \ep + \tfrac{1}{2}\qsubrm{\delta}{E}^2 + \ldots.
+\eea
+\ese
+The required expansion would be of the form
+\bea
+\qsubrm{\Delta}{L} - \qsubrm{\Delta}{E} = \$_{\xi} + \tfrac{1}{2}\$_{\xi}^2 + \tfrac{1}{3!}\$_{\xi}^3 + \ldots.
+\eea
+Notice that to first order in the displacement vectors, $\qsubrm{\Delta}{L} - \qsubrm{\Delta}{E} = \lied{\xi}$.
+
+The form of the ``action'' of the derivatives $\$_{\xi}^n$ on space-time field will be different depending on the types of fields (e.g., scalar, vector, and tensor). The displacement $x^{\mu} \mapsto x^{\mu}_{\{\epsilon\}}$ will determine a pullback mapping of a space-time field. For example, for a scalar, vector, and rank-2 tensor fields, the mapping engenders
+\bse
+\bea
+\phi &\longmapsto& \phi_{\{\epsilon\}}\{x\},\\
+A_{\mu} &\longmapsto& A_{\{\epsilon\}}{}_{\mu}\{x\},\\
+B_{\mu\nu} &\longmapsto& B_{\{\epsilon\}}{}_{\mu\nu}\{x\},
+\eea
+\ese
+with
+\bse
+\bea
+\phi_{\{\epsilon\}}\{x\} &=& \phi\{x_{\{\epsilon\}}\},\\
+A_{\{\epsilon\}}{}_{\mu}\{x\} &=& A_{\{\epsilon\}}{}_{\nu}\{x_{\{\epsilon\}}\}x^{\nu}_{\{\epsilon\},\mu},\\
+B_{\{\epsilon\}}{}_{\mu\nu}\{x\} &=& B_{\{\epsilon\}}{}_{\alpha\beta}\{x_{\{\epsilon\}}\}x^{\alpha}_{\{\epsilon\},\mu}x^{\beta}_{\{\epsilon\},\nu}.
+\eea
+\ese
+It is evident that we will need the components of the Jacobians, $x^{\nu}_{\{\epsilon\},\mu}$, which via (\ref{eq:diff_doll_x}) work out as
+\bea
+x^{\mu}_{\{\epsilon\},\lambda} = {\delta^{\mu}}_{\lambda} + \epsilon{\xi^{\mu}}_{,\lambda} - \tfrac{1}{2}\epsilon^2\left( \cs{\mu}{\nu}{\rho}{}_{,\lambda}\xi^{\nu}\xi^{\rho} + 2 \cs{\mu}{\nu}{\rho}\xi^{(\nu}{\xi^{\rho)}}_{,\sigma}\right) + \mathcal{O}(\epsilon^3)
+\eea
+In the case of a scalar field $\phi$ the expansion will be of the form
+\bea
+\phi_{\{\epsilon\}} = \phi + \phi_{,\mu}\left(x^{\mu}_{\{\epsilon\}} - x^{\mu} \right) + \tfrac{1}{2}\phi_{,\mu\nu}\left(x^{\mu}_{\{\epsilon\}} - x^{\mu} \right)\left(x^{\nu}_{\{\epsilon\}} - x^{\nu} \right) + \mathcal{O}(\epsilon^2).
+\eea
+
+
+The expansion  to higher order in the displacement vectors for a scalar $\phi$, vector $A_{\mu}$, and rank-2 tensor $B_{\mu\nu}$, are 
+\bse
+\label{higher_1st}
+\bea
+\phi_{\{\epsilon\}} = \phi + \epsilon \$_{\xi}\phi + \tfrac{1}{2}\epsilon^2\$_{\xi}^2\phi + \mathcal{O}(\epsilon^3),
+\eea
+\bea
+A_{\{\epsilon\}}{}_{\mu} = A_{\mu} + \epsilon \$_{\xi}A_{\mu} + \tfrac{1}{2}\epsilon^2\$_{\xi}^2A_{\mu} + \mathcal{O}(\epsilon^3),
+\eea
+\bea
+B_{\{\epsilon\}}{}_{\mu\nu} = B_{\mu\nu} + \epsilon \$_{\xi}B_{\mu\nu} + \tfrac{1}{2}\epsilon^2\$_{\xi}^2B_{\mu\nu} + \mathcal{O}(\epsilon^3).
+\eea
+\ese
+The contributions to first order in $\xi^{\mu}$ are
+\bse
+\bea
+\$_{\xi}\phi = \xi^{\mu}\nabla_{\mu}\phi,
+\eea
+\bea
+\$_{\xi}A_{\mu}  = \xi^{\nu}\nabla_{\nu}A_{\mu} + A_{\nu}\nabla_{\mu}\xi^{\nu},
+\eea
+\bea
+\$_{\xi}B_{\mu\nu} = \xi^{\rho}\nabla_{\rho}B_{\mu\nu} + B_{\rho\nu}\nabla_{\mu}\xi^{\rho} + B_{\mu\rho}\nabla_{\nu}\xi^{\rho};
+\eea
+\ese
+and to second order in $\xi^{\mu}$ are
+\bse
+\bea
+\$_{\xi}^2\phi = \xi^{\mu}\xi^{\nu}\nabla_{\mu}\nabla_{\nu}\phi,
+\eea
+\bea
+\$_{\xi}^2A_{\mu} = \xi^{\nu}\xi^{\rho}\left( \nabla_{\rho}\nabla_{\nu}A_{\mu} - {R_{\mu\nu}}^{\lambda}{}_{\rho}A_{\lambda} \right) + 2 \xi^{\nu}\left( \nabla_{\mu}\xi^{\rho}\right)\nabla_{\nu}A_{\rho},
+\eea
+\bea
+\$_{\xi}^2B_{\mu\nu} &=& \xi^{\rho}\xi^{\sigma}\left( \nabla_{\rho}\nabla_{\sigma}B_{\mu\nu} - {R_{\mu\nu}}^{\lambda}{}_{\sigma}B_{\lambda\nu} - {R_{\nu\rho}}^{\lambda}{}_{\sigma}B_{\mu\lambda} \right)\nonumber\\
+&& + 2 \xi^{\rho}\left( \nabla_{\mu}\xi^{\lambda}\nabla_{\rho}B_{\lambda\nu} + \nabla_{\nu}\xi^{\lambda}\nabla_{\rho}B_{\mu\lambda} \right) + 2 B_{\rho\sigma}\nabla_{\mu}\xi^{\rho}\nabla_{\nu}\xi^{\sigma}.
+\eea
+\ese
+The Riemann tensor is defined via
+\bea
+\left(\nabla_{\mu}\nabla_{\nu}-\nabla_{\mu}\nabla_{\nu}\right)A_{\rho} = - {R_{\mu\nu}}^{\lambda}{}_{\rho}A_{\lambda}.
+\eea
+We remark that the first order contributions (\ref{higher_1st}) are just the Lie derivatives. However, for example, the second Lie derivative of a scalar does not coincide with the second dollar-derivative of a scalar:
+\bea
+\lied{\xi}^2\phi = \$_{\xi}^2\phi + \left( \xi^{\mu}\nabla_{\mu}\xi^{\nu}\right)\nabla_{\nu}\phi.
+\eea
+As an important example of a symmetric rank-2 tensor, the case of the space-time metric works out as
+\bea
+g_{\{\epsilon\}\mu\nu} = g_{\mu\nu} +\epsilon \$ g_{\mu\nu} + \tfrac{1}{2}\epsilon^2\$^2g_{\mu\nu} + \mathcal{O}(\epsilon^2),
+\eea
+with
+\bse
+\bea
+\$ g_{\mu\nu}  = 2\nabla_{(\mu}\xi_{\nu)},
+\eea
+\bea
+\$^2 g_{\mu\nu}  = 2 \left( \nabla_{(\mu}\xi^{\rho}\right) \nabla_{\nu)}\xi_{\rho} - 2 \xi^{\rho}\xi^{\sigma}R_{\mu\rho\nu\sigma}.
+\eea
+\ese

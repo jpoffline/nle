@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: review_theory_main.aux
+The style file: JHEP.bst
+Database file #1: nle.bib
+Repeated entry---line 790 of file nle.bib
+ : @article{Frauendiener:2007yx
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1031 of file nle.bib
+ : @article{Frauendiener:2007yx
+ :                             ,
+I'm skipping whatever remains of this entry
+You've used 40 entries,
+            2166 wiz_defined-function locations,
+            779 strings with 9036 characters,
+and the built_in function-call counts, 11880 in all, are:
+= -- 1267
+> -- 292
+< -- 0
++ -- 116
+- -- 76
+* -- 880
+:= -- 1563
+add.period$ -- 42
+call.type$ -- 40
+change.case$ -- 39
+chr.to.int$ -- 0
+cite$ -- 40
+duplicate$ -- 650
+empty$ -- 1131
+format.name$ -- 76
+if$ -- 3092
+int.to.chr$ -- 0
+int.to.str$ -- 40
+missing$ -- 148
+newline$ -- 124
+num.names$ -- 40
+pop$ -- 147
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 492
+stack$ -- 0
+substring$ -- 760
+swap$ -- 300
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 84
+width$ -- 42
+write$ -- 398
+(There were 2 error messages)
