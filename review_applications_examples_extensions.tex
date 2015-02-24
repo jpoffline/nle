@@ -1,3 +1,138 @@
+\subsection{Exact non-linear equations of motion}
+This is based on the discussion in \cite{Carter:1977qf}, and the aim is to compute the equations of motion for General Relativity sourced by a non-linear elastic solid.
+
+Start off with the matter flow velocity
+\bea
+u^a = \frac{\dd x^a}{\dd\tau},
+\eea
+normalised via
+\bea
+u^au_a = -c^2.
+\eea
+Now introduce the flow gradient tensor $v_{ab}$ via
+\bea
+u_{a;b} = v_{ab} - \tfrac{1}{c^2}\dot{u}_au_b,
+\eea
+where
+\bea
+\dot{u}_a = u^bu_{a;b}
+\eea
+is the acceleration vector. The flow gradient tensor is orthogonal to the flow,
+\bea
+u^av_{ab}=0.
+\eea
+Let $f_{ab}$ be an orthogonal covariant tensor. Then the Lie derivative of $f_{ab}$ along the direction of the flow velocity is
+\bea
+\lied{u}f_{ab} = {\gamma^c}_a{\gamma^d}_b u^ef_{cd;e} + f_{cb}{v^c}_a + f_{ac}{v^c}_b.
+\eea
+One has
+\bea
+\label{eq:liedu-gamma-theta}
+\lied{u}\gamma_{ab} = 2\theta_{ab},
+\eea
+where $\theta_{ab}$ is related to the flow gradient $v_{ab}$ via 
+\bea
+v_{ab} = \theta_{ab} + \omega_{ab},
+\eea
+with
+\bea
+\theta_{[ab]} = 0,\qquad \omega_{(ab)}=0.
+\eea
+From the Ricci identity
+\bea
+u_{a;[b;c]} = \tfrac{1}{2}u_d{R^d}_{abc}
+\eea
+one obtains the Lie derivative of the flow gradient  in the direction of $u^a$,
+\bea
+\label{LiedV}
+\lied{u}v_{ab} = {\gamma^c}_a{\gamma^d}_b\dot{u}_{c;d} +{v^c}_a v_{cb} + \tfrac{1}{2}\dot{u}_a\dot{u}_b - u^cu^dR_{acbd}.
+\eea
+The anti-symmetric portion of (\ref{LiedV}) gives
+\bea
+\label{lied-u-omega}
+\lied{u} \omega_{ab} = {\gamma^c}_a{\gamma^d}_b \dot{u}_{[c;d]},
+\eea
+and the symmetric portion of (\ref{LiedV}) gives
+\bea
+\tfrac{1}{2}\lied{u}\lied{u}\gamma_{ab} =  {\gamma^c}_a{\gamma^d}_b\dot{u}_{(c;d)} + {v^c}_av_{cb} + \tfrac{1}{c^2}\dot{u}_a\dot{u}_b - u^cu^dR_{acbd}.
+\eea
+We also use the Weyl tensor
+\bea
+{C^{ab}}_{cd} = {R^{ab}}_{cd} - 2 {g^{[a}}_{[c}\left({R^{b]}}_{d]} -\tfrac{1}{6}R{g^{b]}}_{d]}\right).
+\eea
+
+The \textit{relative strain tensor} is
+\bea
+e_{ab} = \tfrac{1}{2}\left(\gamma_{ab} - \kappa_{ab}\right),
+\eea
+where the \textit{strain reference tensor} is $\kappa_{ab}$ and satisfies
+\bea
+\lied{u}\kappa_{ab}=0.
+\eea
+Hence, from (\ref{eq:liedu-gamma-theta}),
+\bea
+\theta_{ab} = \lied{u}e_{ab},
+\eea
+meaning that the expansion tensor $\theta_{ab}$ quantifies the rate of relative strain. Carter sets $\kappa_{ab}=0$. Hence
+\bea
+\label{eq:sec:lied-u-e}
+\lied{u}\lied{u}e_{ab} &=&  {\gamma^c}_a{\gamma^d}_b\dot{u}_{c;d}+ {v^c}_av_{cb} + \tfrac{1}{c^2}\dot{u}_a\dot{u}_b\nonumber\\
+&& -u^cu^dC_{acbd} - \tfrac{1}{2}\gamma_{ab}\left( u^cu^dR_{cd} + \tfrac{1}{3}Rc^2\right) + \tfrac{1}{2}{\gamma^c}_a{\gamma^d}_b R_{cd}c^2 .
+\eea
+
+Now we set  the energy-momentum tensor to be that for a perfect elastic solid,
+\bea
+T^{ab} = \rho u^au^b + p^{ab}.
+\eea
+One can compute $p^{AB}$ from the energy as a function of strain, $\epsilon(\gamma_{AB})$ via
+\bea
+p^{AB} = - \epsilon \gamma^{AB} - 2\pd{\epsilon}{\gamma_{AB}}.
+\eea
+This is valid for any linear or non-linear function of strain, for which the conservation law
+\bea
+{T^{ab}}_{;b}=0
+\eea
+holds. 
+
+We now specify the gravitational theory, which we take to be General Relativity for whom the Ricci tensor is given by
+\bea
+R_{ab} = \frac{8\pi G}{c^4}\left( T_{ab} - \tfrac{1}{2}Tg_{ab}\right),
+\eea
+where
+\bea
+T = {T^a}_a = {p^a}_a - \rho c^2
+\eea
+is the trace of the energy-momentum tensor. In General Relativity the Weyl tensor satisifies
+\bea
+C_{abcd} = C_{cdab} = C_{[ab][cd]},\qquad {C^a}_{[bcd]}=0,\qquad {C^{ab}}_{ac}=0,
+\eea
+and the Bianchi identities impose
+\bea
+{C^{abcd}}_{;d} = \frac{8\pi G}{c^4}\left( T^{c[a;b]} - \tfrac{1}{3}g^{a[a}T^{;b]} \right).
+\eea
+We denote
+\bea
+C_{ab} = u^cu^dC_{acbd} 
+\eea
+for the electric part of the the Weyl tensor.
+
+From the conservation equation one obtains
+\bea
+\rho\dot{u}^a = - {p^{ab}}_{;b} + \tfrac{1}{c^2}u^ap^{bc}\theta_{bc}.
+\eea
+Hence (\ref{lied-u-omega}) and (\ref{eq:sec:lied-u-e}) become
+\bse
+\bea
+\lied{u}\omega_{ab} =\frac{1}{\rho^2} \gamma_{c[a}{\gamma^d}_{b]}\left( \rho_{,d}{p^{ce}}_{;e} - \rho {p^{ce}}_{;e;d}\right)+ \frac{1}{\rho c^2}\omega_{ab}p^{cd}\lied{u}e_{cd}.
+\eea
+\bea
+\lied{u}\lied{u}e_{ab} &=& \frac{1}{\rho^2}\gamma_{c(a}{\gamma^d}_{b)} \left( \rho_{,d}{p^{ce}}_{;e} - \rho {p^{ce}}_{;e;d}\right) - C_{ab} - \frac{4\pi G}{3}\rho \gamma_{ab}\nonumber\\
+&& + \omega_{ca}{\omega^c}_b + 2 {\omega^c}_{(a}\lied{u}e_{b)c} + g^{cd}\left( \lied{u}e_{ac}\right) \left( \lied{u}e_{bd}\right)+\frac{4\pi G}{c^2}\left( P_{ab} - \tfrac{2}{3}{p^c}_c\gamma_{ab}\right)\nonumber\\
+&& + \frac{1}{c^2\rho^2}\left[ \gamma_{ac}\gamma_{bd}{p^{ce}}_{;e} {p^{df}}_{;f} + \rho p^{cd}\left( \lied{u}e_{cd}\right)\left(\lied{u}e_{ab}\right) \right].
+\eea
+\ese
+
+
 \section{Application to general isotropic configurations of elastic solids}
 The aim of this section is to understand the physics of elastic solids in isotropic configurations. We will study (a) elastic stars, (b) stars immersed in an elastic solid. The former problem has been studied before, but under the guise of ``anisotropic stars'', without mention of the anisotropy coming from elasticity. The latter problem is relevant for understanding how an elastic ``bath'' could affect the properties of compact objects (specifically, we will be looking out for some analogue of a ``screen''). 
 

@@ -137,42 +137,20 @@ J.~Kijowski and G.~Magli, {\it {Relativistic elastomechanics is a gauge type
   theory}},  \href{http://xxx.lanl.gov/abs/hep-th/9411212}{{\tt
   hep-th/9411212}}.
 
-\bibitem{Battye:1995hv}
-R.~Battye and B.~Carter, {\it {Gravitational perturbations of relativistic
-  membranes and strings}},  {\em Phys.Lett.} {\bf B357} (1995) 29--35,
-  [\href{http://xxx.lanl.gov/abs/hep-ph/9508300}{{\tt hep-ph/9508300}}].
+\bibitem{Carter:2005gg}
+B.~Carter, E.~Chachoua, and N.~Chamel, {\it {Covariant Newtonian and
+  relativistic dynamics of (magneto)-elastic solid model for neutron star
+  crust}},  {\em Gen.Rel.Grav.} {\bf 38} (2006) 83--119,
+  [\href{http://xxx.lanl.gov/abs/gr-qc/0507006}{{\tt gr-qc/0507006}}].
 
-\bibitem{Carter:2000wv}
-B.~Carter, {\it {Essentials of classical brane dynamics}},  {\em
-  Int.J.Theor.Phys.} {\bf 40} (2001) 2099--2130,
-  [\href{http://xxx.lanl.gov/abs/gr-qc/0012036}{{\tt gr-qc/0012036}}].
-
-\bibitem{Carter:2011ab}
-B.~Carter, {\it {Classical Dynamics of Strings and Branes, with Application to
-  Vortons}},  \href{http://xxx.lanl.gov/abs/1112.2094}{{\tt arXiv:1112.2094}}.
-
-\bibitem{Carter:1973zz}
-B.~Carter, {\it {Speed of Sound in a High-Pressure General-Relativistic
-  Solid}},  {\em Phys.Rev.} {\bf D7} (1973) 1590--1593.
-
-\bibitem{Battye:2013er}
-R.~A. Battye and J.~A. Pearson, {\it {Massive gravity, the elasticity of
-  space-time and perturbations in the dark sector}},  {\em Phys.Rev.} {\bf D88}
-  (2013), no.~8 084004, [\href{http://xxx.lanl.gov/abs/1301.5042}{{\tt
-  arXiv:1301.5042}}].
-
-\bibitem{ll_elast}
-{L.D. Landau and E.M. Lifshitz}, {\em {\textit{Theory of Elasticity, 3rd Ed}}}.
-\newblock {Pergamon Press}, 1986.
+\bibitem{Gourgoulhon:2006bn}
+E.~Gourgoulhon, {\it {An Introduction to relativistic hydrodynamics}},  {\em
+  EAS Publ.Ser.} {\bf 21} (2006) 43,
+  [\href{http://xxx.lanl.gov/abs/gr-qc/0603009}{{\tt gr-qc/0603009}}].
 
 \bibitem{Carter:1994rv}
 B.~Carter, {\it {Axionic vorticity variational formulation for relativistic
   perfect fluids}},  {\em Class.Quant.Grav.} {\bf 11} (1994) 2013--2030.
-
-\bibitem{Hinterbichler:2011tt}
-K.~Hinterbichler, {\it {Theoretical Aspects of Massive Gravity}},  {\em
-  Rev.Mod.Phys.} {\bf 84} (2012) 671--710,
-  [\href{http://xxx.lanl.gov/abs/1105.3735}{{\tt arXiv:1105.3735}}].
 
 \bibitem{Bellini:2014fua}
 E.~Bellini and I.~Sawicki, {\it {Maximal freedom at minimum cost: linear
@@ -194,9 +172,28 @@ L.~Amendola, G.~Ballesteros, and V.~Pettorino, {\it {Effects of modified
 E.~V. Linder, {\it {Are Scalar and Tensor Deviations Related in Modified
   Gravity?}},  \href{http://xxx.lanl.gov/abs/1407.8184}{{\tt arXiv:1407.8184}}.
 
+\bibitem{Carter:1973zz}
+B.~Carter, {\it {Speed of Sound in a High-Pressure General-Relativistic
+  Solid}},  {\em Phys.Rev.} {\bf D7} (1973) 1590--1593.
+
 \bibitem{Lukacs:1976ja}
 B.~Lukacs, {\it {Robertson-Walker Type Solutions with Carter and Quintana Type
   Elasticity}},  {\em Acta Phys. Hung.} (1976).
   \url{http://www.iaea.org/inis/collection/NCLCollectionStore/_Public/08/313/8313697.pdf}.
+
+\bibitem{Battye:2013er}
+R.~A. Battye and J.~A. Pearson, {\it {Massive gravity, the elasticity of
+  space-time and perturbations in the dark sector}},  {\em Phys.Rev.} {\bf D88}
+  (2013), no.~8 084004, [\href{http://xxx.lanl.gov/abs/1301.5042}{{\tt
+  arXiv:1301.5042}}].
+
+\bibitem{ll_elast}
+{L.D. Landau and E.M. Lifshitz}, {\em {\textit{Theory of Elasticity, 3rd Ed}}}.
+\newblock {Pergamon Press}, 1986.
+
+\bibitem{Hinterbichler:2011tt}
+K.~Hinterbichler, {\it {Theoretical Aspects of Massive Gravity}},  {\em
+  Rev.Mod.Phys.} {\bf 84} (2012) 671--710,
+  [\href{http://xxx.lanl.gov/abs/1105.3735}{{\tt arXiv:1105.3735}}].
 
 \end{thebibliography}\endgroup

@@ -11,45 +11,45 @@ Repeated entry---line 1031 of file nle.bib
  : @article{Frauendiener:2007yx
  :                             ,
 I'm skipping whatever remains of this entry
-You've used 40 entries,
+You've used 39 entries,
             2166 wiz_defined-function locations,
-            779 strings with 9036 characters,
-and the built_in function-call counts, 11880 in all, are:
-= -- 1267
-> -- 292
+            773 strings with 9020 characters,
+and the built_in function-call counts, 11633 in all, are:
+= -- 1236
+> -- 291
 < -- 0
-+ -- 116
++ -- 115
 - -- 76
-* -- 880
-:= -- 1563
-add.period$ -- 42
-call.type$ -- 40
-change.case$ -- 39
+* -- 866
+:= -- 1535
+add.period$ -- 41
+call.type$ -- 39
+change.case$ -- 38
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 650
-empty$ -- 1131
+cite$ -- 39
+duplicate$ -- 639
+empty$ -- 1109
 format.name$ -- 76
-if$ -- 3092
+if$ -- 3029
 int.to.chr$ -- 0
-int.to.str$ -- 40
-missing$ -- 148
-newline$ -- 124
-num.names$ -- 40
-pop$ -- 147
+int.to.str$ -- 39
+missing$ -- 145
+newline$ -- 121
+num.names$ -- 39
+pop$ -- 145
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 492
+skip$ -- 480
 stack$ -- 0
-substring$ -- 760
-swap$ -- 300
+substring$ -- 726
+swap$ -- 294
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 84
-width$ -- 42
-write$ -- 398
+while$ -- 82
+width$ -- 41
+write$ -- 391
 (There were 2 error messages)
