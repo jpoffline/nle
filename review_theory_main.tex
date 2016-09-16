@@ -5,11 +5,13 @@
 \usepackage{amsmath,amssymb}
 %\usepackage{times}
 \usepackage[top=2.5cm,left=3cm,right=3cm,bottom=3cm,foot=1cm,]{geometry}
-\linespread{1.3}
+%\linespread{1.3}
 \usepackage[usenames,dvipsnames]{xcolor}
 %http://en.wikibooks.org/wiki/LaTeX/Colors
 \usepackage{array}
 \newcolumntype{L}{>{\centering\arraybackslash}m{10cm}}
+
+
 
 \usepackage[breaklinks, colorlinks, linkcolor=NavyBlue,citecolor=blue]{hyperref}
 \usepackage{multirow,array,graphicx}
@@ -52,13 +54,16 @@
 
 \maketitle
 \begin{abstract}
-The non-relativistic theory of solids is  highly developed, has extensive applications, and is very intuitive. On the other hand, the relativistic theory of solids is relatively under-developed and has been applied to only a small handful of situations. The purpose of this review is to act as a dictionary to import and translate   ideas and technology between the communities who reguarly use the theory of solids (for example, in the study of neutron stars) and a community which aught to benefit from their insight and intuition (we have in mind cosmologists). Specifically, we advocate the sequence $\Lambda \rightarrow \mbox{fluid} \rightarrow \mbox{solid}$ as a physically coherent way to generalised the cosmological constant, rather than the usual route which is from a fluid to scalar field models. We collect together peices of the ``relativistic theory of solids'' from a variety of sources, put it into a single notation, and provide results and insight along the way. One of the main focusses is to provide an understanding of the construction, derivation, and important applications of the energy-momentum tensor for a perfect solid. The theory holds fully non-linearly.
+The theory of solids comes in two   strands: non-relativistic, which accurately describes a large portion of familar objects in the world, and the relativistic theory, which is relatively under-developed and has been applied to only a   handful of situations. The purpose of this review is to act as a dictionary to import and translate   ideas and technology between the communities who regularly use the relativistic theory of solids and a community which aught to benefit from their insight and intuition. In the cosmological setting, we advocate the sequence $\Lambda \rightarrow \mbox{fluid} \rightarrow \mbox{solid}$ as a physically coherent way to generalise the cosmological constant, rather than the usual route which is from a fluid to scalar field or modified gravity models. We collect together peices of the ``relativistic theory of solids'' from a variety of sources, put it into a single notation, and provide results and insight along the way. One of the main focusses is to provide an understanding of the construction, derivation, and important applications of the energy-momentum tensor for a perfect solid. The theory holds fully non-linearly.
 \end{abstract}
 \clearpage
 \tableofcontents
-%\clearpage
-\input{review_theory}
 \clearpage
+\input{review_theory}
+\section*{Acknowledgements}
+\addcontentsline{toc}{section}{Acknowledgements}
+The author has benefited from  conversations and discussions from a large number of people in the process of writing this paper: Ian Moss, Ruth Gregory, Richard Battye, Adam Moss, Pedro Ferreira, Tessa Baker, Ed Copeland, Alkistis Pourtisdou, Costas Skordis, Paul Saffin, Tony Padilla, Tom Charnock, Clare Burrage, Christian Boehmer
+%\clearpage
 \addcontentsline{toc}{section}{References}
 \bibliographystyle{JHEP}
 \bibliography{nle}

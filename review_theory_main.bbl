@@ -1,19 +1,8 @@
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
-\bibitem{Bucher:1998mh}
-M.~Bucher and D.~N. Spergel, {\it {Is the dark matter a solid?}},  {\em
-  Phys.Rev.} {\bf D60} (1999) 043505,
-  [\href{http://xxx.lanl.gov/abs/astro-ph/9812022}{{\tt astro-ph/9812022}}].
-
-\bibitem{Battye:2007aa}
-R.~A. Battye and A.~Moss, {\it {Cosmological Perturbations in Elastic Dark
-  Energy Models}},  {\em Phys.Rev.} {\bf D76} (2007) 023005,
-  [\href{http://xxx.lanl.gov/abs/astro-ph/0703744}{{\tt astro-ph/0703744}}].
-
-\bibitem{Pearson:2014iaa}
-J.~A. Pearson, {\it {Material models of dark energy}},  {\em Annalen Phys.}
-  {\bf 526} (2014), no.~7-8 318--339,
-  [\href{http://xxx.lanl.gov/abs/1403.1213}{{\tt arXiv:1403.1213}}].
+\bibitem{ll_elast}
+{L.D. Landau and E.M. Lifshitz}, {\em {\textit{Theory of Elasticity, 3rd Ed}}}.
+\newblock {Pergamon Press}, 1986.
 
 \bibitem{Carter21111972}
 B.~Carter and H.~Quintana, {\it Foundations of general relativistic
@@ -24,6 +13,22 @@ B.~Carter and H.~Quintana, {\it Foundations of general relativistic
 \bibitem{Carter:1977qf}
 B.~Carter and H.~Quintana, {\it {Gravitational and Acoustic Waves in an Elastic
   Medium}},  {\em Phys.Rev.} {\bf D16} (1977) 2928--2938.
+
+\bibitem{Carter:1982xm}
+B.~Carter, {\it {Interaction of gravitational waves with an elastic solid
+  medium}},  \href{http://xxx.lanl.gov/abs/gr-qc/0102113}{{\tt gr-qc/0102113}}.
+
+\bibitem{Langlois11071998}
+D.~Langlois, D.~M. Sedrakian, and B.~Carter, {\it Differential rotation of
+  relativistic superfluid in neutron stars},  {\em Monthly Notices of the Royal
+  Astronomical Society} {\bf 297} (1998), no.~4 1189--1201,
+  [\href{http://xxx.lanl.gov/abs/http://mnras.oxfordjournals.org/content/297/4/1189.full.pdf+html}{{\tt
+  http://mnras.oxfordjournals.org/content/297/4/1189.full.pdf+html}}].
+
+\bibitem{Beig:2002pk}
+R.~Beig and B.~G. Schmidt, {\it {Relativistic elasticity}},  {\em
+  Class.Quant.Grav.} {\bf 20} (2003) 889--904,
+  [\href{http://xxx.lanl.gov/abs/gr-qc/0211054}{{\tt gr-qc/0211054}}].
 
 \bibitem{Karlovini:2002fc}
 M.~Karlovini and L.~Samuelsson, {\it {Elastic stars in general relativity. 1.
@@ -43,15 +48,21 @@ M.~Karlovini and L.~Samuelsson, {\it {Elastic stars in general relativity. 3.
   4531--4548, [\href{http://xxx.lanl.gov/abs/gr-qc/0401115}{{\tt
   gr-qc/0401115}}].
 
+\bibitem{Andersson:2005pf}
+N.~Andersson and G.~Comer, {\it {A Flux-conservative formalism for convective
+  and dissipative multi-fluid systems, with application to Newtonian superfluid
+  neutron stars}},  {\em Class.Quant.Grav.} {\bf 23} (2006) 5505--5530,
+  [\href{http://xxx.lanl.gov/abs/physics/0509241}{{\tt physics/0509241}}].
+
+\bibitem{Andersson:2006nr}
+N.~Andersson and G.~Comer, {\it {Relativistic fluid dynamics: Physics for many
+  different scales}},  {\em Living Rev.Rel.} {\bf 10} (2007) 1,
+  [\href{http://xxx.lanl.gov/abs/gr-qc/0605010}{{\tt gr-qc/0605010}}].
+
 \bibitem{Karlovini:2007ut}
 M.~Karlovini and L.~Samuelsson, {\it {Elastic stars in general relativity. IV.
   Axial perturbations}},  {\em Class.Quant.Grav.} {\bf 24} (2007) 3171--3190,
   [\href{http://xxx.lanl.gov/abs/gr-qc/0703001}{{\tt gr-qc/0703001}}].
-
-\bibitem{Beig:2002pk}
-R.~Beig and B.~G. Schmidt, {\it {Relativistic elasticity}},  {\em
-  Class.Quant.Grav.} {\bf 20} (2003) 889--904,
-  [\href{http://xxx.lanl.gov/abs/gr-qc/0211054}{{\tt gr-qc/0211054}}].
 
 \bibitem{Frauendiener:2007yx}
 J.~Frauendiener and A.~Kabobel, {\it {The Static spherically symmetric body in
@@ -64,39 +75,54 @@ I.~Brito, J.~Carot, and E.~Vaz, {\it {General spherically symmetric elastic
   stars in Relativity}},  {\em Erratum-ibid.} {\bf 44} (2012) 287--301,
   [\href{http://xxx.lanl.gov/abs/0911.1425}{{\tt arXiv:0911.1425}}].
 
-\bibitem{Pourtsidou:2013nha}
-A.~Pourtsidou, C.~Skordis, and E.~Copeland, {\it {Models of dark matter coupled
-  to dark energy}},  {\em Phys.Rev.} {\bf D88} (2013), no.~8 083505,
-  [\href{http://xxx.lanl.gov/abs/1307.0458}{{\tt arXiv:1307.0458}}].
+\bibitem{Haskell:2012vp}
+B.~Haskell, N.~Andersson, and G.~Comer, {\it {The dynamics of dissipative
+  multi-fluid neutron star cores}},  {\em Phys.Rev.} {\bf D86} (2012) 063002,
+  [\href{http://xxx.lanl.gov/abs/1204.2894}{{\tt arXiv:1204.2894}}].
+
+\bibitem{Bucher:1998mh}
+M.~Bucher and D.~N. Spergel, {\it {Is the dark matter a solid?}},  {\em
+  Phys.Rev.} {\bf D60} (1999) 043505,
+  [\href{http://xxx.lanl.gov/abs/astro-ph/9812022}{{\tt astro-ph/9812022}}].
 
 \bibitem{Battye:2005ik}
 R.~A. Battye, E.~Chachoua, and A.~Moss, {\it {Elastic properties of anisotropic
   domain wall lattices}},  {\em Phys.Rev.} {\bf D73} (2006) 123528,
   [\href{http://xxx.lanl.gov/abs/hep-th/0512207}{{\tt hep-th/0512207}}].
 
-\bibitem{Balthazar:2014oza}
-B.~Balthazar and P.~G. Ferreira, {\it {Accelerated expansion in a radiation
-  dominated universe}},  \href{http://xxx.lanl.gov/abs/1407.0951}{{\tt
-  arXiv:1407.0951}}.
+\bibitem{Battye:2007aa}
+R.~A. Battye and A.~Moss, {\it {Cosmological Perturbations in Elastic Dark
+  Energy Models}},  {\em Phys.Rev.} {\bf D76} (2007) 023005,
+  [\href{http://xxx.lanl.gov/abs/astro-ph/0703744}{{\tt astro-ph/0703744}}].
 
-\bibitem{Dubovsky:2011sj}
-S.~Dubovsky, L.~Hui, A.~Nicolis, and D.~T. Son, {\it {Effective field theory
-  for hydrodynamics: thermodynamics, and the derivative expansion}},  {\em
-  Phys.Rev.} {\bf D85} (2012) 085029,
-  [\href{http://xxx.lanl.gov/abs/1107.0731}{{\tt arXiv:1107.0731}}].
+\bibitem{Pearson:2014iaa}
+J.~A. Pearson, {\it {Material models of dark energy}},  {\em Annalen Phys.}
+  {\bf 526} (2014), no.~7-8 318--339,
+  [\href{http://xxx.lanl.gov/abs/1403.1213}{{\tt arXiv:1403.1213}}].
 
-\bibitem{Carter:1982xm}
-B.~Carter, {\it {Interaction of gravitational waves with an elastic solid
-  medium}},  \href{http://xxx.lanl.gov/abs/gr-qc/0102113}{{\tt gr-qc/0102113}}.
+\bibitem{WernigPichler:2006mw}
+M.~Wernig-Pichler, {\it {Relativistic elastodynamics}},
+  \href{http://xxx.lanl.gov/abs/gr-qc/0605025}{{\tt gr-qc/0605025}}.
 
-\bibitem{Carter:2006cw}
-B.~Carter, {\it {Poly-essential and general Hyperelastic World (brane)
-  models}},  {\em Int.J.Theor.Phys.} {\bf 46} (2007) 2299--2312,
-  [\href{http://xxx.lanl.gov/abs/hep-th/0604157}{{\tt hep-th/0604157}}].
+\bibitem{Pourtsidou:2013nha}
+A.~Pourtsidou, C.~Skordis, and E.~Copeland, {\it {Models of dark matter coupled
+  to dark energy}},  {\em Phys.Rev.} {\bf D88} (2013), no.~8 083505,
+  [\href{http://xxx.lanl.gov/abs/1307.0458}{{\tt arXiv:1307.0458}}].
 
 \bibitem{deRham:2014zqa}
 C.~de~Rham, {\it {Massive Gravity}},
   \href{http://xxx.lanl.gov/abs/1401.4173}{{\tt arXiv:1401.4173}}.
+
+\bibitem{Nicolis:2013lma}
+A.~Nicolis, R.~Penco, and R.~A. Rosen, {\it {Relativistic Fluids, Superfluids,
+  Solids and Supersolids from a Coset Construction}},  {\em Phys.Rev.} {\bf
+  D89} (2014), no.~4 045002, [\href{http://xxx.lanl.gov/abs/1307.0517}{{\tt
+  arXiv:1307.0517}}].
+
+\bibitem{Nicolis:2015sra}
+A.~Nicolis, R.~Penco, F.~Piazza, and R.~Rattazzi, {\it {Zoology of condensed
+  matter: Framids, ordinary stuff, extra-ordinary stuff}},
+  \href{http://xxx.lanl.gov/abs/1501.0384}{{\tt arXiv:1501.0384}}.
 
 \bibitem{Ballesteros:2012kv}
 G.~Ballesteros and B.~Bellazzini, {\it {Effective perfect fluids in
@@ -148,9 +174,49 @@ E.~Gourgoulhon, {\it {An Introduction to relativistic hydrodynamics}},  {\em
   EAS Publ.Ser.} {\bf 21} (2006) 43,
   [\href{http://xxx.lanl.gov/abs/gr-qc/0603009}{{\tt gr-qc/0603009}}].
 
+\bibitem{Lin:2015cqa}
+C.~Lin and L.~Z. Labun, {\it {Effective Field Theory of Broken Spatial
+  Diffeomorphisms}},  \href{http://xxx.lanl.gov/abs/1501.0716}{{\tt
+  arXiv:1501.0716}}.
+
+\bibitem{Battye:2013er}
+R.~A. Battye and J.~A. Pearson, {\it {Massive gravity, the elasticity of
+  space-time and perturbations in the dark sector}},  {\em Phys.Rev.} {\bf D88}
+  (2013), no.~8 084004, [\href{http://xxx.lanl.gov/abs/1301.5042}{{\tt
+  arXiv:1301.5042}}].
+
+\bibitem{Clifton:2011jh}
+T.~Clifton, P.~G. Ferreira, A.~Padilla, and C.~Skordis, {\it {Modified Gravity
+  and Cosmology}},  {\em Phys.Rept.} {\bf 513} (2012) 1--189,
+  [\href{http://xxx.lanl.gov/abs/1106.2476}{{\tt arXiv:1106.2476}}].
+
+\bibitem{Joyce:2014kja}
+A.~Joyce, B.~Jain, J.~Khoury, and M.~Trodden, {\it {Beyond the Cosmological
+  Standard Model}},  {\em Phys.Rept.} {\bf 568} (2015) 1--98,
+  [\href{http://xxx.lanl.gov/abs/1407.0059}{{\tt arXiv:1407.0059}}].
+
+\bibitem{Carter:2006cw}
+B.~Carter, {\it {Poly-essential and general Hyperelastic World (brane)
+  models}},  {\em Int.J.Theor.Phys.} {\bf 46} (2007) 2299--2312,
+  [\href{http://xxx.lanl.gov/abs/hep-th/0604157}{{\tt hep-th/0604157}}].
+
 \bibitem{Carter:1994rv}
 B.~Carter, {\it {Axionic vorticity variational formulation for relativistic
   perfect fluids}},  {\em Class.Quant.Grav.} {\bf 11} (1994) 2013--2030.
+
+\bibitem{Carter:1973zz}
+B.~Carter, {\it {Speed of Sound in a High-Pressure General-Relativistic
+  Solid}},  {\em Phys.Rev.} {\bf D7} (1973) 1590--1593.
+
+\bibitem{Lukacs:1976ja}
+B.~Lukacs, {\it {Robertson-Walker Type Solutions with Carter and Quintana Type
+  Elasticity}},  {\em Acta Phys. Hung.} (1976).
+  \url{http://www.iaea.org/inis/collection/NCLCollectionStore/_Public/08/313/8313697.pdf}.
+
+\bibitem{Hinterbichler:2011tt}
+K.~Hinterbichler, {\it {Theoretical Aspects of Massive Gravity}},  {\em
+  Rev.Mod.Phys.} {\bf 84} (2012) 671--710,
+  [\href{http://xxx.lanl.gov/abs/1105.3735}{{\tt arXiv:1105.3735}}].
 
 \bibitem{Bellini:2014fua}
 E.~Bellini and I.~Sawicki, {\it {Maximal freedom at minimum cost: linear
@@ -171,29 +237,5 @@ L.~Amendola, G.~Ballesteros, and V.~Pettorino, {\it {Effects of modified
 \bibitem{Linder:2014fna}
 E.~V. Linder, {\it {Are Scalar and Tensor Deviations Related in Modified
   Gravity?}},  \href{http://xxx.lanl.gov/abs/1407.8184}{{\tt arXiv:1407.8184}}.
-
-\bibitem{Carter:1973zz}
-B.~Carter, {\it {Speed of Sound in a High-Pressure General-Relativistic
-  Solid}},  {\em Phys.Rev.} {\bf D7} (1973) 1590--1593.
-
-\bibitem{Lukacs:1976ja}
-B.~Lukacs, {\it {Robertson-Walker Type Solutions with Carter and Quintana Type
-  Elasticity}},  {\em Acta Phys. Hung.} (1976).
-  \url{http://www.iaea.org/inis/collection/NCLCollectionStore/_Public/08/313/8313697.pdf}.
-
-\bibitem{Battye:2013er}
-R.~A. Battye and J.~A. Pearson, {\it {Massive gravity, the elasticity of
-  space-time and perturbations in the dark sector}},  {\em Phys.Rev.} {\bf D88}
-  (2013), no.~8 084004, [\href{http://xxx.lanl.gov/abs/1301.5042}{{\tt
-  arXiv:1301.5042}}].
-
-\bibitem{ll_elast}
-{L.D. Landau and E.M. Lifshitz}, {\em {\textit{Theory of Elasticity, 3rd Ed}}}.
-\newblock {Pergamon Press}, 1986.
-
-\bibitem{Hinterbichler:2011tt}
-K.~Hinterbichler, {\it {Theoretical Aspects of Massive Gravity}},  {\em
-  Rev.Mod.Phys.} {\bf 84} (2012) 671--710,
-  [\href{http://xxx.lanl.gov/abs/1105.3735}{{\tt arXiv:1105.3735}}].
 
 \end{thebibliography}\endgroup

@@ -1,0 +1,28 @@
+
+\tikzstyle{block} = [fill=red!20, draw,rectangle,  text centered, rounded corners, minimum height=2em]
+\tikzstyle{block2} = [fill=blue!20,draw,rectangle,  text centered, rounded corners, minimum height=2.5em]
+\tikzstyle{block3} = [fill=green!20,draw,rectangle,  text centered, rounded corners, minimum height=2em]
+\tikzstyle{block4} = [fill=yellow!5,draw,rectangle,   dotted, text centered, rounded corners, minimum height=2em]
+
+\tikzstyle{line} = [draw,  -latex,   thick]
+\tikzstyle{line2} = [draw,  latex-,   thick]
+\tikzstyle{cloud} = [ minimum height=2em]
+
+\begin{figure}[!t]
+\begin{centering}
+\begin{tikzpicture}[node distance = 2cm, auto]
+    % Place nodes
+    
+    \node [block2] (constant) {constant};
+    \node [block3, right of=constant,  node distance=4cm] (dyn){dynamical};
+    \node[block4, above right = 1.5cm of dyn](stand){\begin{tabular}{c}dark energy \\ modified gravity \end{tabular}};
+    \node[block4, below right = 1.5cm of dyn, xshift=0.25cm](matmods){\begin{tabular}{c}perfect fluid \\ perfect solid\end{tabular}};
+    
+     \draw [line] (constant) -- node{\scriptsize generalise}(dyn);
+      \draw [line] (dyn) -- node{\scriptsize ``standard''}(stand);
+     \draw [line] (dyn) -- node{\scriptsize material models}(matmods);                              
+\end{tikzpicture}
+\caption{Schematic illustration of the philosophy behind model-class choices. The simplest generalisation of a constant modification to the gravitational field equations is to include a dynamical component. At that point one can either go down the route labelled here as ``standard'', in which one can include dark energy and/or modified gravity contributions into the field equations. Alternatively, one can include material models, where in this illustration we have shown perfect fluid and solids as examples. These routes are not mutually exclusive, since, e.g.,  simple scalar field models of dark energy can be thought of as perfect fluids.}\label{fig:shem_roadmap-gen-st-mat-mod}
+\end{centering}
+\end{figure}
+ 
